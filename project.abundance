@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": 1741580545087
+                    "ioValue": 1744998440494
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -87,17 +87,19 @@
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": []
+            "placements": [
+                {
+                    "translate": {
+                        "x": 8.100000858306885,
+                        "y": 53.099998474121094
+                    },
+                    "id": 0,
+                    "rotate": 0
+                }
+            ]
         }
     ],
     "allConnectors": [
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1741580545087,
-            "ap2ID": 1741580342436
-        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
@@ -111,6 +113,13 @@
             "ap2Primary": false,
             "ap1ID": 1744998400316,
             "ap2ID": 1744998440494
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1744998440494,
+            "ap2ID": 1741580342436
         }
     ],
     "unitsKey": "MM",
