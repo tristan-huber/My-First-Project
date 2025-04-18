@@ -25,8 +25,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.5494791666666667,
-            "y": 0.29289940828402367,
+            "x": 0.23893229166666669,
+            "y": 0.4732142857142857,
             "uniqueID": 1741580545087,
             "ioValues": [
                 {
@@ -39,6 +39,55 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.45182291666666663,
+            "y": 0.24702380952380953,
+            "uniqueID": 1744998400316,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1741580545087
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.6184895833333334,
+            "y": 0.29464285714285715,
+            "uniqueID": 1744998440494,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744998400316
+                },
+                {
+                    "name": "Material Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 6
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": []
         }
     ],
     "allConnectors": [
@@ -48,6 +97,20 @@
             "ap2Primary": false,
             "ap1ID": 1741580545087,
             "ap2ID": 1741580342436
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1741580545087,
+            "ap2ID": 1744998400316
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1744998400316,
+            "ap2ID": 1744998440494
         }
     ],
     "unitsKey": "MM",
