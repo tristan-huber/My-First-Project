@@ -40,15 +40,10 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5703125,
-            "y": 0.6342857142857142,
+            "x": 0.4993489583333333,
+            "y": 0.35428571428571426,
             "uniqueID": 1744998400316,
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "{\"geometry\":\"rectangle-10-100\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"color\":\"#aad7f2\",\"tags\":[],\"bom\":[]}",
-                    "currentEquation": null
-                },
                 {
                     "name": "height",
                     "ioValue": 10,
