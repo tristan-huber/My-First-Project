@@ -40,100 +40,15 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.45182291666666663,
-            "y": 0.24702380952380953,
+            "x": 0.5703125,
+            "y": 0.6342857142857142,
             "uniqueID": 1744998400316,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "{\"geometry\":\"rectangle-10-100\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"color\":\"#aad7f2\",\"tags\":[],\"bom\":[]}",
+                    "ioValue": 1741580545087,
                     "currentEquation": null
                 },
-                {
-                    "name": "height",
-                    "ioValue": 10,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Intersection",
-            "name": "Intersection",
-            "x": 0.5625,
-            "y": 0.46726190476190477,
-            "uniqueID": 1749248287238,
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": "",
-                    "currentEquation": null
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": "",
-                    "currentEquation": null
-                }
-            ],
-            "description": "The space shared by two shapes."
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.2701822916666667,
-            "y": 0.7083333333333333,
-            "uniqueID": 1749248299225,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10,
-                    "currentEquation": null
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 100,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.3678385416666667,
-            "y": 0.744047619047619,
-            "uniqueID": 1749248305416,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "{\"geometry\":\"rectangle-10-100\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"color\":\"#aad7f2\",\"tags\":[],\"bom\":[]}",
-                    "currentEquation": null
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 10,
-                    "currentEquation": null
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.46289062500000006,
-            "y": 0.6726190476190476,
-            "uniqueID": 1749248316882,
-            "ioValues": [
                 {
                     "name": "height",
                     "ioValue": 10,
@@ -149,18 +64,6 @@
             "ap2Name": "geometry",
             "ap1ID": 1741580545087,
             "ap2ID": 1744998400316
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap1ID": 1749248299225,
-            "ap2ID": 1749248305416
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap1ID": 1749248305416,
-            "ap2ID": 1749248316882
         }
     ],
     "unitsKey": "MM",
