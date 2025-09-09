@@ -20,17 +20,19 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.23893229166666669,
-            "y": 0.4732142857142857,
+            "x": 0.24609375,
+            "y": 0.4828571428571429,
             "uniqueID": 1741580545087,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 },
                 {
                     "name": "y length",
-                    "ioValue": 100
+                    "ioValue": 100,
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new rectangle."
@@ -44,11 +46,13 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1741580545087
+                    "ioValue": "{\"geometry\":\"rectangle-10-100\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"color\":\"#aad7f2\",\"tags\":[],\"bom\":[]}",
+                    "currentEquation": null
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -62,11 +66,13 @@
             "ioValues": [
                 {
                     "name": "geometry1",
-                    "ioValue": ""
+                    "ioValue": "",
+                    "currentEquation": null
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": ""
+                    "ioValue": "",
+                    "currentEquation": null
                 }
             ],
             "description": "The space shared by two shapes."
@@ -80,11 +86,13 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 },
                 {
                     "name": "y length",
-                    "ioValue": 100
+                    "ioValue": 100,
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new rectangle."
@@ -98,19 +106,23 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1749248299225
+                    "ioValue": "{\"geometry\":\"rectangle-10-100\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"color\":\"#aad7f2\",\"tags\":[],\"bom\":[]}",
+                    "currentEquation": null
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -123,12 +135,9 @@
             "uniqueID": 1749248316882,
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": 1749248305416
-                },
-                {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -138,21 +147,18 @@
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap2Primary": true,
             "ap1ID": 1741580545087,
             "ap2ID": 1744998400316
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap2Primary": true,
             "ap1ID": 1749248299225,
             "ap2ID": 1749248305416
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap2Primary": true,
             "ap1ID": 1749248305416,
             "ap2ID": 1749248316882
         }
