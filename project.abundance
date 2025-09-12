@@ -14,14 +14,20 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1741580342436,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1744998400316,
+                    "currentEquation": null
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.22395833333333334,
-            "y": 0.7053571428571429,
+            "x": 0.22526041666666669,
+            "y": 0.7057142857142857,
             "uniqueID": 1741580545087,
             "ioValues": [
                 {
@@ -45,6 +51,11 @@
             "uniqueID": 1744998400316,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": 1741580545087,
+                    "currentEquation": null
+                },
+                {
                     "name": "height",
                     "ioValue": 10,
                     "currentEquation": null
@@ -59,6 +70,12 @@
             "ap2Name": "geometry",
             "ap1ID": 1741580545087,
             "ap2ID": 1744998400316
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": 1744998400316,
+            "ap2ID": 1741580342436
         }
     ],
     "unitsKey": "MM",
