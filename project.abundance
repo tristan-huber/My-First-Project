@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": 1744998400316,
+                    "ioValue": "da6961d6-12b1-468e-a28d-f3e093879a1d",
                     "currentEquation": null
                 }
             ],
@@ -57,8 +57,8 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 10,
-                    "currentEquation": null
+                    "ioValue": -10,
+                    "currentEquation": "-10"
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -66,8 +66,8 @@
         {
             "atomType": "Loft",
             "name": "Loft",
-            "x": 0.6630859375,
-            "y": 0.5416666666666666,
+            "x": 0.5950520833333334,
+            "y": 0.6041666666666666,
             "uniqueID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36",
             "ioValues": [
                 {
@@ -106,7 +106,7 @@
                 {
                     "name": "diameter",
                     "ioValue": 15,
-                    "currentEquation": "15"
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new circle."
@@ -136,10 +136,28 @@
                 {
                     "name": "zDist",
                     "ioValue": 100,
-                    "currentEquation": "100"
+                    "currentEquation": null
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.7408854166666666,
+            "y": 0.5714285714285714,
+            "uniqueID": "da6961d6-12b1-468e-a28d-f3e093879a1d",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "65b6bda2-88db-43c9-8bdf-cc292dc43e36"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1744998400316
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
         }
     ],
     "allConnectors": [
@@ -157,9 +175,15 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "Shape 2",
             "ap1ID": 1744998400316,
-            "ap2ID": 1741580342436
+            "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap1ID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36",
+            "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
         },
         {
             "ap1Name": "geometry",
@@ -172,6 +196,12 @@
             "ap2Name": "Shape 2",
             "ap1ID": "266a9b12-168e-4c7d-87cc-4adbf93c2580",
             "ap2ID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "da6961d6-12b1-468e-a28d-f3e093879a1d",
+            "ap2ID": 1741580342436
         }
     ],
     "unitsKey": "MM",
