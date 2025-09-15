@@ -58,7 +58,7 @@
                 {
                     "name": "height",
                     "ioValue": -10,
-                    "currentEquation": "-10"
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
