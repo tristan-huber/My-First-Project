@@ -46,8 +46,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.51953125,
-            "y": 0.22083333333333333,
+            "x": 0.3567708333333333,
+            "y": 0.22916666666666669,
             "uniqueID": 1744998400316,
             "ioValues": [
                 {
@@ -100,7 +100,7 @@
                 {
                     "name": "x-axis degrees",
                     "ioValue": 90,
-                    "currentEquation": "90"
+                    "currentEquation": null
                 },
                 {
                     "name": "y-axis degrees",
@@ -130,7 +130,7 @@
                 {
                     "name": "xDist",
                     "ioValue": 5,
-                    "currentEquation": "5"
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
@@ -177,31 +177,139 @@
             "placements": [
                 [
                     {
-                        "id": 1,
-                        "rotate": 270,
+                        "id": 2,
+                        "rotate": 90,
                         "translate": {
-                            "x": 10.200000000000015,
+                            "x": 10.20000000000001,
                             "y": 55.2
                         }
                     },
                     {
-                        "id": 2,
+                        "id": 3,
                         "rotate": 0,
                         "translate": {
-                            "x": 30.600000000000062,
+                            "x": 30.60000000000004,
                             "y": 55.20000002434009
                         }
                     },
                     {
-                        "id": 0,
-                        "rotate": 30,
+                        "id": 1,
+                        "rotate": 210,
                         "translate": {
-                            "x": 32.745350748375685,
-                            "y": 136.70497161011832
+                            "x": 17.745350751624315,
+                            "y": 134.55079507017865
+                        }
+                    },
+                    {
+                        "id": 0,
+                        "rotate": 330,
+                        "translate": {
+                            "x": 20.245350772715778,
+                            "y": 187.18251210305982
                         }
                     }
                 ]
             ]
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Molecule",
+            "x": 0.287109375,
+            "y": 0.6994047619047619,
+            "uniqueID": "22360cde-7a69-4be2-8d9d-4acf1ee388ed",
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "9eab6adf-710f-4582-883e-b3117380f7dd",
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "f753181f-f225-42d4-b86f-eec89d81c612",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "height",
+                    "x": 0.025384615384615384,
+                    "y": 0.4880952380952381,
+                    "uniqueID": "137cccad-75a2-4dd6-9751-11d156c2c292",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.24739583333333331,
+                    "y": 0.3214285714285714,
+                    "uniqueID": "066e2d15-bf24-4e51-9022-d7e6c7363da6",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.3743489583333333,
+                    "y": 0.4375,
+                    "uniqueID": "f753181f-f225-42d4-b86f-eec89d81c612",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "066e2d15-bf24-4e51-9022-d7e6c7363da6",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negative."
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap1ID": "137cccad-75a2-4dd6-9751-11d156c2c292",
+                    "ap2ID": "f753181f-f225-42d4-b86f-eec89d81c612"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "066e2d15-bf24-4e51-9022-d7e6c7363da6",
+                    "ap2ID": "f753181f-f225-42d4-b86f-eec89d81c612"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "f753181f-f225-42d4-b86f-eec89d81c612",
+                    "ap2ID": "9eab6adf-710f-4582-883e-b3117380f7dd"
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
