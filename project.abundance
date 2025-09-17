@@ -158,8 +158,8 @@
             "ioValues": [
                 {
                     "name": "height",
-                    "ioValue": 5,
-                    "currentEquation": null
+                    "ioValue": 10,
+                    "currentEquation": "10"
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -199,8 +199,8 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 20,
-                            "currentEquation": "20"
+                            "ioValue": 25,
+                            "currentEquation": "25"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -219,7 +219,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 5,
+                            "ioValue": 10,
                             "currentEquation": null
                         }
                     ],
