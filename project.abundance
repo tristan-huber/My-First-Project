@@ -58,88 +58,10 @@
                 {
                     "name": "height",
                     "ioValue": -10,
-                    "currentEquation": "-10"
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Loft",
-            "name": "Loft",
-            "x": 0.5950520833333334,
-            "y": 0.6041666666666666,
-            "uniqueID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36",
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1741580545087,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": "266a9b12-168e-4c7d-87cc-4adbf93c2580",
-                    "currentEquation": null
-                },
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1741580545087
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": "266a9b12-168e-4c7d-87cc-4adbf93c2580"
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": null
-                }
-            ],
-            "description": "Joins two or more shapes into a single solid by filling in the space between them.",
-            "closedSelection": 0
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.33056640625,
-            "y": 0.6687500000000001,
-            "uniqueID": "da008846-3a39-4de6-8e01-57045c8bd970",
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 15,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.48974609375000006,
-            "y": 0.6583333333333333,
-            "uniqueID": "266a9b12-168e-4c7d-87cc-4adbf93c2580",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "da008846-3a39-4de6-8e01-57045c8bd970",
-                    "currentEquation": null
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 100,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
         },
         {
             "atomType": "Assembly",
@@ -149,15 +71,137 @@
             "uniqueID": "da6961d6-12b1-468e-a28d-f3e093879a1d",
             "ioValues": [
                 {
-                    "name": "Shape 1",
-                    "ioValue": "65b6bda2-88db-43c9-8bdf-cc292dc43e36"
-                },
-                {
                     "name": "Shape 2",
                     "ioValue": 1744998400316
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "839dfd93-9035-4971-96db-3162b8252070"
+                },
+                {
+                    "name": "Shape 4",
+                    "ioValue": "b188eeab-5ac4-424b-9694-1642685890f3"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.5091145833333334,
+            "y": 0.6666666666666666,
+            "uniqueID": "839dfd93-9035-4971-96db-3162b8252070",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744998400316,
+                    "currentEquation": null
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 90,
+                    "currentEquation": "90"
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.6627604166666666,
+            "y": 0.23214285714285715,
+            "uniqueID": "b188eeab-5ac4-424b-9694-1642685890f3",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744998400316,
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 5,
+                    "currentEquation": "5"
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.8444010416666666,
+            "y": 0.8125,
+            "uniqueID": "eae7c496-d01c-4671-8a51-7098465eb6f1",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "da6961d6-12b1-468e-a28d-f3e093879a1d",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": [
+                [
+                    {
+                        "id": 1,
+                        "rotate": 270,
+                        "translate": {
+                            "x": 10.200000000000015,
+                            "y": 55.2
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "rotate": 0,
+                        "translate": {
+                            "x": 30.600000000000062,
+                            "y": 55.20000002434009
+                        }
+                    },
+                    {
+                        "id": 0,
+                        "rotate": 30,
+                        "translate": {
+                            "x": 32.745350748375685,
+                            "y": 136.70497161011832
+                        }
+                    }
+                ]
+            ]
         }
     ],
     "allConnectors": [
@@ -169,39 +213,45 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap1ID": 1741580545087,
-            "ap2ID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "Shape 2",
             "ap1ID": 1744998400316,
             "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap1ID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36",
-            "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
+            "ap2Name": "geometry",
+            "ap1ID": 1744998400316,
+            "ap2ID": "839dfd93-9035-4971-96db-3162b8252070"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap1ID": "da008846-3a39-4de6-8e01-57045c8bd970",
-            "ap2ID": "266a9b12-168e-4c7d-87cc-4adbf93c2580"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap1ID": "266a9b12-168e-4c7d-87cc-4adbf93c2580",
-            "ap2ID": "65b6bda2-88db-43c9-8bdf-cc292dc43e36"
+            "ap1ID": 1744998400316,
+            "ap2ID": "b188eeab-5ac4-424b-9694-1642685890f3"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap1ID": "da6961d6-12b1-468e-a28d-f3e093879a1d",
             "ap2ID": 1741580342436
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "da6961d6-12b1-468e-a28d-f3e093879a1d",
+            "ap2ID": "eae7c496-d01c-4671-8a51-7098465eb6f1"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap1ID": "839dfd93-9035-4971-96db-3162b8252070",
+            "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 4",
+            "ap1ID": "b188eeab-5ac4-424b-9694-1642685890f3",
+            "ap2ID": "da6961d6-12b1-468e-a28d-f3e093879a1d"
         }
     ],
     "unitsKey": "MM",
