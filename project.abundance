@@ -5,7 +5,6 @@
     "y": 0,
     "uniqueID": 1734979976986,
     "ioValues": [],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
         {
@@ -14,8 +13,13 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1741580342436,
-            "ioValues": [],
-            "description": "Connect geometry here to make it available in the next level up. "
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "384c91e4-39b4-4567-8470-daf6ad3acc3f",
+                    "currentEquation": null
+                }
+            ]
         },
         {
             "atomType": "Rectangle",
@@ -34,8 +38,7 @@
                     "ioValue": 100,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new rectangle."
+            ]
         },
         {
             "atomType": "Circle",
@@ -49,8 +52,7 @@
                     "ioValue": 10,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new circle."
+            ]
         },
         {
             "atomType": "Move",
@@ -59,6 +61,11 @@
             "y": 0.7202380952380952,
             "uniqueID": "46bda2d5-c769-4db1-8737-8cbb42cdbf36",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "daedcfbd-0981-42c7-b794-82e3239a9022",
+                    "currentEquation": null
+                },
                 {
                     "name": "xDist",
                     "ioValue": 10,
@@ -74,8 +81,7 @@
                     "ioValue": 0,
                     "currentEquation": null
                 }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
+            ]
         },
         {
             "atomType": "Rotate",
@@ -84,6 +90,11 @@
             "y": 0.7708333333333333,
             "uniqueID": "384c91e4-39b4-4567-8470-daf6ad3acc3f",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "46bda2d5-c769-4db1-8737-8cbb42cdbf36",
+                    "currentEquation": null
+                },
                 {
                     "name": "x-axis degrees",
                     "ioValue": 0,
@@ -99,8 +110,7 @@
                     "ioValue": 180,
                     "currentEquation": null
                 }
-            ],
-            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+            ]
         },
         {
             "atomType": "Rectangle",
@@ -119,8 +129,7 @@
                     "ioValue": 10,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new rectangle."
+            ]
         },
         {
             "atomType": "Extrude",
@@ -130,12 +139,16 @@
             "uniqueID": "ff3e616b-9e9d-474e-b361-8b18f291194e",
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": 1741580545087,
+                    "currentEquation": null
+                },
+                {
                     "name": "height",
                     "ioValue": 10,
                     "currentEquation": null
                 }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negative."
+            ]
         }
     ],
     "allConnectors": [
