@@ -116,8 +116,8 @@
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 20,
-                    "currentEquation": "20"
+                    "ioValue": 0,
+                    "currentEquation": "0"
                 },
                 {
                     "name": "y-axis degrees",
@@ -126,8 +126,8 @@
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 0,
-                    "currentEquation": "0"
+                    "ioValue": 180,
+                    "currentEquation": "180"
                 }
             ]
         }
