@@ -81,8 +81,8 @@
             "ioValues": [
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 0,
-                    "currentEquation": null
+                    "ioValue": 20,
+                    "currentEquation": "20"
                 },
                 {
                     "name": "y-axis degrees",
@@ -182,8 +182,8 @@
                             ],
                             "normal": [
                                 0,
-                                0,
-                                1
+                                -0.3420201433256687,
+                                0.9396926207859084
                             ]
                         },
                         "color": "#aad7f2",
