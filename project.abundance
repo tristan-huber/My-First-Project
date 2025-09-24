@@ -238,12 +238,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap1ID": "384c91e4-39b4-4567-8470-daf6ad3acc3f",
-            "ap2ID": 1741580342436
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "Shape 2",
             "ap1ID": "384c91e4-39b4-4567-8470-daf6ad3acc3f",
             "ap2ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6"
@@ -259,6 +253,12 @@
             "ap2Name": "geometry",
             "ap1ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6",
             "ap2ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7",
+            "ap2ID": 1741580342436
         }
     ],
     "unitsKey": "MM",
