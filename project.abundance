@@ -81,8 +81,8 @@
             "ioValues": [
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 20,
-                    "currentEquation": "20"
+                    "ioValue": 90,
+                    "currentEquation": null
                 },
                 {
                     "name": "y-axis degrees",
@@ -182,8 +182,8 @@
                             ],
                             "normal": [
                                 0,
-                                -0.3420201433256687,
-                                0.9396926207859084
+                                -1,
+                                1.1102230246251565e-16
                             ]
                         },
                         "color": "#aad7f2",
@@ -250,15 +250,15 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap1ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6",
-            "ap2ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7"
+            "ap2Name": "number or geometry",
+            "ap1ID": "ff3e616b-9e9d-474e-b361-8b18f291194e",
+            "ap2ID": 1741580342436
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap1ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7",
-            "ap2ID": 1741580342436
+            "ap2Name": "geometry",
+            "ap1ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6",
+            "ap2ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7"
         }
     ],
     "unitsKey": "MM",
