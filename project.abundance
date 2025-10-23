@@ -277,12 +277,6 @@
       "ap2Name": "geometry",
       "ap1ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6",
       "ap2ID": "080fb4d5-7e73-48c4-8b08-d85f02bd70a7"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "ebbb73a6-dc19-4a5c-a32e-03c8ec0d62d6",
-      "ap2ID": "f0d8a9e4-7bb7-4b7f-8b3d-73374fa3a29f"
     }
   ],
   "unitsKey": "MM",
