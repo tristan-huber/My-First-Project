@@ -204,8 +204,8 @@
     {
       "atomType": "CutLayout",
       "name": "Cut Layout",
-      "x": 0.7330729166666666,
-      "y": 0.744047619047619,
+      "x": 0.7630208333333334,
+      "y": 0.6964285714285714,
       "uniqueID": "f0d8a9e4-7bb7-4b7f-8b3d-73374fa3a29f",
       "ioValues": [
         {
@@ -271,6 +271,12 @@
       "ap2Name": "number or geometry",
       "ap1ID": "ff3e616b-9e9d-474e-b361-8b18f291194e",
       "ap2ID": 1741580342436
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "ff3e616b-9e9d-474e-b361-8b18f291194e",
+      "ap2ID": "f0d8a9e4-7bb7-4b7f-8b3d-73374fa3a29f"
     },
     {
       "ap1Name": "geometry",
