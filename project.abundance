@@ -54,7 +54,8 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 12
+          "ioValue": 2,
+          "currentEquation": "2"
         },
         {
           "name": "yDist",
@@ -69,8 +70,8 @@
     {
       "atomType": "Intersection",
       "name": "Intersection",
-      "x": 0.71484375,
-      "y": 0.3392857142857143,
+      "x": 0.7180989583333334,
+      "y": 0.3485714285714286,
       "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
       "ioValues": []
     }
