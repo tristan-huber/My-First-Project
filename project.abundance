@@ -18,8 +18,8 @@
     {
       "atomType": "Rectangle",
       "name": "Rectangle",
-      "x": 0.2903645833333333,
-      "y": 0.48,
+      "x": 0.283203125,
+      "y": 0.47428571428571425,
       "uniqueID": "b4a97cbe-834f-434c-aab9-81d74e01c430",
       "ioValues": [
         {
