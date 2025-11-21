@@ -65,7 +65,7 @@
     {
       "atomType": "Intersection",
       "x": 0.7180989583333334,
-      "y": 0.3485714285714286,
+      "y": 0.3142857142857143,
       "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
     },
     {
@@ -76,7 +76,8 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 20
+          "ioValue": 21,
+          "currentEquation": "21"
         }
       ]
     },
