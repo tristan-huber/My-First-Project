@@ -1,23 +1,19 @@
 {
   "atomType": "Molecule",
-  "name": "My-First-Project",
   "x": 0,
   "y": 0,
   "uniqueID": 1734979976986,
-  "ioValues": [],
+  "name": "My-First-Project",
   "topLevel": true,
   "allAtoms": [
     {
       "atomType": "Output",
-      "name": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": 1741580342436,
-      "ioValues": []
+      "uniqueID": 1741580342436
     },
     {
       "atomType": "Rectangle",
-      "name": "Rectangle",
       "x": 0.28125,
       "y": 0.5028571428571429,
       "uniqueID": "b4a97cbe-834f-434c-aab9-81d74e01c430",
@@ -34,7 +30,6 @@
     },
     {
       "atomType": "Circle",
-      "name": "Circle",
       "x": 0.4680989583333333,
       "y": 0.25,
       "uniqueID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
@@ -47,7 +42,6 @@
     },
     {
       "atomType": "Move",
-      "name": "Move",
       "x": 0.5670572916666667,
       "y": 0.1488095238095238,
       "uniqueID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
@@ -68,15 +62,12 @@
     },
     {
       "atomType": "Intersection",
-      "name": "Intersection",
       "x": 0.7180989583333334,
       "y": 0.3485714285714286,
-      "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
-      "ioValues": []
+      "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
       "x": 0.490234375,
       "y": 0.7571428571428572,
       "uniqueID": "id-17",
@@ -89,7 +80,6 @@
     },
     {
       "atomType": "Rotate",
-      "name": "Rotate",
       "x": 0.3509114583333333,
       "y": 0.8514285714285714,
       "uniqueID": "id-37",
@@ -111,31 +101,31 @@
   ],
   "allConnectors": [
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry2",
       "ap1ID": "b4a97cbe-834f-434c-aab9-81d74e01c430",
       "ap2ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "b4a97cbe-834f-434c-aab9-81d74e01c430",
       "ap2ID": "id-37"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
       "ap2ID": "69adfa82-3dee-4073-bfea-608fe865a4d4"
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry1",
       "ap1ID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
       "ap2ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
     },
     {
-      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
+      "ap2ID": 1741580342436
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-37",
       "ap2ID": "id-17"
@@ -143,6 +133,5 @@
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": [],
   "filetypeVersion": 1
 }
