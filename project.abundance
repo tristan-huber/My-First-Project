@@ -20,8 +20,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 12,
-          "currentEquation": "12"
+          "ioValue": 12
         },
         {
           "name": "y length",
@@ -49,8 +48,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -2,
-          "currentEquation": "-2"
+          "ioValue": -2
         },
         {
           "name": "yDist",
@@ -76,8 +74,7 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 21,
-          "currentEquation": "21"
+          "ioValue": 21
         }
       ]
     },
