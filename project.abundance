@@ -110,7 +110,8 @@
         },
         {
           "name": "yDist",
-          "ioValue": 6
+          "ioValue": 7,
+          "currentEquation": "7"
         },
         {
           "name": "zDist",
