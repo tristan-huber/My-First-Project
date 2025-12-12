@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": 1734979976986,
   "name": "My-First-Project",
+  "ioValues": [
+    {
+      "name": "offset",
+      "ioValue": 8,
+      "currentEquation": "8"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -110,7 +117,8 @@
         },
         {
           "name": "yDist",
-          "ioValue": 7
+          "ioValue": 8,
+          "currentEquation": "offset"
         },
         {
           "name": "zDist",
@@ -137,6 +145,22 @@
           "ioValue": null
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.2914285714285714,
+      "uniqueID": "id-129",
+      "name": "offset",
+      "type": "number"
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.18098958333333331,
+      "y": 0.7628571428571428,
+      "uniqueID": "id-132",
+      "name": "const",
+      "value": 8
     }
   ],
   "allConnectors": [
