@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "offset",
-      "ioValue": 8,
-      "currentEquation": "8"
+      "ioValue": 2,
+      "currentEquation": "2"
     }
   ],
   "topLevel": true,
@@ -55,7 +55,8 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -2
+          "ioValue": -2,
+          "currentEquation": "-1 * offset"
         },
         {
           "name": "yDist",
@@ -117,8 +118,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 8,
-          "currentEquation": "offset"
+          "ioValue": null
         },
         {
           "name": "zDist",
@@ -159,8 +159,60 @@
       "x": 0.18098958333333331,
       "y": 0.7628571428571428,
       "uniqueID": "id-132",
-      "name": "const",
-      "value": 8
+      "name": "foo",
+      "value": 20
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.22786458333333331,
+      "y": 0.32285714285714284,
+      "uniqueID": "id-134",
+      "name": "Molecule",
+      "ioValues": [
+        {
+          "name": "arg",
+          "ioValue": 2,
+          "currentEquation": "offset"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-136"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3914285714285714,
+          "uniqueID": "id-138",
+          "name": "arg",
+          "type": "number"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.3287760416666667,
+          "y": 0.5885714285714286,
+          "uniqueID": "id-141",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 2,
+              "currentEquation": "arg"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-141",
+          "ap2ID": "id-136"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
