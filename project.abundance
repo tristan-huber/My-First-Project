@@ -16,7 +16,7 @@
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": 1741580342436
+      "uniqueID": "id-130"
     },
     {
       "atomType": "Rectangle",
@@ -27,10 +27,6 @@
         {
           "name": "x length",
           "ioValue": 12
-        },
-        {
-          "name": "y length",
-          "ioValue": null
         }
       ]
     },
@@ -126,14 +122,6 @@
           "ioValue": 0
         }
       ]
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
-      "uniqueID": "id-129",
-      "name": "offset",
-      "type": "number"
     }
   ],
   "allConnectors": [
@@ -161,11 +149,6 @@
       "ap2Name": "geometry",
       "ap1ID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
       "ap2ID": "id-88"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
-      "ap2ID": 1741580342436
     },
     {
       "ap2Name": "geometry",
