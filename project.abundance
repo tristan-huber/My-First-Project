@@ -99,16 +99,6 @@
       ]
     },
     {
-      "atomType": "Import",
-      "x": 0.13911182450508291,
-      "y": 0.5413870246085011,
-      "uniqueID": "id-62",
-      "fileName": null,
-      "name": "Import",
-      "type": null,
-      "SVGwidth": 10
-    },
-    {
       "atomType": "Move",
       "x": 0.6380208333333334,
       "y": 0.7257142857142858,
@@ -120,8 +110,8 @@
         },
         {
           "name": "yDist",
-          "ioValue": 5,
-          "currentEquation": "5"
+          "ioValue": 6,
+          "currentEquation": "6"
         },
         {
           "name": "zDist",
