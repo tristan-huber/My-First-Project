@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "offset",
-      "ioValue": 2,
-      "currentEquation": "2"
+      "ioValue": 2
     }
   ],
   "topLevel": true,
@@ -117,10 +116,6 @@
           "ioValue": 0
         },
         {
-          "name": "yDist",
-          "ioValue": null
-        },
-        {
           "name": "zDist",
           "ioValue": 0
         }
@@ -149,7 +144,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.2914285714285714,
+      "y": 0.15384615384615385,
       "uniqueID": "id-129",
       "name": "offset",
       "type": "number"
@@ -171,8 +166,8 @@
       "ioValues": [
         {
           "name": "arg",
-          "ioValue": 2,
-          "currentEquation": "offset"
+          "ioValue": 4,
+          "currentEquation": "offset + 2"
         }
       ],
       "topLevel": false,
@@ -186,7 +181,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.3914285714285714,
+          "y": 0.15384615384615385,
           "uniqueID": "id-138",
           "name": "arg",
           "type": "number"
@@ -199,7 +194,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 2,
+              "ioValue": 4,
               "currentEquation": "arg"
             }
           ]
