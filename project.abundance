@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "offset",
-      "ioValue": 2
+      "ioValue": 20,
+      "currentEquation": "20"
     }
   ],
   "topLevel": true,
@@ -116,28 +117,12 @@
           "ioValue": 0
         },
         {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
           "name": "zDist",
           "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.7526041666666667,
-      "y": 0.6342857142857142,
-      "uniqueID": "id-94",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": null
         }
       ]
     },
@@ -166,7 +151,7 @@
       "ioValues": [
         {
           "name": "arg",
-          "ioValue": 4,
+          "ioValue": 22,
           "currentEquation": "offset + 2"
         }
       ],
@@ -194,7 +179,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 4,
+              "ioValue": 22,
               "currentEquation": "arg"
             }
           ]
@@ -227,11 +212,6 @@
       "ap2ID": "69adfa82-3dee-4073-bfea-608fe865a4d4"
     },
     {
-      "ap2Name": "Shape 3",
-      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
-      "ap2ID": "id-94"
-    },
-    {
       "ap2Name": "geometry1",
       "ap1ID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
       "ap2ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
@@ -242,11 +222,6 @@
       "ap2ID": "id-88"
     },
     {
-      "ap2Name": "Shape 2",
-      "ap1ID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
-      "ap2ID": "id-94"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
       "ap2ID": 1741580342436
@@ -255,11 +230,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-37",
       "ap2ID": "id-17"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-88",
-      "ap2ID": "id-94"
     }
   ],
   "unitsKey": "MM",
