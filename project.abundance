@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "offset",
-      "ioValue": 4,
-      "currentEquation": "4"
+      "ioValue": 4
     }
   ],
   "topLevel": true,
@@ -55,7 +54,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -2,
+          "ioValue": -4,
           "currentEquation": "-1 * offset"
         },
         {
@@ -98,7 +97,8 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 45
+          "ioValue": 90,
+          "currentEquation": "foo"
         },
         {
           "name": "z-axis degrees",
@@ -118,7 +118,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 10,
+          "ioValue": 4,
           "currentEquation": "offset"
         },
         {
@@ -141,7 +141,7 @@
       "y": 0.7628571428571428,
       "uniqueID": "id-132",
       "name": "foo",
-      "value": 20
+      "value": 90
     }
   ],
   "allConnectors": [
