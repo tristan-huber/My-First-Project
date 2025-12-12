@@ -30,7 +30,8 @@
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 7,
+          "currentEquation": "foo"
         }
       ]
     },
@@ -97,7 +98,7 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 90,
+          "ioValue": 7,
           "currentEquation": "foo"
         },
         {
@@ -140,8 +141,8 @@
       "x": 0.18098958333333331,
       "y": 0.7628571428571428,
       "uniqueID": "id-132",
-      "name": "foo",
-      "value": 90
+      "name": "width",
+      "value": 7
     }
   ],
   "allConnectors": [
