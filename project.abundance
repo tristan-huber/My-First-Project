@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "offset",
-      "ioValue": 20,
-      "currentEquation": "20"
+      "ioValue": 20
     }
   ],
   "topLevel": true,
@@ -141,58 +140,6 @@
       "uniqueID": "id-132",
       "name": "foo",
       "value": 20
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.22786458333333331,
-      "y": 0.32285714285714284,
-      "uniqueID": "id-134",
-      "name": "Molecule",
-      "ioValues": [
-        {
-          "name": "arg",
-          "ioValue": 22,
-          "currentEquation": "offset + 2"
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-136"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-138",
-          "name": "arg",
-          "type": "number"
-        },
-        {
-          "atomType": "Circle",
-          "x": 0.3287760416666667,
-          "y": 0.5885714285714286,
-          "uniqueID": "id-141",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 22,
-              "currentEquation": "arg"
-            }
-          ]
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-141",
-          "ap2ID": "id-136"
-        }
-      ],
-      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
