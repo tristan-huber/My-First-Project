@@ -155,7 +155,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 5
+              "ioValue": 3
             },
             {
               "name": "yDist",
@@ -182,12 +182,24 @@
               "ioValue": 10
             }
           ]
+        },
+        {
+          "atomType": "Import",
+          "x": 0.244140625,
+          "y": 0.7202380952380952,
+          "uniqueID": "id-220",
+          "fileName": "feed_copy1.svg",
+          "name": "Import",
+          "type": "SVG",
+          "repoOwner": "tristan-huber",
+          "repoName": "My-First-Project",
+          "SVGwidth": 10
         }
       ],
       "allConnectors": [
         {
           "ap2Name": "geometry",
-          "ap1ID": "id-177",
+          "ap1ID": "id-169",
           "ap2ID": "id-171"
         }
       ],
