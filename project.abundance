@@ -4,12 +4,6 @@
   "y": 0,
   "uniqueID": 1734979976986,
   "name": "My-First-Project",
-  "ioValues": [
-    {
-      "name": "offset",
-      "ioValue": 4
-    }
-  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -27,6 +21,10 @@
         {
           "name": "x length",
           "ioValue": 12
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
         }
       ]
     },
@@ -122,6 +120,36 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.3502604166666667,
+      "y": 0.25,
+      "uniqueID": "id-160",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-162"
+        },
+        {
+          "atomType": "Import",
+          "x": 0.306640625,
+          "y": 0.41369047619047616,
+          "uniqueID": "id-169",
+          "fileName": "feed.svg",
+          "name": "Import",
+          "type": "SVG",
+          "repoOwner": "tristan-huber",
+          "repoName": "My-First-Project",
+          "SVGwidth": 10
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
