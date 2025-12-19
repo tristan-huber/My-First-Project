@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": 1734979976986,
   "name": "My-First-Project",
+  "ioValues": [
+    {
+      "name": "zap",
+      "ioValue": 20,
+      "currentEquation": "20"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -148,19 +155,66 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.40571428571428575,
+          "y": 0.15384615384615385,
           "uniqueID": "id-455",
           "name": "foo"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.49802197802197806,
-          "uniqueID": "id-458"
+          "y": 0.52,
+          "uniqueID": "id-458",
+          "type": "number"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.30598958333333337,
+          "y": 0.6085714285714285,
+          "uniqueID": "id-498",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 8,
+              "currentEquation": "zam"
+            },
+            {
+              "name": "y length",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.22330729166666666,
+          "y": 0.2542857142857143,
+          "uniqueID": "id-505",
+          "name": "foo_1",
+          "value": 8
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-498",
+          "ap2ID": "id-453"
+        }
+      ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.14453125,
+      "y": 0.7057142857142857,
+      "uniqueID": "id-496",
+      "name": "blah",
+      "value": 2
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.3257142857142857,
+      "uniqueID": "id-502",
+      "name": "zap"
     }
   ],
   "allConnectors": [
