@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "zap",
-      "ioValue": 20,
-      "currentEquation": "20"
+      "ioValue": 20
     }
   ],
   "topLevel": true,
@@ -129,6 +128,21 @@
       ]
     },
     {
+      "atomType": "Constant",
+      "x": 0.14453125,
+      "y": 0.7057142857142857,
+      "uniqueID": "id-496",
+      "name": "blah",
+      "value": 2
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "id-502",
+      "name": "zap"
+    },
+    {
       "atomType": "Molecule",
       "x": 0.16796875,
       "y": 0.26857142857142857,
@@ -162,7 +176,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.52,
+          "y": 0.24615384615384617,
           "uniqueID": "id-458",
           "type": "number"
         },
@@ -200,21 +214,6 @@
         }
       ],
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Constant",
-      "x": 0.14453125,
-      "y": 0.7057142857142857,
-      "uniqueID": "id-496",
-      "name": "blah",
-      "value": 2
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.3257142857142857,
-      "uniqueID": "id-502",
-      "name": "zap"
     }
   ],
   "allConnectors": [
