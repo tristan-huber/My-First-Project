@@ -123,17 +123,17 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.24088541666666666,
-      "y": 0.25142857142857145,
-      "uniqueID": "id-350",
+      "x": 0.16796875,
+      "y": 0.26857142857142857,
+      "uniqueID": "id-451",
       "name": "Molecule",
       "ioValues": [
         {
-          "name": "foo_1",
+          "name": "foo",
           "ioValue": 10
         },
         {
-          "name": "foo",
+          "name": "Input",
           "ioValue": 10
         }
       ],
@@ -143,21 +143,20 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-352"
+          "uniqueID": "id-453"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.3257142857142857,
-          "uniqueID": "id-395",
-          "name": "foo_1"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.418021978021978,
-          "uniqueID": "id-398",
+          "y": 0.40571428571428575,
+          "uniqueID": "id-455",
           "name": "foo"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.49802197802197806,
+          "uniqueID": "id-458"
         }
       ],
       "allConnectors": [],
