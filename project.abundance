@@ -129,15 +129,11 @@
       "name": "Molecule",
       "ioValues": [
         {
-          "name": "Input_1",
+          "name": "foo_1",
           "ioValue": 10
         },
         {
-          "name": "Input_1",
-          "ioValue": 11
-        },
-        {
-          "name": "Input",
+          "name": "foo",
           "ioValue": 10
         }
       ],
@@ -152,15 +148,16 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-354"
+          "y": 0.3257142857142857,
+          "uniqueID": "id-395",
+          "name": "foo_1"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
-          "uniqueID": "id-357",
-          "name": "Input_1"
+          "y": 0.418021978021978,
+          "uniqueID": "id-398",
+          "name": "foo"
         }
       ],
       "allConnectors": [],
