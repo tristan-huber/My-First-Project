@@ -127,6 +127,24 @@
       "y": 0.25,
       "uniqueID": "id-160",
       "name": "Molecule",
+      "ioValues": [
+        {
+          "name": "Input_1",
+          "ioValue": 11
+        },
+        {
+          "name": "Input_2",
+          "ioValue": 10
+        },
+        {
+          "name": "Input_3",
+          "ioValue": 10
+        },
+        {
+          "name": "Input",
+          "ioValue": 10
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -194,6 +212,44 @@
           "repoOwner": "tristan-huber",
           "repoName": "My-First-Project",
           "SVGwidth": 10
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.5123076923076924,
+          "uniqueID": "id-267",
+          "name": "Input_1",
+          "type": "number"
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.13802083333333334,
+          "y": 0.3257142857142857,
+          "uniqueID": "id-269",
+          "value": 10
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.6046153846153847,
+          "uniqueID": "id-271",
+          "name": "Input_2",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.696923076923077,
+          "uniqueID": "id-281",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.7892307692307693,
+          "uniqueID": "id-284",
+          "name": "Input_3",
+          "type": "number"
         }
       ],
       "allConnectors": [
@@ -201,6 +257,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-169",
           "ap2ID": "id-171"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-171",
+          "ap2ID": "id-162"
         }
       ],
       "fileTypeVersion": 1
