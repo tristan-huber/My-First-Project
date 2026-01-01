@@ -16,7 +16,36 @@
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": "id-130"
+      "uniqueID": "id-130",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": {
+            "geometry": "intersect-move-circle-5--4-0-0-rectangle-12-10",
+            "tags": [],
+            "color": "#aad7f2",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [],
+            "dimension": "2D"
+          }
+        }
+      ]
     },
     {
       "atomType": "Rectangle",
@@ -53,6 +82,33 @@
       "uniqueID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": {
+            "geometry": "circle-5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
           "name": "xDist",
           "ioValue": -4,
           "currentEquation": "-1 * offset"
@@ -71,7 +127,63 @@
       "atomType": "Intersection",
       "x": 0.7180989583333334,
       "y": 0.3142857142857143,
-      "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
+      "uniqueID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": {
+            "geometry": "move-circle-5--4-0-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "geometry2",
+          "ioValue": {
+            "geometry": "rectangle-12-10",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        }
+      ]
     },
     {
       "atomType": "Extrude",
@@ -79,6 +191,33 @@
       "y": 0.7571428571428572,
       "uniqueID": "id-17",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": {
+            "geometry": "rotate-rectangle-12-10-0-0-0",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                0.9945218953682734,
+                0,
+                -0.10452846326765348
+              ],
+              "normal": [
+                0.10452846326765348,
+                0,
+                0.9945218953682734
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
         {
           "name": "height",
           "ioValue": 21
@@ -91,6 +230,33 @@
       "y": 0.8514285714285714,
       "uniqueID": "id-37",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": {
+            "geometry": "rectangle-12-10",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
         {
           "name": "x-axis degrees",
           "ioValue": 0
@@ -112,6 +278,33 @@
       "y": 0.7257142857142858,
       "uniqueID": "id-88",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": {
+            "geometry": "move-circle-5--4-0-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
         {
           "name": "xDist",
           "ioValue": 0
@@ -144,8 +337,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.16796875,
-      "y": 0.26857142857142857,
+      "x": 0.5091145833333334,
+      "y": 0.6041666666666666,
       "uniqueID": "id-451",
       "name": "Molecule",
       "ioValues": [
@@ -164,19 +357,26 @@
           "atomType": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-453"
+          "uniqueID": "id-453",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": 10
+            }
+          ]
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "y": 0.29464285714285715,
           "uniqueID": "id-455",
-          "name": "foo"
+          "name": "foo",
+          "type": "geometry"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "y": 0.4851190476190476,
           "uniqueID": "id-458",
           "type": "number"
         },
@@ -204,12 +404,61 @@
           "uniqueID": "id-505",
           "name": "foo_1",
           "value": 8
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.48502604166666663,
+          "y": 0.41369047619047616,
+          "uniqueID": "id-550",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": 10
+            },
+            {
+              "name": "geometry2",
+              "ioValue": {
+                "geometry": "rectangle-8-10",
+                "dimension": "2D",
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "tags": [],
+                "bom": []
+              }
+            }
+          ]
         }
       ],
       "allConnectors": [
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "geometry1",
+          "ap1ID": "id-455",
+          "ap2ID": "id-550"
+        },
+        {
+          "ap2Name": "geometry2",
           "ap1ID": "id-498",
+          "ap2ID": "id-550"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-550",
           "ap2ID": "id-453"
         }
       ],
