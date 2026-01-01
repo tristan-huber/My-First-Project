@@ -414,7 +414,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.29464285714285715,
+          "y": 0.15384615384615385,
           "uniqueID": "id-455",
           "name": "foo",
           "type": "geometry"
@@ -422,7 +422,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.4851190476190476,
+          "y": 0.24615384615384617,
           "uniqueID": "id-458",
           "type": "number"
         },
@@ -843,36 +843,6 @@
           "global": true
         },
         {
-          "atomType": "Code",
-          "x": 0.6091703056768559,
-          "y": 0.28787878787878785,
-          "uniqueID": "id-597",
-          "ioValues": [
-            {
-              "name": "Number",
-              "ioValue": 5
-            },
-            {
-              "name": "distX",
-              "ioValue": 15
-            },
-            {
-              "name": "distY",
-              "ioValue": 2
-            },
-            {
-              "name": "distZ",
-              "ioValue": 0
-            },
-            {
-              "name": "Shape",
-              "ioValue": null
-            }
-          ],
-          "codeVersion": 1,
-          "code": "//Inputs:[Shape, Number, distX, distY, distZ];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-        },
-        {
           "atomType": "Extrude",
           "x": 0.39847161572052403,
           "y": 0.396969696969697,
@@ -924,16 +894,6 @@
           "ap2Name": "distZ",
           "ap1ID": "id-595",
           "ap2ID": "id-592"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-597",
-          "ap2ID": "id-596"
-        },
-        {
-          "ap2Name": "Shape",
-          "ap1ID": "id-598",
-          "ap2ID": "id-597"
         }
       ],
       "parentRepo": {
