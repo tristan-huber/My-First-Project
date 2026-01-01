@@ -344,30 +344,7 @@
       "ioValues": [
         {
           "name": "foo",
-          "ioValue": {
-            "geometry": "circle-5",
-            "dimension": "2D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
+          "ioValue": null
         },
         {
           "name": "Input",
@@ -384,30 +361,7 @@
           "ioValues": [
             {
               "name": "number or geometry",
-              "ioValue": {
-                "geometry": "cut-circle-5-rectangle-8-10",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             }
           ]
         },
@@ -459,30 +413,7 @@
           "ioValues": [
             {
               "name": "geometry1",
-              "ioValue": {
-                "geometry": "circle-5",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             },
             {
               "name": "geometry2",
@@ -1336,11 +1267,6 @@
       "ap2Name": "geometry",
       "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
       "ap2ID": "69adfa82-3dee-4073-bfea-608fe865a4d4"
-    },
-    {
-      "ap2Name": "foo",
-      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
-      "ap2ID": "id-451"
     },
     {
       "ap2Name": "Geometry",
