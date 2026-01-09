@@ -375,10 +375,6 @@
             {
               "name": "distZ",
               "ioValue": 10
-            },
-            {
-              "name": "Shape",
-              "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "codeVersion": 1,
@@ -600,10 +596,6 @@
             {
               "name": "distZ",
               "ioValue": 10
-            },
-            {
-              "name": "Shape",
-              "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "codeVersion": 1,
