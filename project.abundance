@@ -151,17 +151,27 @@
     },
     {
       "atomType": "Code",
-      "x": 0.7278645833333334,
-      "y": 0.5971428571428571,
+      "x": 0.7376302083333333,
+      "y": 0.6755952380952381,
       "uniqueID": "id-746",
-      "ioValues": [
-        {
-          "name": "size",
-          "ioValue": 2
-        }
-      ],
       "codeVersion": 1,
       "code": "// Chamfer the edges of an incoming shape.\n// Declare inputs as parameters of run(); their types map to Abundance input types.\nfunction run(shape: AbundanceObj<replicad.Shape3D>, size: number = 2) {\n  const chamfered = shape.geometry.chamfer(size);\n  return new AbundanceObj(chamfered, shape);\n}\n"
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.5651041666666666,
+      "y": 0.7797619047619048,
+      "uniqueID": "id-967",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "GitHubMolecule",
@@ -172,8 +182,7 @@
       "ioValues": [
         {
           "name": "Length",
-          "ioValue": 1.25,
-          "currentEquation": "1.25"
+          "ioValue": 1.25
         }
       ],
       "topLevel": false,
@@ -258,57 +267,11 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": {
-                "geometry": "move-circle-1.65-0-0-0",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    -4
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             },
             {
               "name": "Shape 2",
-              "ioValue": {
-                "geometry": "circle-4.25",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             },
             {
               "name": "Shape 3",
@@ -649,57 +612,11 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": {
-                "geometry": "move-circle-1.65-0-0-0",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    -4
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             },
             {
               "name": "Shape 2",
-              "ioValue": {
-                "geometry": "circle-4.25",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             },
             {
               "name": "Shape 3",
@@ -945,22 +862,6 @@
       "unitsKey": "MM",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1777481154639
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.5651041666666666,
-      "y": 0.7797619047619048,
-      "uniqueID": "id-967",
-      "ioValues": [
-        {
-          "name": "geometry1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "geometry2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
     }
   ],
   "allConnectors": [
