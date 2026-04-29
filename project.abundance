@@ -945,6 +945,22 @@
       "unitsKey": "MM",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1777481154639
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.5651041666666666,
+      "y": 0.7797619047619048,
+      "uniqueID": "id-967",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
