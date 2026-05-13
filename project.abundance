@@ -42,8 +42,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.2721354166666667,
-      "y": 0.11904761904761904,
+      "x": 0.15364583333333331,
+      "y": 0.3714285714285714,
       "uniqueID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
       "ioValues": [
         {
@@ -154,7 +154,7 @@
       "x": 0.7376302083333333,
       "y": 0.6755952380952381,
       "uniqueID": "id-746",
-      "codeVersion": 1,
+      "interpreterVersion": 0,
       "code": "// Chamfer the edges of an incoming shape.\n// Declare inputs as parameters of run(); their types map to Abundance input types.\nfunction run(shape: AbundanceObj<replicad.Shape3D>, size: number = 2) {\n  const chamfered = shape.geometry.chamfer(size);\n  return new AbundanceObj(chamfered, shape);\n}\n"
     },
     {
@@ -164,11 +164,11 @@
       "uniqueID": "id-967",
       "ioValues": [
         {
-          "name": "geometry1",
+          "name": "retain",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "geometry2",
+          "name": "remove",
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
@@ -267,15 +267,61 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": null
+              "ioValue": {
+                "geometry": "move-circle-1.65-0-0-0",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    -4
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
             },
             {
               "name": "Shape 2",
-              "ioValue": null
+              "ioValue": {
+                "geometry": "circle-4.25",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
             },
             {
               "name": "Shape 3",
-              "ioValue": ""
+              "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "closedSelection": 0
@@ -612,15 +658,61 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": null
+              "ioValue": {
+                "geometry": "move-circle-1.65-0-0-0",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    -4
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
             },
             {
               "name": "Shape 2",
-              "ioValue": null
+              "ioValue": {
+                "geometry": "circle-4.25",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
             },
             {
               "name": "Shape 3",
-              "ioValue": ""
+              "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
           "closedSelection": 0
@@ -862,6 +954,216 @@
       "unitsKey": "MM",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1777481154639
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.15559895833333334,
+      "y": 0.66,
+      "uniqueID": "id-1089",
+      "name": "crv.Point",
+      "ioValues": [
+        {
+          "name": "X",
+          "ioValue": 0
+        },
+        {
+          "name": "Y",
+          "ioValue": 0
+        },
+        {
+          "name": "Z",
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1084",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-1085",
+          "name": "X"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.2688802083333333,
+          "y": 0.42857142857142855,
+          "uniqueID": "id-1086",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 0
+            },
+            {
+              "name": "y",
+              "ioValue": 0
+            },
+            {
+              "name": "z",
+              "ioValue": 10
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\nfunction run(x: number = 0, y: number = 0, z: number = 0) {\n  return replicad.makeVertex([x,y,z])\n}",
+          "compiledCode": "\"use strict\";\nfunction run(x = 0, y = 0, z = 0) {\n    return replicad.makeVertex([x, y, z]);\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-1087",
+          "name": "Y"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-1088",
+          "name": "Z"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-1085",
+          "ap2ID": "id-1086"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1086",
+          "ap2ID": "id-1084"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-1087",
+          "ap2ID": "id-1086"
+        },
+        {
+          "ap2Name": "z",
+          "ap1ID": "id-1088",
+          "ap2ID": "id-1086"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-05-13T18:23:39.260Z",
+        "privateRepo": false,
+        "repoName": "crv.Point",
+        "dateCreated": "2026-05-08T22:20:14Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/crv.Point",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739744",
+        "ranking": 0.3,
+        "searchField": "crv.point tristan-huber simple 3d point defined by it's xyz position abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Simple 3d Point defined by it's xyz position",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1778706404667
+    },
+    {
+      "atomType": "Loft",
+      "x": 0.2825520833333333,
+      "y": 0.5771428571428572,
+      "uniqueID": "id-1104",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "circle-5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "5099b7c0-0-0-10-0",
+            "color": "#3c5a6e",
+            "tags": [],
+            "bom": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "dimension": "Point3D"
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ],
+      "closedSelection": 0
     }
   ],
   "allConnectors": [
@@ -881,6 +1183,11 @@
       "ap2ID": "69adfa82-3dee-4073-bfea-608fe865a4d4"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
+      "ap2ID": "id-1104"
+    },
+    {
       "ap2Name": "geometry1",
       "ap1ID": "69adfa82-3dee-4073-bfea-608fe865a4d4",
       "ap2ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c"
@@ -894,6 +1201,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "1b40e8b6-ff2d-48aa-8e3a-460bef55321c",
       "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-1089",
+      "ap2ID": "id-1104"
     }
   ],
   "unitsKey": "MM",
