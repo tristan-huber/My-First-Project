@@ -111,8 +111,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6380208333333334,
-      "y": 0.7257142857142858,
+      "x": 0.6529947916666666,
+      "y": 0.5142857142857143,
       "uniqueID": "id-88",
       "ioValues": [
         {
@@ -130,7 +130,8 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0
+          "ioValue": -8,
+          "currentEquation": "-8"
         }
       ]
     },
@@ -184,19 +185,19 @@
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Shape 3",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
           "name": "Shape 4",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Shape 5",
+          "name": "Shape 7",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Shape 6",
+          "name": "Shape 8",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape 9",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
@@ -227,33 +228,6 @@
           }
         },
         {
-          "name": "Shape 3",
-          "ioValue": {
-            "geometry": "circle-5",
-            "dimension": "2D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        },
-        {
           "name": "Shape 4",
           "ioValue": {
             "geometry": "intersect-move-circle-5--4-0-0-rectangle-12-10",
@@ -281,9 +255,36 @@
           }
         },
         {
-          "name": "Shape 5",
+          "name": "Shape 7",
           "ioValue": {
-            "geometry": "5099b7c0-0-0-10-0",
+            "geometry": "move-move-circle-5--4-0-0-0-4-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                -8
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 8",
+          "ioValue": {
+            "geometry": "move-5099b7c0-0-0-10-0-0-0--20",
             "color": "#3c5a6e",
             "tags": [],
             "bom": [],
@@ -308,7 +309,7 @@
           }
         },
         {
-          "name": "Shape 6",
+          "name": "Shape 9",
           "ioValue": null
         }
       ],
@@ -1225,6 +1226,31 @@
       "unitsKey": "Unitless",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1778706404667
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5032552083333334,
+      "y": 0.8257142857142857,
+      "uniqueID": "id-1240",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -20,
+          "currentEquation": "-20"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -1242,11 +1268,6 @@
       "ap2Name": "geometry",
       "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
       "ap2ID": "69adfa82-3dee-4073-bfea-608fe865a4d4"
-    },
-    {
-      "ap2Name": "Shape 3",
-      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
-      "ap2ID": "id-1104"
     },
     {
       "ap2Name": "geometry1",
@@ -1269,13 +1290,23 @@
       "ap2ID": "id-1104"
     },
     {
+      "ap2Name": "Shape 7",
+      "ap1ID": "id-88",
+      "ap2ID": "id-1104"
+    },
+    {
       "ap2Name": "Shape 2",
       "ap1ID": "id-1089",
       "ap2ID": "id-1104"
     },
     {
-      "ap2Name": "Shape 5",
+      "ap2Name": "geometry",
       "ap1ID": "id-1089",
+      "ap2ID": "id-1240"
+    },
+    {
+      "ap2Name": "Shape 8",
+      "ap1ID": "id-1240",
       "ap2ID": "id-1104"
     }
   ],
