@@ -130,8 +130,8 @@
         },
         {
           "name": "zDist",
-          "ioValue": -8,
-          "currentEquation": "-8"
+          "ioValue": -20,
+          "currentEquation": "-20"
         }
       ]
     },
@@ -189,15 +189,15 @@
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Shape 7",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
           "name": "Shape 8",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
           "name": "Shape 9",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape 10",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
@@ -255,33 +255,6 @@
           }
         },
         {
-          "name": "Shape 7",
-          "ioValue": {
-            "geometry": "move-move-circle-5--4-0-0-0-4-0",
-            "dimension": "2D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                -8
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        },
-        {
           "name": "Shape 8",
           "ioValue": {
             "geometry": "move-5099b7c0-0-0-10-0-0-0--20",
@@ -310,6 +283,33 @@
         },
         {
           "name": "Shape 9",
+          "ioValue": {
+            "geometry": "move-move-circle-5--4-0-0-0-4-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                -20
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 10",
           "ioValue": null
         }
       ],
@@ -1290,7 +1290,7 @@
       "ap2ID": "id-1104"
     },
     {
-      "ap2Name": "Shape 7",
+      "ap2Name": "Shape 9",
       "ap1ID": "id-88",
       "ap2ID": "id-1104"
     },
