@@ -713,6 +713,22 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Intersection",
+      "x": 0.7311197916666666,
+      "y": 0.7142857142857143,
+      "uniqueID": "id-1529",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -730,6 +746,11 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-1104",
       "ap2ID": "id-1511"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-1104",
+      "ap2ID": "id-1529"
     },
     {
       "ap2Name": "Shape 1",
@@ -790,6 +811,11 @@
       "ap2Name": "Shape 10",
       "ap1ID": "id-1392",
       "ap2ID": "id-1104"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-1505",
+      "ap2ID": "id-1529"
     },
     {
       "ap2Name": "Shape 1",
