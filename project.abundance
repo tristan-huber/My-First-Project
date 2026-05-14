@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.6881510416666666,
-      "y": 0.11714285714285713,
+      "x": 0.7721354166666667,
+      "y": 0.26785714285714285,
       "uniqueID": "id-746",
       "interpreterVersion": 0,
       "code": "// Chamfer the edges of an incoming shape.\n// Declare inputs as parameters of run(); their types map to Abundance input types.\nfunction run(shape: AbundanceObj<replicad.Shape3D>, size: number = 2) {\n  const chamfered = shape.geometry.chamfer(size);\n  return new AbundanceObj(chamfered, shape);\n}\n"
@@ -45,10 +45,6 @@
       "uniqueID": "id-1104",
       "ioValues": [
         {
-          "name": "Shape 8",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
           "name": "Shape 10",
           "ioValue": "__GEOMETRY_INPUT__"
         },
@@ -57,36 +53,13 @@
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Shape 8",
-          "ioValue": {
-            "geometry": "move-421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-0--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0-0-10-0",
-            "color": "#3c5a6e",
-            "tags": [],
-            "bom": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "dimension": "Wire"
-          }
+          "name": "Shape 12",
+          "ioValue": "__GEOMETRY_INPUT__"
         },
         {
           "name": "Shape 10",
           "ioValue": {
-            "geometry": "421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-0--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0",
+            "geometry": "421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-11--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0",
             "color": "#3c5a6e",
             "tags": [],
             "bom": [],
@@ -112,7 +85,34 @@
         },
         {
           "name": "Shape 11",
-          "ioValue": "__GEOMETRY_INPUT__"
+          "ioValue": {
+            "geometry": "move-421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-11--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0-0-10-0",
+            "color": "#3c5a6e",
+            "tags": [],
+            "bom": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "dimension": "Wire"
+          }
+        },
+        {
+          "name": "Shape 12",
+          "ioValue": null
         }
       ],
       "closedSelection": 0
@@ -133,7 +133,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 11
         },
         {
           "name": "zDist",
@@ -191,8 +191,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5442708333333334,
-      "y": 0.6914285714285714,
+      "x": 0.53515625,
+      "y": 0.8154761904761905,
       "uniqueID": "id-1410",
       "ioValues": [
         {
@@ -478,9 +478,259 @@
       "unitsKey": "Unitless",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1778712601816
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.40234375000000006,
+      "y": 0.3273809523809524,
+      "uniqueID": "id-1484",
+      "name": "crv.Point",
+      "ioValues": [
+        {
+          "name": "X",
+          "ioValue": 0
+        },
+        {
+          "name": "Y",
+          "ioValue": -5,
+          "currentEquation": "-5"
+        },
+        {
+          "name": "Z",
+          "ioValue": 0
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1485",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-1486",
+          "name": "X"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.2688802083333333,
+          "y": 0.42857142857142855,
+          "uniqueID": "id-1487",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 0
+            },
+            {
+              "name": "y",
+              "ioValue": -5
+            },
+            {
+              "name": "z",
+              "ioValue": 0
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\nfunction run(x: number = 0, y: number = 0, z: number = 0) {\n  return replicad.makeVertex([x,y,z])\n}",
+          "compiledCode": "\"use strict\";\nfunction run(x = 0, y = 0, z = 0) {\n    return replicad.makeVertex([x, y, z]);\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-1488",
+          "name": "Y"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-1489",
+          "name": "Z"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-1486",
+          "ap2ID": "id-1487"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1487",
+          "ap2ID": "id-1485"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-1488",
+          "ap2ID": "id-1487"
+        },
+        {
+          "ap2Name": "z",
+          "ap1ID": "id-1489",
+          "ap2ID": "id-1487"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-05-13T18:23:39.260Z",
+        "privateRepo": false,
+        "repoName": "crv.Point",
+        "dateCreated": "2026-05-08T22:20:14Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/crv.Point",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739744",
+        "ranking": 0.3,
+        "searchField": "crv.point tristan-huber simple 3d point defined by it's xyz position abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Simple 3d Point defined by it's xyz position",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1778706404667
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5787760416666667,
+      "y": 0.24702380952380953,
+      "uniqueID": "id-1505",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.73046875,
+      "y": 0.21726190476190477,
+      "uniqueID": "id-1511",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "extrude-circle-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "loftWire-421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-11--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0-move-421a9d00-{\"geometry\":[{\"geometry\":\"move-5099b7c0-0-0-10-0-0-11--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0--5-10--20\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"5099b7c0-0-0-10-0\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"},{\"geometry\":\"move-5099b7c0-0-0-10-0-5-10--15\",\"color\":\"#3c5a6e\",\"tags\":[],\"bom\":[],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"dimension\":\"Point3D\"}],\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"tags\":[],\"color\":\"#aad7f2\",\"bom\":[],\"nonReplicadSerialized\":[]}-10-0-0-10-0--",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5,
+      "y": 0.5,
+      "uniqueID": "id-1516",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
     }
   ],
   "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
+      "ap2ID": "id-1516"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-1104",
+      "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-1104",
+      "ap2ID": "id-1511"
+    },
     {
       "ap2Name": "Shape 1",
       "ap1ID": "id-1240",
@@ -497,7 +747,12 @@
       "ap2ID": "id-1392"
     },
     {
-      "ap2Name": "Shape 8",
+      "ap2Name": "geometry",
+      "ap1ID": "id-1404",
+      "ap2ID": "id-1505"
+    },
+    {
+      "ap2Name": "Shape 11",
       "ap1ID": "id-1410",
       "ap2ID": "id-1104"
     },
@@ -535,6 +790,11 @@
       "ap2Name": "Shape 10",
       "ap1ID": "id-1392",
       "ap2ID": "id-1104"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-1516",
+      "ap2ID": "id-1511"
     }
   ],
   "unitsKey": "MM",
