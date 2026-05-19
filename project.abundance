@@ -831,8 +831,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": 10,
-              "currentEquation": "10"
+              "ioValue": 5,
+              "currentEquation": "5"
             },
             {
               "name": "yDist",
@@ -878,8 +878,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6002604166666667,
-          "y": 0.33714285714285713,
+          "x": 0.6263020833333333,
+          "y": 0.39428571428571424,
           "uniqueID": "id-1746",
           "ioValues": [
             {
@@ -900,12 +900,27 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 1,
-              "currentEquation": "1"
+              "ioValue": 1
             },
             {
               "name": "y length",
               "ioValue": 20
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.5768229166666666,
+          "y": 0.6914285714285714,
+          "uniqueID": "id-1873",
+          "ioValues": [
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
             }
           ]
         }
@@ -922,6 +937,11 @@
           "ap2ID": "id-1738"
         },
         {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-1732",
+          "ap2ID": "id-1873"
+        },
+        {
           "ap2Name": "Shape 3",
           "ap1ID": "id-1738",
           "ap2ID": "id-1746"
@@ -935,6 +955,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-1751",
           "ap2ID": "id-1742"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-1751",
+          "ap2ID": "id-1873"
         }
       ],
       "fileTypeVersion": 1
