@@ -785,8 +785,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3600260416666667,
-      "y": 0.3,
+      "x": 0.35286458333333337,
+      "y": 0.10857142857142857,
       "uniqueID": "id-1724",
       "name": "Molecule",
       "topLevel": false,
@@ -1824,6 +1824,30 @@
           "ap2ID": "id-1726"
         }
       ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.38476562500000006,
+      "y": 0.5885714285714286,
+      "uniqueID": "id-2730",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-2732",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
       "fileTypeVersion": 1
     }
   ],
