@@ -785,6 +785,279 @@
     },
     {
       "atomType": "Molecule",
+      "x": 0.38476562500000006,
+      "y": 0.5885714285714286,
+      "uniqueID": "id-2730",
+      "name": "Intersect",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-2732",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.11328125,
+          "y": 0.30857142857142855,
+          "uniqueID": "id-2967",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 100
+            },
+            {
+              "name": "y length",
+              "ioValue": 55
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.19921875,
+          "y": 0.23714285714285713,
+          "uniqueID": "id-2971",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 27.5,
+              "currentEquation": "27.5"
+            },
+            {
+              "name": "zDist",
+              "ioValue": -50,
+              "currentEquation": "-50"
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.09570312500000001,
+          "y": 0.5342857142857143,
+          "uniqueID": "id-2982",
+          "name": "Sphere",
+          "ioValues": [
+            {
+              "name": "Radius",
+              "ioValue": 50,
+              "currentEquation": "50"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-2978",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.45804540967423496,
+              "y": 0.5090909090909091,
+              "uniqueID": "id-2979",
+              "ioValues": [
+                {
+                  "name": "radius",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "//Inputs:[radius];\n\n//let shape = replicad.makeSphere(radius)\n\nconst newPlane = new replicad.Plane().pivot(0, 'Y');\n\n return { geometry: [replicad.makeSphere(radius)], tags: [],\n      color: '#A3CE5B',\n      bom:[],\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-2980",
+              "name": "Radius",
+              "type": "number"
+            },
+            {
+              "atomType": "Constant",
+              "x": 0.24709302325581398,
+              "y": 0.8575851393188855,
+              "uniqueID": "id-2981",
+              "value": 10
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-2979",
+              "ap2ID": "id-2978"
+            },
+            {
+              "ap2Name": "radius",
+              "ap1ID": "id-2980",
+              "ap2ID": "id-2979"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-05-27T18:23:38.996Z",
+            "repoName": "Sphere",
+            "dateCreated": "2024-11-13T19:37:04Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/Sphere/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": 1731526624936,
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Sphere",
+            "topics": [],
+            "parentRepo": "BarbourSmith/Sphere",
+            "forks": 1,
+            "dateModified": "03/05/2025",
+            "ranking": 2,
+            "searchField": "sphere alzatin",
+            "owner": "alzatin",
+            "description": "Creates a sphere from the input radius",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Inches",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1779923301381
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.3053385416666667,
+          "y": 0.26857142857142857,
+          "uniqueID": "id-2992",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 100,
+              "currentEquation": "100"
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.33854166666666663,
+          "y": 0.52,
+          "uniqueID": "id-2996",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.42643229166666663,
+          "y": 0.74,
+          "uniqueID": "id-3000",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -3,
+              "currentEquation": "-3"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.5227864583333333,
+          "y": 0.47428571428571425,
+          "uniqueID": "id-3006",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2967",
+          "ap2ID": "id-2971"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2971",
+          "ap2ID": "id-2992"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-2982",
+          "ap2ID": "id-2996"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-2992",
+          "ap2ID": "id-2996"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2996",
+          "ap2ID": "id-3000"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-2996",
+          "ap2ID": "id-3006"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-3000",
+          "ap2ID": "id-3006"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
       "x": 0.35286458333333337,
       "y": 0.10857142857142857,
       "uniqueID": "id-1724",
@@ -1824,30 +2097,6 @@
           "ap2ID": "id-1726"
         }
       ],
-      "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.38476562500000006,
-      "y": 0.5885714285714286,
-      "uniqueID": "id-2730",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-2732",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        }
-      ],
-      "allConnectors": [],
       "fileTypeVersion": 1
     }
   ],
