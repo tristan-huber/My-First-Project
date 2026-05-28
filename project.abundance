@@ -54,7 +54,7 @@
         },
         {
           "name": "Shape 10",
-          "ioValue": null
+          "ioValue": "__GEOMETRY_INPUT__"
         },
         {
           "name": "Shape 11",
@@ -219,7 +219,30 @@
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": null
+          "ioValue": {
+            "geometry": "extrude-circle-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
         },
         {
           "name": "Shape 2",
@@ -1071,7 +1094,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10
+              "ioValue": 11
             },
             {
               "name": "y length",
