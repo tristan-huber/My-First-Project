@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "diam",
-      "ioValue": 5
+      "ioValue": 4
     }
   ],
   "topLevel": true,
@@ -32,7 +32,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 5
+          "ioValue": 4
         }
       ]
     },
@@ -45,7 +45,7 @@
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-circle-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "geometry": "extrude-circle-2-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -100,7 +100,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 5.000002
+          "ioValue": 4.000002
         }
       ]
     },
@@ -158,6 +158,30 @@
           "y": 0.15384615384615385,
           "uniqueID": "id-3983",
           "type": "geometry"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5,
+          "y": 0.5,
+          "uniqueID": "id-4083",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -167,8 +191,13 @@
           "ap2ID": "id-3978"
         },
         {
-          "ap2Name": "shape",
+          "ap2Name": "geometry",
           "ap1ID": "id-3983",
+          "ap2ID": "id-4083"
+        },
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-4083",
           "ap2ID": "id-3980"
         }
       ],
