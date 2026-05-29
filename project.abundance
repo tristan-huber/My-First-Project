@@ -716,8 +716,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.33984375,
-      "y": 0.86,
+      "x": 0.39713541666666663,
+      "y": 0.8457142857142858,
       "uniqueID": "id-3783",
       "ioValues": [
         {
@@ -741,7 +741,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 8.000002
+          "ioValue": 2
         }
       ]
     },
@@ -751,6 +751,288 @@
       "y": 0.15384615384615385,
       "uniqueID": "id-3797",
       "name": "diam"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.18489583333333334,
+      "y": 0.29714285714285715,
+      "uniqueID": "id-3800",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 2
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.23372395833333331,
+      "y": 0.7771428571428571,
+      "uniqueID": "id-3806",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.06119791666666667,
+      "y": 0.6142857142857143,
+      "uniqueID": "id-3821",
+      "name": "crv.Point",
+      "ioValues": [
+        {
+          "name": "X",
+          "ioValue": 0
+        },
+        {
+          "name": "Y",
+          "ioValue": 0
+        },
+        {
+          "name": "Z",
+          "ioValue": 0
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3816",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-3817",
+          "name": "X"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.2688802083333333,
+          "y": 0.42857142857142855,
+          "uniqueID": "id-3818",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 0
+            },
+            {
+              "name": "y",
+              "ioValue": 0
+            },
+            {
+              "name": "z",
+              "ioValue": 0
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\nfunction run(x: number = 0, y: number = 0, z: number = 0) {\n  return replicad.makeVertex([x,y,z])\n}",
+          "compiledCode": "\"use strict\";\nfunction run(x = 0, y = 0, z = 0) {\n    return replicad.makeVertex([x, y, z]);\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-3819",
+          "name": "Y"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-3820",
+          "name": "Z"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-3817",
+          "ap2ID": "id-3818"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3818",
+          "ap2ID": "id-3816"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-3819",
+          "ap2ID": "id-3818"
+        },
+        {
+          "ap2Name": "z",
+          "ap1ID": "id-3820",
+          "ap2ID": "id-3818"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-05-29T18:23:39.112Z",
+        "privateRepo": false,
+        "repoName": "crv.Point",
+        "dateCreated": "2026-05-08T22:20:14Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/crv.Point",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739744",
+        "ranking": 1.5,
+        "searchField": "crv.point tristan-huber simple 3d point defined by it's xyz position abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Simple 3d Point defined by it's xyz position",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/crv.Point/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1780080233213
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.17252604166666669,
+      "y": 0.8657142857142858,
+      "uniqueID": "id-3841",
+      "name": "crv.BSpline",
+      "ioValues": [
+        {
+          "name": "Points",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "close",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3837",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.4296875,
+          "y": 0.6514285714285714,
+          "uniqueID": "id-3838",
+          "ioValues": [
+            {
+              "name": "points",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "close",
+              "ioValue": 10
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\nfunction run(points: Assembly, close: boolean = false) {\n  if (!points) {\n    throw new Error(\"Missing required input - assembly of Points\")\n  }\n  const p: [number, number, number][] = []\n  points.onLeafs((l) => {\n    if (l.isPoint()) {\n      p.push(l.geometry.asTuple())\n    }\n    else throw new Error(\"Requires an assembly of Points, received: \" + l.geometry.constructor.name)\n    return l;\n  })\n  if (close) {\n    p.push(p[0])\n  }\n\n  return replicad.assembleWire([replicad.makeBSplineApproximation(p, {\n    degMax: 3,\n    degMin: 3,\n    tolerance: 0.0001,\n  })])\n}",
+          "compiledCode": "\"use strict\";\nfunction run(points, close = false) {\n    if (!points) {\n        throw new Error(\"Missing required input - assembly of Points\");\n    }\n    const p = [];\n    points.onLeafs((l) => {\n        if (l.isPoint()) {\n            p.push(l.geometry.asTuple());\n        }\n        else\n            throw new Error(\"Requires an assembly of Points, received: \" + l.geometry.constructor.name);\n        return l;\n    });\n    if (close) {\n        p.push(p[0]);\n    }\n    return replicad.assembleWire([replicad.makeBSplineApproximation(p, {\n            degMax: 3,\n            degMin: 3,\n            tolerance: 0.0001,\n        })]);\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-3839",
+          "name": "Points",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-3840",
+          "name": "close",
+          "type": "boolean"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3838",
+          "ap2ID": "id-3837"
+        },
+        {
+          "ap2Name": "points",
+          "ap1ID": "id-3839",
+          "ap2ID": "id-3838"
+        },
+        {
+          "ap2Name": "close",
+          "ap1ID": "id-3840",
+          "ap2ID": "id-3838"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-05-29T18:23:39.112Z",
+        "privateRepo": false,
+        "repoName": "crv.BSpline",
+        "dateCreated": "2026-05-08T23:45:51Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/crv.BSpline/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1402",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/crv.BSpline",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739751",
+        "ranking": 2.1,
+        "searchField": "crv.bspline tristan-huber makes a bspline from an assembly of points abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Makes a BSpline from an assembly of points",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/crv.BSpline/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/crv.BSpline/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1780080275093
     }
   ],
   "allConnectors": [
@@ -763,11 +1045,6 @@
       "ap2Name": "Shape",
       "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
       "ap2ID": "id-3774"
-    },
-    {
-      "ap2Name": "shape",
-      "ap1ID": "ac808c95-4087-4e83-9ada-091ad09c80b6",
-      "ap2ID": "id-3783"
     },
     {
       "ap2Name": "Shape 1",
@@ -793,6 +1070,26 @@
       "ap2Name": "diameter",
       "ap1ID": "id-3797",
       "ap2ID": "ac808c95-4087-4e83-9ada-091ad09c80b6"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-3800",
+      "ap2ID": "id-3806"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-3806",
+      "ap2ID": "id-3783"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3821",
+      "ap2ID": "id-3800"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-3821",
+      "ap2ID": "id-3806"
     }
   ],
   "unitsKey": "MM",
