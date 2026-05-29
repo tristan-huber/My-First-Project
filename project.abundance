@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "diam",
-      "ioValue": 6
+      "ioValue": 5
     }
   ],
   "topLevel": true,
@@ -32,7 +32,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 6
+          "ioValue": 5
         }
       ]
     },
@@ -45,7 +45,7 @@
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-circle-3-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "geometry": "extrude-circle-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -100,7 +100,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 6.000002
+          "ioValue": 5.000002
         }
       ]
     },
