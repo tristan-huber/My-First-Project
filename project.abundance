@@ -4,6 +4,12 @@
   "y": 0,
   "uniqueID": 1734979976986,
   "name": "My-First-Project",
+  "ioValues": [
+    {
+      "name": "diam",
+      "ioValue": 8
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -26,7 +32,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 15,
+          "ioValue": 8,
           "currentEquation": "15"
         }
       ]
@@ -40,7 +46,7 @@
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-circle-7.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "geometry": "extrude-circle-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -731,13 +737,20 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 15.000002
+          "ioValue": 8.000002
         },
         {
           "name": "y length",
-          "ioValue": 15.000002
+          "ioValue": 8.000002
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "id-3797",
+      "name": "diam"
     }
   ],
   "allConnectors": [
@@ -775,6 +788,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-3793",
       "ap2ID": "id-130"
+    },
+    {
+      "ap2Name": "diameter",
+      "ap1ID": "id-3797",
+      "ap2ID": "ac808c95-4087-4e83-9ada-091ad09c80b6"
     }
   ],
   "unitsKey": "MM",
