@@ -392,8 +392,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.48046874999999994,
-          "y": 0.2657142857142857,
+          "x": 0.3665364583333333,
+          "y": 0.10714285714285714,
           "uniqueID": "id-1738",
           "ioValues": [
             {
@@ -492,13 +492,17 @@
             {
               "name": "Shape 6",
               "ioValue": null
+            },
+            {
+              "name": "Shape 7",
+              "ioValue": null
             }
           ]
         },
         {
           "atomType": "Color",
-          "x": 0.49609375,
-          "y": 0.4628571428571429,
+          "x": 0.44010416666666663,
+          "y": 0.24404761904761904,
           "uniqueID": "id-2093",
           "ioValues": [
             {
@@ -506,7 +510,7 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ],
-          "selectedColor": "Default"
+          "selectedColor": "Keep Out"
         },
         {
           "atomType": "Code",
@@ -1142,6 +1146,55 @@
           "unitsKey": "MM",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1781050999056
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5052083333333333,
+          "y": 0.27976190476190477,
+          "uniqueID": "id-4509",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 5,
+              "currentEquation": "5"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4908854166666667,
+          "y": 0.5178571428571428,
+          "uniqueID": "id-4516",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 5
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1172,6 +1225,11 @@
         },
         {
           "ap2Name": "geometry",
+          "ap1ID": "id-1738",
+          "ap2ID": "id-4516"
+        },
+        {
+          "ap2Name": "geometry",
           "ap1ID": "id-1742",
           "ap2ID": "id-2032"
         },
@@ -1194,6 +1252,11 @@
           "ap2Name": "geom",
           "ap1ID": "id-2038",
           "ap2ID": "id-2282"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2093",
+          "ap2ID": "id-4509"
         },
         {
           "ap2Name": "Geometry",
@@ -1219,6 +1282,11 @@
           "ap2Name": "Shape 3",
           "ap1ID": "id-4447",
           "ap2ID": "id-1873"
+        },
+        {
+          "ap2Name": "Shape 7",
+          "ap1ID": "id-4509",
+          "ap2ID": "id-2038"
         }
       ],
       "fileTypeVersion": 1
