@@ -2490,8 +2490,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.7174479166666667,
-          "y": 0.6011904761904762,
+          "x": 0.6634114583333334,
+          "y": 0.5148809523809524,
           "uniqueID": "id-4886",
           "name": "crv.OpenWireLoft",
           "ioValues": [
@@ -2616,6 +2616,36 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Export",
+          "x": 0.783203125,
+          "y": 0.2619047619047619,
+          "uniqueID": "id-4903",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Splines",
+              "currentEquation": "Splines"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "Splines"
         }
       ],
       "allConnectors": [
@@ -2653,6 +2683,11 @@
           "ap2Name": "Shape 2",
           "ap1ID": "id-4865",
           "ap2ID": "id-4898"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4886",
+          "ap2ID": "id-4903"
         },
         {
           "ap2Name": "Wires",
