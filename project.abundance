@@ -106,8 +106,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.0231,
+      "y": 0.14,
       "uniqueID": "id-3797",
       "name": "diam"
     },
@@ -186,8 +186,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-3983",
           "type": "geometry"
         },
@@ -217,8 +217,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-4196",
           "name": "blah"
         }
@@ -270,8 +270,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-4208",
           "name": "Shape",
           "type": "geometry"
@@ -654,40 +654,40 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-2046",
               "name": "Geometry",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-2047",
               "name": "Offset",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-2048",
               "name": "Angle X",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.4307692307692308,
+              "x": 0.0231,
+              "y": 0.39200000000000007,
               "uniqueID": "id-2049",
               "name": "Angle Z",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.5230769230769231,
+              "x": 0.0231,
+              "y": 0.4760000000000001,
               "uniqueID": "id-2050",
               "name": "Angle Y",
               "type": "number"
@@ -928,40 +928,40 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4453",
               "name": "Number",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4454",
               "name": "Geometry",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4455",
               "name": "distX",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.4307692307692308,
+              "x": 0.0231,
+              "y": 0.39200000000000007,
               "uniqueID": "id-4456",
               "name": "distY",
               "type": "number"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.5230769230769231,
+              "x": 0.0231,
+              "y": 0.4760000000000001,
               "uniqueID": "id-4457",
               "name": "distZ",
               "type": "number"
@@ -1310,6 +1310,52 @@
           ]
         },
         {
+          "atomType": "Assembly",
+          "x": 0.5911458333333334,
+          "y": 0.6071428571428572,
+          "uniqueID": "id-4898",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Export",
+          "x": 0.783203125,
+          "y": 0.2619047619047619,
+          "uniqueID": "id-4903",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Splines",
+              "currentEquation": "Splines"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "Splines"
+        },
+        {
           "atomType": "GitHubMolecule",
           "x": 0.10872395833333334,
           "y": 0.34226190476190477,
@@ -1345,8 +1391,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4699",
               "name": "X"
             },
@@ -1375,15 +1421,15 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4701",
               "name": "Y"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4702",
               "name": "Z"
             }
@@ -1484,24 +1530,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4720",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4721",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4722",
               "name": "direction",
               "type": "point3d",
@@ -1759,24 +1805,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4764",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4765",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4766",
               "name": "direction",
               "type": "point3d",
@@ -2040,16 +2086,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4808",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4809",
               "name": "close",
               "type": "boolean"
@@ -2146,24 +2192,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4824",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4825",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4826",
               "name": "direction",
               "type": "point3d",
@@ -2427,16 +2473,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4868",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4869",
               "name": "close",
               "type": "boolean"
@@ -2501,8 +2547,7 @@
             },
             {
               "name": "Thickness",
-              "ioValue": 0.1,
-              "currentEquation": "0.1"
+              "ioValue": 0.1
             }
           ],
           "topLevel": false,
@@ -2540,16 +2585,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4884",
               "name": "Wires",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4885",
               "name": "Thickness",
               "type": "number"
@@ -2602,53 +2647,55 @@
           "lastReloadedFromGithubAt": 1781135315743
         },
         {
-          "atomType": "Assembly",
-          "x": 0.5911458333333334,
-          "y": 0.6071428571428572,
-          "uniqueID": "id-4898",
+          "atomType": "Code",
+          "x": 0.8365885416666667,
+          "y": 0.681547619047619,
+          "uniqueID": "id-5235",
           "ioValues": [
             {
-              "name": "Shape 1",
-              "ioValue": null
-            },
-            {
-              "name": "Shape 2",
-              "ioValue": null
-            }
-          ]
-        },
-        {
-          "atomType": "Export",
-          "x": 0.783203125,
-          "y": 0.2619047619047619,
-          "uniqueID": "id-4903",
-          "ioValues": [
-            {
-              "name": "geometry",
+              "name": "surface",
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
-              "name": "File Type",
-              "ioValue": "STEP",
-              "currentEquation": "STEP"
+              "name": "numRulings",
+              "ioValue": 24
             },
             {
-              "name": "Resolution (dpi)",
-              "ioValue": 96
-            },
-            {
-              "name": "Part Name",
-              "ioValue": "Splines",
-              "currentEquation": "Splines"
+              "name": "rulingAxis",
+              "ioValue": "auto",
+              "currentEquation": "auto"
             }
           ],
-          "type": null,
-          "resolution": 96,
-          "importIndex": 0,
-          "partName": "Splines"
+          "interpreterVersion": 1,
+          "code": "/**\n * Extracts the ruling lines from a ruled surface.\n *\n * Input must be an Assembly containing a single replicad.Face — typically the\n * side face of a ruled loft. The atom samples `numRulings + 1` straight-line\n * generators across the surface and returns them as 3D wires for visual\n * confirmation. A downstream \"Develop\" atom will reuse this sampling to flatten\n * the surface into a 2D pattern.\n *\n *   rulingAxis === \"U\"  → each ruling sweeps U from uMin..uMax with V fixed;\n *                          rulings step in V.\n *   rulingAxis === \"V\"  → each ruling sweeps V from vMin..vMax with U fixed;\n *                          rulings step in U.\n *   rulingAxis === \"auto\" → pick the parametric axis whose interior iso-curves\n *                          are (within tolerance) straight lines. Ties prefer V\n *                          to match replicad's `ruled: true` loft convention.\n */\nfunction run(\n  surface: Assembly,\n  numRulings: number = 24,\n  rulingAxis: string = \"auto\",\n): Assembly {\n  // ── Step 1: Validate input is a single Face ───────────────────────────────\n  if (!surface || !surface.isLeaf || !surface.isLeaf()) {\n    throw new Error(\n      \"Develop rulings: input must be an Assembly with exactly one leaf \" +\n      \"(the ruled surface as a replicad.Face).\",\n    );\n  }\n  const face = surface.geometry as any;\n  if (!(face instanceof replicad.Face)) {\n    throw new Error(\n      \"Develop rulings: input geometry must be a replicad.Face from a ruled \" +\n      \"loft; got \" +\n      (face && face.constructor ? face.constructor.name : typeof face),\n    );\n  }\n  if (!Number.isFinite(numRulings) || numRulings < 1) {\n    throw new Error(\"Develop rulings: numRulings must be a positive integer.\");\n  }\n  const n = Math.max(1, Math.floor(numRulings));\n\n  const { uMin, uMax, vMin, vMax } = face.UVBounds;\n\n  // pointOnSurface returns a replicad.Vector; wrap into a plain tuple for math\n  // and a Point for makeLine().\n  const sampleTuple = (u: number, v: number): [number, number, number] => {\n    const p = face.pointOnSurface(u, v);\n    return [p.x, p.y, p.z];\n  };\n\n  // ── Step 2: Decide which parametric axis is the ruling direction ──────────\n  // An iso-curve sample at parameters (p0, pm, p1) is \"straight\" when the\n  // perpendicular distance from the midpoint to the chord is negligible\n  // relative to the chord length.\n  const STRAIGHT_TOL = 1e-4;\n  const isStraightAlong = (axis: \"U\" | \"V\"): boolean => {\n    const cross =\n      axis === \"U\" ? vMin + 0.5 * (vMax - vMin) : uMin + 0.5 * (uMax - uMin);\n    const a = axis === \"U\" ? uMin : vMin;\n    const b = axis === \"U\" ? uMax : vMax;\n    const get = (t: number) =>\n      axis === \"U\" ? sampleTuple(t, cross) : sampleTuple(cross, t);\n    const p0 = get(a);\n    const pm = get(0.5 * (a + b));\n    const p1 = get(b);\n    const dx = p1[0] - p0[0],\n      dy = p1[1] - p0[1],\n      dz = p1[2] - p0[2];\n    const chord = Math.hypot(dx, dy, dz);\n    if (chord === 0) return false;\n    const tx = pm[0] - p0[0],\n      ty = pm[1] - p0[1],\n      tz = pm[2] - p0[2];\n    // |(p1-p0) × (pm-p0)| / |p1-p0| = perpendicular distance.\n    const cx = dy * tz - dz * ty;\n    const cy = dz * tx - dx * tz;\n    const cz = dx * ty - dy * tx;\n    const perp = Math.hypot(cx, cy, cz) / chord;\n    return perp / chord < STRAIGHT_TOL;\n  };\n\n  let axis: \"U\" | \"V\";\n  if (rulingAxis === \"U\" || rulingAxis === \"V\") {\n    axis = rulingAxis;\n  } else if (rulingAxis === \"auto\") {\n    const vStraight = isStraightAlong(\"V\");\n    const uStraight = isStraightAlong(\"U\");\n    if (vStraight) axis = \"V\";\n    else if (uStraight) axis = \"U\";\n    else\n      throw new Error(\n        \"Develop rulings: auto-detect failed — surface is not straight along \" +\n        \"either parametric axis (it is not a ruled surface, or the trimmed \" +\n        \"region is curved on both axes). Override with rulingAxis: 'U' or 'V'.\",\n      );\n  } else {\n    throw new Error(\n      'Develop rulings: rulingAxis must be \"auto\", \"U\", or \"V\"; got ' +\n      JSON.stringify(rulingAxis),\n    );\n  }\n\n  // ── Step 3: Build n+1 ruling edges along the chosen axis ──────────────────\n  // axis === \"V\": rulings run vMin → vMax; we step the OTHER parameter (U).\n  // axis === \"U\": rulings run uMin → uMax; we step the OTHER parameter (V).\n  const rulings: Assembly[] = [];\n  for (let i = 0; i <= n; i++) {\n    const t = i / n;\n    let pStart: any, pEnd: any;\n    if (axis === \"V\") {\n      const u = uMin + t * (uMax - uMin);\n      pStart = face.pointOnSurface(u, vMin);\n      pEnd = face.pointOnSurface(u, vMax);\n    } else {\n      const v = vMin + t * (vMax - vMin);\n      pStart = face.pointOnSurface(uMin, v);\n      pEnd = face.pointOnSurface(uMax, v);\n    }\n    const edge = replicad.makeLine(\n      [pStart.x, pStart.y, pStart.z],\n      [pEnd.x, pEnd.y, pEnd.z],\n    );\n    // The framework rejects bare Edges (see code.ts); wrap with assembleWire\n    // so each ruling round-trips as a Wire leaf.\n    const wire = replicad.assembleWire([edge]);\n    rulings.push(\n      new Assembly({\n        geometry: wire,\n        color: \"#e07b00\",\n        tags: [\"ruling\"],\n      }),\n    );\n  }\n\n  return new Assembly({\n    geometry: rulings,\n    color: \"#e07b00\",\n    tags: [\"rulings\", \"ruling-axis:\" + axis],\n  });\n}\n",
+          "compiledCode": "\"use strict\";\n/**\n * Extracts the ruling lines from a ruled surface.\n *\n * Input must be an Assembly containing a single replicad.Face — typically the\n * side face of a ruled loft. The atom samples `numRulings + 1` straight-line\n * generators across the surface and returns them as 3D wires for visual\n * confirmation. A downstream \"Develop\" atom will reuse this sampling to flatten\n * the surface into a 2D pattern.\n *\n *   rulingAxis === \"U\"  → each ruling sweeps U from uMin..uMax with V fixed;\n *                          rulings step in V.\n *   rulingAxis === \"V\"  → each ruling sweeps V from vMin..vMax with U fixed;\n *                          rulings step in U.\n *   rulingAxis === \"auto\" → pick the parametric axis whose interior iso-curves\n *                          are (within tolerance) straight lines. Ties prefer V\n *                          to match replicad's `ruled: true` loft convention.\n */\nfunction run(surface, numRulings = 24, rulingAxis = \"auto\") {\n    // ── Step 1: Validate input is a single Face ───────────────────────────────\n    if (!surface || !surface.isLeaf || !surface.isLeaf()) {\n        throw new Error(\"Develop rulings: input must be an Assembly with exactly one leaf \" +\n            \"(the ruled surface as a replicad.Face).\");\n    }\n    const face = surface.geometry;\n    if (!(face instanceof replicad.Face)) {\n        throw new Error(\"Develop rulings: input geometry must be a replicad.Face from a ruled \" +\n            \"loft; got \" +\n            (face && face.constructor ? face.constructor.name : typeof face));\n    }\n    if (!Number.isFinite(numRulings) || numRulings < 1) {\n        throw new Error(\"Develop rulings: numRulings must be a positive integer.\");\n    }\n    const n = Math.max(1, Math.floor(numRulings));\n    const { uMin, uMax, vMin, vMax } = face.UVBounds;\n    // pointOnSurface returns a replicad.Vector; wrap into a plain tuple for math\n    // and a Point for makeLine().\n    const sampleTuple = (u, v) => {\n        const p = face.pointOnSurface(u, v);\n        return [p.x, p.y, p.z];\n    };\n    // ── Step 2: Decide which parametric axis is the ruling direction ──────────\n    // An iso-curve sample at parameters (p0, pm, p1) is \"straight\" when the\n    // perpendicular distance from the midpoint to the chord is negligible\n    // relative to the chord length.\n    const STRAIGHT_TOL = 1e-4;\n    const isStraightAlong = (axis) => {\n        const cross = axis === \"U\" ? vMin + 0.5 * (vMax - vMin) : uMin + 0.5 * (uMax - uMin);\n        const a = axis === \"U\" ? uMin : vMin;\n        const b = axis === \"U\" ? uMax : vMax;\n        const get = (t) => axis === \"U\" ? sampleTuple(t, cross) : sampleTuple(cross, t);\n        const p0 = get(a);\n        const pm = get(0.5 * (a + b));\n        const p1 = get(b);\n        const dx = p1[0] - p0[0], dy = p1[1] - p0[1], dz = p1[2] - p0[2];\n        const chord = Math.hypot(dx, dy, dz);\n        if (chord === 0)\n            return false;\n        const tx = pm[0] - p0[0], ty = pm[1] - p0[1], tz = pm[2] - p0[2];\n        // |(p1-p0) × (pm-p0)| / |p1-p0| = perpendicular distance.\n        const cx = dy * tz - dz * ty;\n        const cy = dz * tx - dx * tz;\n        const cz = dx * ty - dy * tx;\n        const perp = Math.hypot(cx, cy, cz) / chord;\n        return perp / chord < STRAIGHT_TOL;\n    };\n    let axis;\n    if (rulingAxis === \"U\" || rulingAxis === \"V\") {\n        axis = rulingAxis;\n    }\n    else if (rulingAxis === \"auto\") {\n        const vStraight = isStraightAlong(\"V\");\n        const uStraight = isStraightAlong(\"U\");\n        if (vStraight)\n            axis = \"V\";\n        else if (uStraight)\n            axis = \"U\";\n        else\n            throw new Error(\"Develop rulings: auto-detect failed — surface is not straight along \" +\n                \"either parametric axis (it is not a ruled surface, or the trimmed \" +\n                \"region is curved on both axes). Override with rulingAxis: 'U' or 'V'.\");\n    }\n    else {\n        throw new Error('Develop rulings: rulingAxis must be \"auto\", \"U\", or \"V\"; got ' +\n            JSON.stringify(rulingAxis));\n    }\n    // ── Step 3: Build n+1 ruling edges along the chosen axis ──────────────────\n    // axis === \"V\": rulings run vMin → vMax; we step the OTHER parameter (U).\n    // axis === \"U\": rulings run uMin → uMax; we step the OTHER parameter (V).\n    const rulings = [];\n    for (let i = 0; i <= n; i++) {\n        const t = i / n;\n        let pStart, pEnd;\n        if (axis === \"V\") {\n            const u = uMin + t * (uMax - uMin);\n            pStart = face.pointOnSurface(u, vMin);\n            pEnd = face.pointOnSurface(u, vMax);\n        }\n        else {\n            const v = vMin + t * (vMax - vMin);\n            pStart = face.pointOnSurface(uMin, v);\n            pEnd = face.pointOnSurface(uMax, v);\n        }\n        const edge = replicad.makeLine([pStart.x, pStart.y, pStart.z], [pEnd.x, pEnd.y, pEnd.z]);\n        // The framework rejects bare Edges (see code.ts); wrap with assembleWire\n        // so each ruling round-trips as a Wire leaf.\n        const wire = replicad.assembleWire([edge]);\n        rulings.push(new Assembly({\n            geometry: wire,\n            color: \"#e07b00\",\n            tags: [\"ruling\"],\n        }));\n    }\n    return new Assembly({\n        geometry: rulings,\n        color: \"#e07b00\",\n        tags: [\"rulings\", \"ruling-axis:\" + axis],\n    });\n}\n"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.7220052083333333,
+          "y": 0.7738095238095237,
+          "uniqueID": "id-5247",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "faceIndex",
+              "ioValue": 1
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "\nfunction run(\n  shape: Assembly,\n  faceIndex: number\n) {\n  let result = undefined;\n  shape.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const f = leaf.geometry.faces\n      if (f.length > faceIndex && result == undefined) {\n        result = f[faceIndex]\n      } else {\n        faceIndex = faceIndex - f.length\n      }\n      return leaf;\n    }\n  })\n  return result;\n}\n",
+          "compiledCode": "\"use strict\";\nfunction run(shape, faceIndex) {\n    let result = undefined;\n    shape.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const f = leaf.geometry.faces;\n            if (f.length > faceIndex && result == undefined) {\n                result = f[faceIndex];\n            }\n            else {\n                faceIndex = faceIndex - f.length;\n            }\n            return leaf;\n        }\n    });\n    return result;\n}\n"
         }
       ],
       "allConnectors": [
+        {
+          "ap2Name": "Wires",
+          "ap1ID": "id-4898",
+          "ap2ID": "id-4886"
+        },
         {
           "ap2Name": "toMove",
           "ap1ID": "id-4703",
@@ -2690,9 +2737,14 @@
           "ap2ID": "id-4903"
         },
         {
-          "ap2Name": "Wires",
-          "ap1ID": "id-4898",
-          "ap2ID": "id-4886"
+          "ap2Name": "surface",
+          "ap1ID": "id-4886",
+          "ap2ID": "id-5235"
+        },
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-4886",
+          "ap2ID": "id-5247"
         }
       ],
       "fileTypeVersion": 1
