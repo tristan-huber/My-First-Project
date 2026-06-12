@@ -4122,115 +4122,6 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.47021484375,
-          "y": 0.9229166666666666,
-          "uniqueID": "id-8170",
-          "name": "util.SelectFace",
-          "ioValues": [
-            {
-              "name": "shape",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "index",
-              "ioValue": 2
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-8166",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
-              "uniqueID": "id-8167",
-              "name": "shape",
-              "type": "geometry"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
-              "uniqueID": "id-8168",
-              "name": "index"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.38183593749999994,
-              "y": 0.48750000000000004,
-              "uniqueID": "id-8169",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "faceIndex",
-                  "ioValue": 2
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\nfunction run(\n  shape: Assembly,\n  faceIndex: number = 0\n) {\n  let result = undefined;\n  shape.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const f = leaf.geometry.faces\n      if (f.length > faceIndex && result == undefined) {\n        result = f[faceIndex]\n      } else {\n        faceIndex = faceIndex - f.length\n      }\n      return leaf;\n    }\n  })\n  return result;\n}\n",
-              "compiledCode": "\"use strict\";\nfunction run(shape, faceIndex = 0) {\n    let result = undefined;\n    shape.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const f = leaf.geometry.faces;\n            if (f.length > faceIndex && result == undefined) {\n                result = f[faceIndex];\n            }\n            else {\n                faceIndex = faceIndex - f.length;\n            }\n            return leaf;\n        }\n    });\n    return result;\n}\n"
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-8167",
-              "ap2ID": "id-8169"
-            },
-            {
-              "ap2Name": "faceIndex",
-              "ap1ID": "id-8168",
-              "ap2ID": "id-8169"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-8169",
-              "ap2ID": "id-8166"
-            }
-          ],
-          "parentRepo": {
-            "privateRepo": false,
-            "repoName": "util.SelectFace",
-            "dateCreated": "2026-06-11T23:43:58Z",
-            "readMe": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/README.md?sanitize=true",
-            "yyyy": 2026,
-            "topMoleculeID": "id-1",
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/tristan-huber/util.SelectFace",
-            "topics": [
-              "abundance-tool"
-            ],
-            "parentRepo": null,
-            "forks": 0,
-            "dateModified": "739778",
-            "ranking": 0,
-            "searchField": "util.selectface tristan-huber gets a face by index from an assembly abundance-tool",
-            "owner": "tristan-huber",
-            "description": "Gets a face by index from an assembly",
-            "contentURL": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/project.abundance?sanitize=true",
-            "svgURL": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/project.svg?sanitize=true",
-            "isLocal": false
-          },
-          "unitsKey": "Unitless",
-          "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1781221704897
-        },
-        {
-          "atomType": "GitHubMolecule",
           "x": 0.56982421875,
           "y": 0.6020833333333334,
           "uniqueID": "id-8230",
@@ -4363,9 +4254,9 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.1416015625,
+          "x": 0.12646484375,
           "y": 0.5416666666666666,
-          "uniqueID": "id-8251",
+          "uniqueID": "id-8275",
           "name": "crv.Unroll",
           "ioValues": [
             {
@@ -4374,11 +4265,12 @@
             },
             {
               "name": "NumRulings",
-              "ioValue": 10
+              "ioValue": 50
             },
             {
               "name": "RulingAxis(U,V,auto)",
-              "ioValue": 10
+              "ioValue": "auto",
+              "currentEquation": "auto"
             }
           ],
           "topLevel": false,
@@ -4387,7 +4279,7 @@
               "atomType": "Output",
               "x": 0.98,
               "y": 0.5,
-              "uniqueID": "id-8246",
+              "uniqueID": "id-8270",
               "ioValues": [
                 {
                   "name": "number or geometry",
@@ -4399,7 +4291,7 @@
               "atomType": "Code",
               "x": 0.5546875,
               "y": 0.5916666666666667,
-              "uniqueID": "id-8247",
+              "uniqueID": "id-8271",
               "ioValues": [
                 {
                   "name": "surface",
@@ -4407,11 +4299,11 @@
                 },
                 {
                   "name": "numRulings",
-                  "ioValue": 10
+                  "ioValue": 50
                 },
                 {
                   "name": "rulingAxis",
-                  "ioValue": 10,
+                  "ioValue": "auto",
                   "currentEquation": "auto"
                 },
                 {
@@ -4435,7 +4327,7 @@
               "atomType": "Input",
               "x": 0.025384615384615384,
               "y": 0.15384615384615385,
-              "uniqueID": "id-8248",
+              "uniqueID": "id-8272",
               "name": "Face",
               "type": "geometry"
             },
@@ -4443,14 +4335,14 @@
               "atomType": "Input",
               "x": 0.025384615384615384,
               "y": 0.24615384615384617,
-              "uniqueID": "id-8249",
+              "uniqueID": "id-8273",
               "name": "NumRulings"
             },
             {
               "atomType": "Input",
               "x": 0.025384615384615384,
               "y": 0.3384615384615385,
-              "uniqueID": "id-8250",
+              "uniqueID": "id-8274",
               "name": "RulingAxis(U,V,auto)",
               "type": "string"
             }
@@ -4458,23 +4350,23 @@
           "allConnectors": [
             {
               "ap2Name": "number or geometry",
-              "ap1ID": "id-8247",
-              "ap2ID": "id-8246"
+              "ap1ID": "id-8271",
+              "ap2ID": "id-8270"
             },
             {
               "ap2Name": "surface",
-              "ap1ID": "id-8248",
-              "ap2ID": "id-8247"
+              "ap1ID": "id-8272",
+              "ap2ID": "id-8271"
             },
             {
               "ap2Name": "numRulings",
-              "ap1ID": "id-8249",
-              "ap2ID": "id-8247"
+              "ap1ID": "id-8273",
+              "ap2ID": "id-8271"
             },
             {
               "ap2Name": "rulingAxis",
-              "ap1ID": "id-8250",
-              "ap2ID": "id-8247"
+              "ap1ID": "id-8274",
+              "ap2ID": "id-8271"
             }
           ],
           "parentRepo": {
@@ -4491,7 +4383,7 @@
             ],
             "parentRepo": null,
             "forks": 0,
-            "dateModified": "739778",
+            "dateModified": "739779",
             "ranking": 0,
             "searchField": "crv.unroll tristan-huber unroll a face to flat. the resulting face is heat-mapped where red indicates substantial twist or stretch in the material. a truly developable surface will appear all white. abundance-tool",
             "owner": "tristan-huber",
@@ -4502,7 +4394,116 @@
           },
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1781222379000
+          "lastReloadedFromGithubAt": 1781222468112
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.47021484375,
+          "y": 0.9229166666666666,
+          "uniqueID": "id-8298",
+          "name": "util.SelectFace",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "index",
+              "ioValue": 0
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-8294",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-8295",
+              "name": "shape",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-8296",
+              "name": "index"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.38183593749999994,
+              "y": 0.48750000000000004,
+              "uniqueID": "id-8297",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "faceIndex",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\nfunction run(\n  shape: Assembly,\n  faceIndex: number = 0\n) {\n  let result = undefined;\n  shape.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const f = leaf.geometry.faces\n      if (f.length > faceIndex && result == undefined) {\n        result = f[faceIndex]\n      } else {\n        faceIndex = faceIndex - f.length\n      }\n      return leaf;\n    }\n  })\n  return result;\n}\n",
+              "compiledCode": "\"use strict\";\nfunction run(shape, faceIndex = 0) {\n    let result = undefined;\n    shape.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const f = leaf.geometry.faces;\n            if (f.length > faceIndex && result == undefined) {\n                result = f[faceIndex];\n            }\n            else {\n                faceIndex = faceIndex - f.length;\n            }\n            return leaf;\n        }\n    });\n    return result;\n}\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-8295",
+              "ap2ID": "id-8297"
+            },
+            {
+              "ap2Name": "faceIndex",
+              "ap1ID": "id-8296",
+              "ap2ID": "id-8297"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-8297",
+              "ap2ID": "id-8294"
+            }
+          ],
+          "parentRepo": {
+            "privateRepo": false,
+            "repoName": "util.SelectFace",
+            "dateCreated": "2026-06-11T23:43:58Z",
+            "readMe": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-1",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/tristan-huber/util.SelectFace",
+            "topics": [
+              "abundance-tool"
+            ],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739778",
+            "ranking": 0,
+            "searchField": "util.selectface tristan-huber gets a face by index from an assembly abundance-tool",
+            "owner": "tristan-huber",
+            "description": "Gets a face by index from an assembly",
+            "contentURL": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/tristan-huber/util.SelectFace/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1781222497479
         }
       ],
       "allConnectors": [
@@ -4679,7 +4680,7 @@
         {
           "ap2Name": "shape",
           "ap1ID": "id-6508",
-          "ap2ID": "id-8170"
+          "ap2ID": "id-8298"
         },
         {
           "ap2Name": "Shape 1",
@@ -4693,18 +4694,18 @@
         },
         {
           "ap2Name": "surface",
-          "ap1ID": "id-8170",
+          "ap1ID": "id-8298",
           "ap2ID": "id-6560"
         },
         {
           "ap2Name": "Face",
-          "ap1ID": "id-8170",
+          "ap1ID": "id-8298",
           "ap2ID": "id-8230"
         },
         {
           "ap2Name": "Face",
-          "ap1ID": "id-8170",
-          "ap2ID": "id-8251"
+          "ap1ID": "id-8298",
+          "ap2ID": "id-8275"
         }
       ],
       "fileTypeVersion": 1
