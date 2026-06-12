@@ -4162,8 +4162,7 @@
                 },
                 {
                   "name": "thresholdRadius",
-                  "ioValue": 1,
-                  "currentEquation": "1"
+                  "ioValue": 1
                 }
               ],
               "interpreterVersion": 1,
