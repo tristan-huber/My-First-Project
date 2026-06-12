@@ -3894,46 +3894,8 @@
             },
             {
               "atomType": "Code",
-              "x": 0.41080729166666663,
-              "y": 0.35714285714285715,
-              "uniqueID": "id-8875",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "faceIndex",
-                  "ioValue": 6
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\nfunction run(\n  shape: Assembly,\n  faceIndex: number = 0\n) {\n  let result = undefined;\n  shape.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const f = leaf.geometry.faces\n      if (f.length > faceIndex && result == undefined) {\n        result = f[faceIndex]\n      } else {\n        faceIndex = faceIndex - f.length\n      }\n      return leaf;\n    }\n  })\n  return result;\n}\n",
-              "compiledCode": "\"use strict\";\nfunction run(shape, faceIndex = 0) {\n    let result = undefined;\n    shape.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const f = leaf.geometry.faces;\n            if (f.length > faceIndex && result == undefined) {\n                result = f[faceIndex];\n            }\n            else {\n                faceIndex = faceIndex - f.length;\n            }\n            return leaf;\n        }\n    });\n    return result;\n}\n"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.8026041666666668,
-              "y": 0.4976190476190477,
-              "uniqueID": "id-8876",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "faceIndex",
-                  "ioValue": 0
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\nfunction run(\n  shape: Assembly,\n  faceIndex: number = 0\n) {\n  let result = undefined;\n  shape.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const f = leaf.geometry.faces\n      if (f.length > faceIndex && result == undefined) {\n        result = f[faceIndex]\n      } else {\n        faceIndex = faceIndex - f.length\n      }\n      return leaf;\n    }\n  })\n  return result;\n}\n",
-              "compiledCode": "\"use strict\";\nfunction run(shape, faceIndex = 0) {\n    let result = undefined;\n    shape.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const f = leaf.geometry.faces;\n            if (f.length > faceIndex && result == undefined) {\n                result = f[faceIndex];\n            }\n            else {\n                faceIndex = faceIndex - f.length;\n            }\n            return leaf;\n        }\n    });\n    return result;\n}\n"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.92646484375,
-              "y": 0.32916666666666666,
+              "x": 0.3899739583333333,
+              "y": 0.2708333333333333,
               "uniqueID": "id-8877",
               "ioValues": [
                 {
@@ -3996,8 +3958,8 @@
             },
             {
               "atomType": "Code",
-              "x": 0.9337890624999999,
-              "y": 0.4708333333333334,
+              "x": 0.587890625,
+              "y": 0.3333333333333333,
               "uniqueID": "id-8879",
               "ioValues": [
                 {
@@ -4511,31 +4473,6 @@
           ],
           "allConnectors": [
             {
-              "ap2Name": "surface",
-              "ap1ID": "id-8875",
-              "ap2ID": "id-8874"
-            },
-            {
-              "ap2Name": "surface",
-              "ap1ID": "id-8875",
-              "ap2ID": "id-8878"
-            },
-            {
-              "ap2Name": "surface",
-              "ap1ID": "id-8875",
-              "ap2ID": "id-8882"
-            },
-            {
-              "ap2Name": "surface",
-              "ap1ID": "id-8876",
-              "ap2ID": "id-8877"
-            },
-            {
-              "ap2Name": "surface",
-              "ap1ID": "id-8876",
-              "ap2ID": "id-8879"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-8880",
               "ap2ID": "id-8881"
@@ -4553,11 +4490,6 @@
             {
               "ap2Name": "shape",
               "ap1ID": "id-8949",
-              "ap2ID": "id-8875"
-            },
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-8949",
               "ap2ID": "id-8979"
             },
             {
@@ -4569,6 +4501,11 @@
               "ap2Name": "shape",
               "ap1ID": "id-8955",
               "ap2ID": "id-8995"
+            },
+            {
+              "ap2Name": "surface",
+              "ap1ID": "id-8979",
+              "ap2ID": "id-8877"
             },
             {
               "ap2Name": "surface",
