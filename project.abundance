@@ -113,8 +113,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5924479166666666,
-      "y": 0.4942857142857142,
+      "x": 0.5615234375,
+      "y": 0.5125000000000001,
       "uniqueID": "id-4325",
       "ioValues": [
         {
@@ -3879,7 +3879,7 @@
             {
               "atomType": "Input",
               "x": 0.0231,
-              "y": 0.3457142857142857,
+              "y": 0.22400000000000003,
               "uniqueID": "id-8952",
               "name": "SimpleTwist",
               "type": "geometry"
@@ -3887,7 +3887,7 @@
             {
               "atomType": "Input",
               "x": 0.0231,
-              "y": 0.6114285714285714,
+              "y": 0.30800000000000005,
               "uniqueID": "id-8955",
               "name": "WithHole",
               "type": "geometry"
@@ -5251,6 +5251,71 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.638671875,
+      "y": 0.4520833333333333,
+      "uniqueID": "id-11595",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.72607421875,
+      "y": 0.7458333333333333,
+      "uniqueID": "id-11599",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 2438
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 1219
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 10
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 12
+        }
+      ],
+      "placements": [
+        [
+          {
+            "id": 1,
+            "rotate": 150,
+            "translate": {
+              "x": 8.431480644429874,
+              "y": 11.743508153224473
+            }
+          },
+          {
+            "id": 0,
+            "rotate": 180,
+            "translate": {
+              "x": 8.000001,
+              "y": 34.93825640963197
+            }
+          }
+        ]
+      ]
     }
   ],
   "allConnectors": [
@@ -5290,6 +5355,11 @@
       "ap2ID": "ac808c95-4087-4e83-9ada-091ad09c80b6"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4325",
+      "ap2ID": "id-11595"
+    },
+    {
       "ap2Name": "y length",
       "ap1ID": "id-3976",
       "ap2ID": "id-3793"
@@ -5298,6 +5368,11 @@
       "ap2Name": "x length",
       "ap1ID": "id-4210",
       "ap2ID": "id-3793"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-11595",
+      "ap2ID": "id-11599"
     }
   ],
   "unitsKey": "MM",
