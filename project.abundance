@@ -152,26 +152,22 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.7666015625,
-      "y": 0.6354166666666666,
+      "x": 0.76318359375,
+      "y": 0.64375,
       "uniqueID": "id-12239",
       "name": "Cut Orient",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Thickness",
-          "ioValue": 0
         }
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 3
+          "downwardFaceIndex": 13
         },
         {
-          "downwardFaceIndex": 4
+          "downwardFaceIndex": 5
         }
       ]
     },
@@ -227,8 +223,7 @@
         },
         {
           "name": "height",
-          "ioValue": 1,
-          "currentEquation": "1"
+          "ioValue": 1
         }
       ]
     },
@@ -5349,6 +5344,30 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.72607421875,
+      "y": 0.49374999999999997,
+      "uniqueID": "id-13535",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 1
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -5415,7 +5434,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-12887",
-      "ap2ID": "id-12239"
+      "ap2ID": "id-13535"
     },
     {
       "ap2Name": "y length",
@@ -5426,6 +5445,11 @@
       "ap2Name": "x length",
       "ap1ID": "id-4210",
       "ap2ID": "id-3793"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-13535",
+      "ap2ID": "id-12239"
     }
   ],
   "unitsKey": "MM",
