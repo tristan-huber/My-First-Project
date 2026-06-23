@@ -113,8 +113,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5615234375,
-      "y": 0.5125000000000001,
+      "x": 0.5888671875,
+      "y": 0.17708333333333331,
       "uniqueID": "id-4325",
       "ioValues": [
         {
@@ -136,8 +136,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.638671875,
-      "y": 0.4520833333333333,
+      "x": 0.6552734375,
+      "y": 0.20625,
       "uniqueID": "id-11595",
       "ioValues": [
         {
@@ -149,6 +149,24 @@
           "ioValue": 1
         }
       ]
+    },
+    {
+      "atomType": "CutOrient",
+      "x": 0.7138671875,
+      "y": 0.7708333333333333,
+      "uniqueID": "id-12239",
+      "name": "Cut Orient",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Thickness",
+          "ioValue": 0
+        }
+      ],
+      "orientations": []
     },
     {
       "atomType": "Molecule",
@@ -5269,22 +5287,45 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "CutOrient",
-      "x": 0.7138671875,
-      "y": 0.7708333333333333,
-      "uniqueID": "id-12239",
-      "name": "Cut Orient",
+      "atomType": "Rotate",
+      "x": 0.5263671875,
+      "y": 0.8520833333333333,
+      "uniqueID": "id-12876",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Thickness",
+          "name": "x-axis degrees",
           "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 20,
+          "currentEquation": "20"
         }
-      ],
-      "orientations": []
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.6220703125,
+      "y": 0.7,
+      "uniqueID": "id-12882",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -5319,6 +5360,16 @@
       "ap2ID": "id-4325"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3793",
+      "ap2ID": "id-12876"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-3793",
+      "ap2ID": "id-12882"
+    },
+    {
       "ap2Name": "diameter",
       "ap1ID": "id-3797",
       "ap2ID": "ac808c95-4087-4e83-9ada-091ad09c80b6"
@@ -5337,6 +5388,16 @@
       "ap2Name": "x length",
       "ap1ID": "id-4210",
       "ap2ID": "id-3793"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-12876",
+      "ap2ID": "id-12882"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12882",
+      "ap2ID": "id-12239"
     }
   ],
   "unitsKey": "MM",
