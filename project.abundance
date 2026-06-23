@@ -152,8 +152,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.7587890625,
-      "y": 0.6375,
+      "x": 0.7666015625,
+      "y": 0.6354166666666666,
       "uniqueID": "id-12239",
       "name": "Cut Orient",
       "ioValues": [
@@ -168,7 +168,7 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 1
+          "downwardFaceIndex": 4
         },
         {
           "downwardFaceIndex": 4
@@ -5336,8 +5336,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.60546875,
-      "y": 0.45416666666666666,
+      "x": 0.6279296875,
+      "y": 0.45625000000000004,
       "uniqueID": "id-12887",
       "ioValues": [
         {
