@@ -152,8 +152,8 @@
     },
     {
       "atomType": "CutOrient",
-      "x": 0.7138671875,
-      "y": 0.7708333333333333,
+      "x": 0.7587890625,
+      "y": 0.6375,
       "uniqueID": "id-12239",
       "name": "Cut Orient",
       "ioValues": [
@@ -166,7 +166,14 @@
           "ioValue": 0
         }
       ],
-      "orientations": []
+      "orientations": [
+        {
+          "downwardFaceIndex": 1
+        },
+        {
+          "downwardFaceIndex": 4
+        }
+      ]
     },
     {
       "atomType": "Molecule",
@@ -5313,8 +5320,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6220703125,
-      "y": 0.7,
+      "x": 0.5986328125,
+      "y": 0.7333333333333334,
       "uniqueID": "id-12882",
       "ioValues": [
         {
@@ -5324,6 +5331,22 @@
         {
           "name": "Shape 2",
           "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.60546875,
+      "y": 0.45416666666666666,
+      "uniqueID": "id-12887",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
         }
       ]
     }
@@ -5397,6 +5420,11 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-12882",
+      "ap2ID": "id-12887"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12887",
       "ap2ID": "id-12239"
     }
   ],
