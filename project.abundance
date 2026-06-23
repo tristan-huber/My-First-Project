@@ -164,7 +164,7 @@
       ],
       "orientations": [
         {
-          "downwardFaceIndex": 13
+          "downwardFaceIndex": 19
         },
         {
           "downwardFaceIndex": 5
@@ -224,6 +224,30 @@
         {
           "name": "height",
           "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.72607421875,
+      "y": 0.49374999999999997,
+      "uniqueID": "id-13535",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 1
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
         }
       ]
     },
@@ -5346,27 +5370,44 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Move",
-      "x": 0.72607421875,
-      "y": 0.49374999999999997,
-      "uniqueID": "id-13535",
+      "atomType": "CutLayout",
+      "x": 0.6842447916666666,
+      "y": 0.7914285714285715,
+      "uniqueID": "id-14188",
+      "name": "Cut Layout",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "xDist",
-          "ioValue": 0
+          "name": "Sheet Width",
+          "ioValue": 2438
         },
         {
-          "name": "yDist",
-          "ioValue": 1
+          "name": "Sheet Height",
+          "ioValue": 1219
         },
         {
-          "name": "zDist",
-          "ioValue": 0
+          "name": "Part Padding",
+          "ioValue": 10
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 12
         }
+      ],
+      "placements": [
+        [
+          {
+            "id": 0,
+            "rotate": 150,
+            "translate": {
+              "x": 9.346469267357648,
+              "y": 12.185527711337503
+            }
+          }
+        ]
       ]
     }
   ],
@@ -5428,6 +5469,11 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-12876",
+      "ap2ID": "id-14188"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-12882",
       "ap2ID": "id-12887"
     },
@@ -5435,6 +5481,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-12887",
       "ap2ID": "id-13535"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-13535",
+      "ap2ID": "id-12239"
     },
     {
       "ap2Name": "y length",
@@ -5445,11 +5496,6 @@
       "ap2Name": "x length",
       "ap1ID": "id-4210",
       "ap2ID": "id-3793"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-13535",
-      "ap2ID": "id-12239"
     }
   ],
   "unitsKey": "MM",
