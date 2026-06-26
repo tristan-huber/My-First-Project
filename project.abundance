@@ -5558,7 +5558,7 @@
                 },
                 {
                   "name": "numRulings",
-                  "ioValue": 24
+                  "ioValue": 50
                 },
                 {
                   "name": "primaryEdgeIndex",
@@ -5633,7 +5633,7 @@
             },
             {
               "ap2Name": "number or geometry",
-              "ap1ID": "id-9590",
+              "ap1ID": "id-16280",
               "ap2ID": "id-8872"
             }
           ],
