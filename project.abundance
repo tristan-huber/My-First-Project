@@ -1555,8 +1555,8 @@
         },
         {
           "atomType": "Loft",
-          "x": 0.7962239583333333,
-          "y": 0.28285714285714286,
+          "x": 0.6783854166666666,
+          "y": 0.25142857142857145,
           "uniqueID": "id-5599",
           "ioValues": [
             {
@@ -1564,11 +1564,11 @@
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
-              "name": "Shape 2",
+              "name": "Shape 3",
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
-              "name": "Shape 3",
+              "name": "Shape 4",
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
@@ -1599,9 +1599,9 @@
               }
             },
             {
-              "name": "Shape 2",
+              "name": "Shape 3",
               "ioValue": {
-                "geometry": "cut-circle-5-move-rectangle-10-10-0-9-0",
+                "geometry": "circle-5",
                 "dimension": "2D",
                 "tags": [],
                 "plane": {
@@ -1626,8 +1626,8 @@
               }
             },
             {
-              "name": "Shape 3",
-              "ioValue": "__GEOMETRY_INPUT__"
+              "name": "Shape 4",
+              "ioValue": null
             }
           ],
           "closedSelection": 0
@@ -1849,8 +1849,8 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.6647135416666667,
-          "y": 0.3342857142857143,
+          "x": 0.75,
+          "y": 0.2914285714285714,
           "uniqueID": "id-15573",
           "ioValues": [
             {
@@ -4112,8 +4112,8 @@
             },
             {
               "atomType": "Code",
-              "x": 0.607421875,
-              "y": 0.26,
+              "x": 0.6002604166666667,
+              "y": 0.26285714285714284,
               "uniqueID": "id-15509",
               "ioValues": [
                 {
@@ -4147,7 +4147,7 @@
                 },
                 {
                   "name": "index",
-                  "ioValue": -1
+                  "ioValue": 0
                 }
               ],
               "topLevel": false,
@@ -4191,7 +4191,7 @@
                     },
                     {
                       "name": "faceIndex",
-                      "ioValue": -1
+                      "ioValue": 0
                     }
                   ],
                   "interpreterVersion": 1,
@@ -5627,14 +5627,14 @@
               "ap2ID": "id-15534"
             },
             {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-8979",
+              "ap2ID": "id-10246"
+            },
+            {
               "ap2Name": "number or geometry",
               "ap1ID": "id-9590",
               "ap2ID": "id-8872"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-10187",
-              "ap2ID": "id-10246"
             }
           ],
           "fileTypeVersion": 1
@@ -5647,9 +5647,9 @@
           "ap2ID": "id-4886"
         },
         {
-          "ap2Name": "retain",
+          "ap2Name": "Shape 3",
           "ap1ID": "id-5586",
-          "ap2ID": "id-15573"
+          "ap2ID": "id-5599"
         },
         {
           "ap2Name": "geometry",
@@ -5667,9 +5667,9 @@
           "ap2ID": "id-5599"
         },
         {
-          "ap2Name": "Cone",
+          "ap2Name": "retain",
           "ap1ID": "id-5599",
-          "ap2ID": "id-8870"
+          "ap2ID": "id-15573"
         },
         {
           "ap2Name": "geometry",
@@ -5685,6 +5685,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-6008",
           "ap2ID": "id-6002"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-6008",
+          "ap2ID": "id-15573"
         },
         {
           "ap2Name": "WithHole",
@@ -5717,14 +5722,9 @@
           "ap2ID": "id-15567"
         },
         {
-          "ap2Name": "remove",
-          "ap1ID": "id-15567",
-          "ap2ID": "id-15573"
-        },
-        {
-          "ap2Name": "Shape 2",
+          "ap2Name": "Cone",
           "ap1ID": "id-15573",
-          "ap2ID": "id-5599"
+          "ap2ID": "id-8870"
         },
         {
           "ap2Name": "toMove",
