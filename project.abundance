@@ -1574,15 +1574,14 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-94083284-0-0-0-10",
-                "color": "#3c5a6e",
+                "geometry": "move-circle-0.5-0-0-0",
+                "dimension": "2D",
                 "tags": [],
-                "bom": [],
                 "plane": {
                   "origin": [
                     0,
                     0,
-                    0
+                    10
                   ],
                   "xDir": [
                     1,
@@ -1595,8 +1594,8 @@
                     1
                   ]
                 },
-                "metadata": {},
-                "dimension": "Point3D"
+                "color": "#aad7f2",
+                "bom": []
               }
             },
             {
@@ -4123,7 +4122,8 @@
                 },
                 {
                   "name": "numRulings",
-                  "ioValue": 24
+                  "ioValue": 24,
+                  "currentEquation": "24"
                 },
                 {
                   "name": "primaryEdgeIndex",
@@ -4147,7 +4147,7 @@
                 },
                 {
                   "name": "index",
-                  "ioValue": 2
+                  "ioValue": -1
                 }
               ],
               "topLevel": false,
@@ -4191,7 +4191,7 @@
                     },
                     {
                       "name": "faceIndex",
-                      "ioValue": 2
+                      "ioValue": -1
                     }
                   ],
                   "interpreterVersion": 1,
@@ -5548,8 +5548,8 @@
             },
             {
               "atomType": "Code",
-              "x": 0.6080729166666666,
-              "y": 0.5914285714285714,
+              "x": 0.6380208333333334,
+              "y": 0.47428571428571425,
               "uniqueID": "id-16280",
               "ioValues": [
                 {
@@ -5558,7 +5558,7 @@
                 },
                 {
                   "name": "numRulings",
-                  "ioValue": 50
+                  "ioValue": 100
                 },
                 {
                   "name": "primaryEdgeIndex",
@@ -5627,14 +5627,14 @@
               "ap2ID": "id-15534"
             },
             {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-8995",
-              "ap2ID": "id-10246"
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-9590",
+              "ap2ID": "id-8872"
             },
             {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-16280",
-              "ap2ID": "id-8872"
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-10187",
+              "ap2ID": "id-10246"
             }
           ],
           "fileTypeVersion": 1
@@ -5655,6 +5655,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-5589",
           "ap2ID": "id-5998"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5589",
+          "ap2ID": "id-5593"
         },
         {
           "ap2Name": "Shape 1",
@@ -5725,11 +5730,6 @@
           "ap2Name": "toMove",
           "ap1ID": "id-4703",
           "ap2ID": "id-4729"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-4703",
-          "ap2ID": "id-5593"
         },
         {
           "ap2Name": "toMove",
