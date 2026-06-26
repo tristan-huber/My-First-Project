@@ -4127,7 +4127,7 @@
                 },
                 {
                   "name": "primaryEdgeIndex",
-                  "ioValue": 2
+                  "ioValue": 1
                 }
               ],
               "interpreterVersion": 1,
