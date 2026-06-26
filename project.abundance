@@ -1669,7 +1669,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": -4
+              "ioValue": -2
             }
           ]
         },
@@ -5566,7 +5566,8 @@
                 },
                 {
                   "name": "holeSamples",
-                  "ioValue": 100
+                  "ioValue": 100,
+                  "currentEquation": "100"
                 }
               ],
               "interpreterVersion": 1,
