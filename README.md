@@ -7,6 +7,7 @@
 ## Inputs
 
 - **diam** (number)
+- **TargetLen** (number)
 
 
 
