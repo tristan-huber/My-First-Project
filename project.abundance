@@ -617,8 +617,7 @@
           "y": 0.15384615384615385,
           "uniqueID": "id-30112",
           "name": "Shape",
-          "type": "faceselect",
-          "selectedFaceData": {}
+          "type": "faceselect"
         },
         {
           "atomType": "Code",
@@ -682,8 +681,7 @@
           "y": 0.15384615384615385,
           "uniqueID": "id-32343",
           "name": "Shape",
-          "type": "faceselect",
-          "selectedFaceData": {}
+          "type": "faceselect"
         },
         {
           "atomType": "Code",
@@ -868,14 +866,6 @@
       "name": "Molecule",
       "ioValues": [
         {
-          "name": "target",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "mover",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
           "name": "flip",
           "ioValue": true
         },
@@ -904,12 +894,7 @@
           "y": 0.15384615384615385,
           "uniqueID": "id-32399",
           "name": "target",
-          "type": "edgeselect",
-          "selectedEdgeData": {
-            "0": [
-              299
-            ]
-          }
+          "type": "edgeselect"
         },
         {
           "atomType": "Input",
@@ -917,12 +902,7 @@
           "y": 0.24615384615384617,
           "uniqueID": "id-32402",
           "name": "mover",
-          "type": "edgeselect",
-          "selectedEdgeData": {
-            "0": [
-              898
-            ]
-          }
+          "type": "edgeselect"
         },
         {
           "atomType": "Input",
@@ -1494,8 +1474,7 @@
           "y": 0.15384615384615385,
           "uniqueID": "id-34783",
           "name": "Shape",
-          "type": "faceselect",
-          "selectedFaceData": {}
+          "type": "faceselect"
         },
         {
           "atomType": "Code",
@@ -3696,6 +3675,907 @@
           "ap2Name": "geometry",
           "ap1ID": "id-27514",
           "ap2ID": "id-27549"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.37369791666666663,
+      "y": 0.24,
+      "uniqueID": "id-34816",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-34818",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.3990885416666667,
+          "y": 0.6228571428571429,
+          "uniqueID": "id-34971",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 4,
+              "currentEquation": "4"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 10,
+              "currentEquation": "10"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.13932291666666666,
+          "y": 0.44571428571428573,
+          "uniqueID": "id-34830",
+          "name": "Involute_Gear",
+          "ioValues": [
+            {
+              "name": "Number_of_Teeth",
+              "ioValue": 20
+            },
+            {
+              "name": "Pitch",
+              "ioValue": 5
+            },
+            {
+              "name": "Thickness",
+              "ioValue": 5
+            },
+            {
+              "name": "Pressure_Angle",
+              "ioValue": 20
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-34824",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-34825",
+              "name": "Number_of_Teeth"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-34826",
+              "name": "Pitch"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-34827",
+              "name": "Thickness"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.4307692307692308,
+              "uniqueID": "id-34828",
+              "name": "Pressure_Angle"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4431216931216931,
+              "y": 0.34818941504178275,
+              "uniqueID": "id-34829",
+              "ioValues": [
+                {
+                  "name": "teeth",
+                  "ioValue": 20
+                },
+                {
+                  "name": "pitch",
+                  "ioValue": 5
+                },
+                {
+                  "name": "thickness",
+                  "ioValue": 5
+                },
+                {
+                  "name": "pressureAngle",
+                  "ioValue": 20
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "/**\n * Involute spur gear with curved (spline) flanks. Each flank is split into\n * FLANK_SEGMENTS sub-splines, with the *exact* involute tangent fed to\n * replicad at every junction as a direction vector.\n *\n * Bug history note: replicad's smoothSplineTo treats a NUMBER tangent as\n * an angle in DEGREES (it multiplies by π/180 internally). To keep the\n * math in radians we pass tangents as unit Point2D direction vectors —\n * those bypass the degree conversion entirely.\n */\nfunction run(\n  teeth: number = 20,\n  pitch: number = 5,\n  thickness: number = 5,\n  pressureAngle: number = 20,\n) {\n  const N = Math.max(3, Math.round(teeth));\n  const m = pitch / Math.PI;\n  const alpha = (pressureAngle * Math.PI) / 180;\n  const pitchR = (N * pitch) / (2 * Math.PI);\n  const addR = pitchR + m;\n  const rootR = Math.max(0.1, pitchR - 1.25 * m);\n  const baseR = pitchR * Math.cos(alpha);\n\n  const inv = (a: number) => Math.tan(a) - a;\n  const invAtPitch = inv(alpha);\n  const halfTooth = Math.PI / (2 * N);\n  const toothAngle = (2 * Math.PI) / N;\n\n  const tMax = Math.acos(Math.min(1, baseR / addR));\n  const useRadialUndercut = rootR < baseR;\n  const tMin = useRadialUndercut ? 0 : Math.acos(Math.min(1, baseR / rootR));\n  const flankBaseR = useRadialUndercut ? rootR : baseR / Math.cos(tMin);\n\n  const FLANK_SEGMENTS = 3;   // sub-splines per flank — bump to 4–5 for tiny tooth counts\n\n  const P = (r: number, a: number): [number, number] => [r * Math.cos(a), r * Math.sin(a)];\n  const involutePt = (t: number, originA: number, orient: number): [number, number] =>\n    P(baseR / Math.cos(t), originA + orient * inv(t));\n  // Unit tangent VECTOR at parameter t. orient = ±1 (left/right flank);\n  // traversalSign = +1 if we're walking with t increasing, -1 if decreasing.\n  const tanVec = (t: number, originA: number, orient: number, traversalSign: number): [number, number] => {\n    const a = originA + orient * (inv(t) + t);\n    return [traversalSign * Math.cos(a), traversalSign * Math.sin(a)];\n  };\n\n  const samples: number[] = [];\n  for (let s = 0; s <= FLANK_SEGMENTS; s++) {\n    samples.push(tMin + (tMax - tMin) * (s / FLANK_SEGMENTS));\n  }\n\n  let pen = replicad.draw(P(rootR, -halfTooth - invAtPitch));\n\n  for (let i = 0; i < N; i++) {\n    const c = i * toothAngle;\n    const leftStart = c - halfTooth - invAtPitch;\n    const rightStart = c + halfTooth + invAtPitch;\n\n    // ── Left flank: tMin → tMax ──\n    if (useRadialUndercut) pen = pen.lineTo(P(baseR, leftStart));\n    for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n      const tA = samples[s - 1], tB = samples[s];\n      pen = pen.smoothSplineTo(involutePt(tB, leftStart, +1), {\n        startTangent: tanVec(tA, leftStart, +1, +1),\n        endTangent: tanVec(tB, leftStart, +1, +1),\n      });\n    }\n\n    // ── Tip chord ──\n    pen = pen.lineTo(involutePt(tMax, rightStart, -1));\n\n    // ── Right flank: tMax → tMin (reversed traversal) ──\n    for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n      const tA = samples[FLANK_SEGMENTS - (s - 1)];\n      const tB = samples[FLANK_SEGMENTS - s];\n      pen = pen.smoothSplineTo(involutePt(tB, rightStart, -1), {\n        startTangent: tanVec(tA, rightStart, -1, -1),\n        endTangent: tanVec(tB, rightStart, -1, -1),\n      });\n    }\n    if (useRadialUndercut) pen = pen.lineTo(P(rootR, rightStart));\n\n    // ── Gap arc to next tooth (close() handles the last one) ──\n    if (i < N - 1) {\n      const arcStartA = useRadialUndercut ? rightStart : (rightStart - inv(tMin));\n      const nextLeft = (i + 1) * toothAngle - halfTooth - invAtPitch;\n      const arcEndA = nextLeft + (useRadialUndercut ? 0 : inv(tMin));\n      const arcMidA = (arcStartA + arcEndA) / 2;\n      pen = pen.threePointsArcTo(P(flankBaseR, arcEndA), P(flankBaseR, arcMidA));\n    }\n  }\n\n  const drawing = pen.close();\n  return drawing.sketchOnPlane().extrude(thickness);\n}",
+              "compiledCode": "\"use strict\";\n/**\n * Involute spur gear with curved (spline) flanks. Each flank is split into\n * FLANK_SEGMENTS sub-splines, with the *exact* involute tangent fed to\n * replicad at every junction as a direction vector.\n *\n * Bug history note: replicad's smoothSplineTo treats a NUMBER tangent as\n * an angle in DEGREES (it multiplies by π/180 internally). To keep the\n * math in radians we pass tangents as unit Point2D direction vectors —\n * those bypass the degree conversion entirely.\n */\nfunction run(teeth = 20, pitch = 5, thickness = 5, pressureAngle = 20) {\n    const N = Math.max(3, Math.round(teeth));\n    const m = pitch / Math.PI;\n    const alpha = (pressureAngle * Math.PI) / 180;\n    const pitchR = (N * pitch) / (2 * Math.PI);\n    const addR = pitchR + m;\n    const rootR = Math.max(0.1, pitchR - 1.25 * m);\n    const baseR = pitchR * Math.cos(alpha);\n    const inv = (a) => Math.tan(a) - a;\n    const invAtPitch = inv(alpha);\n    const halfTooth = Math.PI / (2 * N);\n    const toothAngle = (2 * Math.PI) / N;\n    const tMax = Math.acos(Math.min(1, baseR / addR));\n    const useRadialUndercut = rootR < baseR;\n    const tMin = useRadialUndercut ? 0 : Math.acos(Math.min(1, baseR / rootR));\n    const flankBaseR = useRadialUndercut ? rootR : baseR / Math.cos(tMin);\n    const FLANK_SEGMENTS = 3; // sub-splines per flank — bump to 4–5 for tiny tooth counts\n    const P = (r, a) => [r * Math.cos(a), r * Math.sin(a)];\n    const involutePt = (t, originA, orient) => P(baseR / Math.cos(t), originA + orient * inv(t));\n    // Unit tangent VECTOR at parameter t. orient = ±1 (left/right flank);\n    // traversalSign = +1 if we're walking with t increasing, -1 if decreasing.\n    const tanVec = (t, originA, orient, traversalSign) => {\n        const a = originA + orient * (inv(t) + t);\n        return [traversalSign * Math.cos(a), traversalSign * Math.sin(a)];\n    };\n    const samples = [];\n    for (let s = 0; s <= FLANK_SEGMENTS; s++) {\n        samples.push(tMin + (tMax - tMin) * (s / FLANK_SEGMENTS));\n    }\n    let pen = replicad.draw(P(rootR, -halfTooth - invAtPitch));\n    for (let i = 0; i < N; i++) {\n        const c = i * toothAngle;\n        const leftStart = c - halfTooth - invAtPitch;\n        const rightStart = c + halfTooth + invAtPitch;\n        // ── Left flank: tMin → tMax ──\n        if (useRadialUndercut)\n            pen = pen.lineTo(P(baseR, leftStart));\n        for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n            const tA = samples[s - 1], tB = samples[s];\n            pen = pen.smoothSplineTo(involutePt(tB, leftStart, +1), {\n                startTangent: tanVec(tA, leftStart, +1, +1),\n                endTangent: tanVec(tB, leftStart, +1, +1),\n            });\n        }\n        // ── Tip chord ──\n        pen = pen.lineTo(involutePt(tMax, rightStart, -1));\n        // ── Right flank: tMax → tMin (reversed traversal) ──\n        for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n            const tA = samples[FLANK_SEGMENTS - (s - 1)];\n            const tB = samples[FLANK_SEGMENTS - s];\n            pen = pen.smoothSplineTo(involutePt(tB, rightStart, -1), {\n                startTangent: tanVec(tA, rightStart, -1, -1),\n                endTangent: tanVec(tB, rightStart, -1, -1),\n            });\n        }\n        if (useRadialUndercut)\n            pen = pen.lineTo(P(rootR, rightStart));\n        // ── Gap arc to next tooth (close() handles the last one) ──\n        if (i < N - 1) {\n            const arcStartA = useRadialUndercut ? rightStart : (rightStart - inv(tMin));\n            const nextLeft = (i + 1) * toothAngle - halfTooth - invAtPitch;\n            const arcEndA = nextLeft + (useRadialUndercut ? 0 : inv(tMin));\n            const arcMidA = (arcStartA + arcEndA) / 2;\n            pen = pen.threePointsArcTo(P(flankBaseR, arcEndA), P(flankBaseR, arcMidA));\n        }\n    }\n    const drawing = pen.close();\n    return drawing.sketchOnPlane().extrude(thickness);\n}\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "teeth",
+              "ap1ID": "id-34825",
+              "ap2ID": "id-34829"
+            },
+            {
+              "ap2Name": "pitch",
+              "ap1ID": "id-34826",
+              "ap2ID": "id-34829"
+            },
+            {
+              "ap2Name": "thickness",
+              "ap1ID": "id-34827",
+              "ap2ID": "id-34829"
+            },
+            {
+              "ap2Name": "pressureAngle",
+              "ap1ID": "id-34828",
+              "ap2ID": "id-34829"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-34829",
+              "ap2ID": "id-34824"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-07-30T10:23:39.244Z",
+            "privateRepo": false,
+            "repoName": "Involute_Gear",
+            "dateCreated": "2026-04-21T21:23:02Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-709",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Involute_Gear",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739749",
+            "ranking": 2.1,
+            "searchField": "involute_gear barboursmith generates an involute gear given the number of teeth, tooth ptich, thickness and the pressure angle ",
+            "owner": "BarbourSmith",
+            "description": "Generates an involute gear given the number of teeth, tooth ptich, thickness and the pressure angle",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1785431986572
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.31380208333333337,
+          "y": 0.21142857142857144,
+          "uniqueID": "id-34869",
+          "name": "Linear-Pattern",
+          "ioValues": [
+            {
+              "name": "Number",
+              "ioValue": 4
+            },
+            {
+              "name": "Geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "distX",
+              "ioValue": 25,
+              "currentEquation": "25"
+            },
+            {
+              "name": "distY",
+              "ioValue": 0
+            },
+            {
+              "name": "distZ",
+              "ioValue": 0
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-34855",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.27976190476190477,
+              "y": 0.2116991643454039,
+              "uniqueID": "id-34856",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-34857",
+              "name": "Number",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-34858",
+              "name": "Geometry",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-34859",
+              "name": "distX",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.4307692307692308,
+              "uniqueID": "id-34860",
+              "name": "distY",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.5230769230769231,
+              "uniqueID": "id-34861",
+              "name": "distZ",
+              "type": "number"
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.7794759825327511,
+              "y": 0.2787878787878788,
+              "uniqueID": "id-34862",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "Readme text here",
+              "global": true
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3799621928166351,
+              "y": 0.28955223880597014,
+              "uniqueID": "id-34863",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.603515625,
+              "y": 0.21428571428571427,
+              "uniqueID": "id-34864",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "count",
+                  "ioValue": 5
+                },
+                {
+                  "name": "distX",
+                  "ioValue": 20
+                },
+                {
+                  "name": "distY",
+                  "ioValue": 0
+                },
+                {
+                  "name": "distZ",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0           \n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
+              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4012178619756428,
+              "y": 0.6829268292682927,
+              "uniqueID": "id-34865",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "count",
+                  "ioValue": 4
+                },
+                {
+                  "name": "distX",
+                  "ioValue": 25
+                },
+                {
+                  "name": "distY",
+                  "ioValue": 0
+                },
+                {
+                  "name": "distZ",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0\n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
+              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.458984375,
+              "y": 0.4142857142857143,
+              "uniqueID": "id-34866",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 3
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 9
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.5247395833333334,
+              "y": 0.47428571428571425,
+              "uniqueID": "id-34867",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.6790364583333334,
+              "y": 0.21714285714285714,
+              "uniqueID": "id-34868",
+              "interpreterVersion": 1,
+              "code": "// Example Code\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"distX\", type: \"number\", defaultValue: 10 },\n    { inputName: \"distY\", type: \"number\", defaultValue: 0 },\n    { inputName: \"distZ\", type: \"number\", defaultValue: 0 }\n];\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-34856",
+              "ap2ID": "id-34863"
+            },
+            {
+              "ap2Name": "count",
+              "ap1ID": "id-34857",
+              "ap2ID": "id-34865"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-34858",
+              "ap2ID": "id-34865"
+            },
+            {
+              "ap2Name": "distX",
+              "ap1ID": "id-34859",
+              "ap2ID": "id-34865"
+            },
+            {
+              "ap2Name": "distY",
+              "ap1ID": "id-34860",
+              "ap2ID": "id-34865"
+            },
+            {
+              "ap2Name": "distZ",
+              "ap1ID": "id-34861",
+              "ap2ID": "id-34865"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-34863",
+              "ap2ID": "id-34866"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-34863",
+              "ap2ID": "id-34867"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-34865",
+              "ap2ID": "id-34855"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-34866",
+              "ap2ID": "id-34867"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-34867",
+              "ap2ID": "id-34864"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-07-30T10:23:39.244Z",
+            "privateRepo": false,
+            "repoName": "Linear-Pattern",
+            "dateCreated": "2025-02-19T00:40:13Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": 1739925613779,
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/Linear-Pattern",
+            "topics": [
+              "abundance-tool"
+            ],
+            "pullRequests": [],
+            "parentRepo": "BarbourSmith/Linear-Pattern",
+            "forks": 1,
+            "dateModified": "739770",
+            "ranking": 28.7,
+            "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times abundance-tool",
+            "owner": "alzatin",
+            "description": "Returns the input shape formed into an assembly translated n times",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1785432011447
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.2897135416666667,
+          "y": 0.6057142857142858,
+          "uniqueID": "id-34913",
+          "name": "Linear-Pattern",
+          "ioValues": [
+            {
+              "name": "Number",
+              "ioValue": 4
+            },
+            {
+              "name": "Geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "distX",
+              "ioValue": 55
+            },
+            {
+              "name": "distY",
+              "ioValue": 0
+            },
+            {
+              "name": "distZ",
+              "ioValue": 0
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-34914",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.27976190476190477,
+              "y": 0.2116991643454039,
+              "uniqueID": "id-34915",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-34916",
+              "name": "Number",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-34917",
+              "name": "Geometry",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-34918",
+              "name": "distX",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.4307692307692308,
+              "uniqueID": "id-34919",
+              "name": "distY",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.5230769230769231,
+              "uniqueID": "id-34920",
+              "name": "distZ",
+              "type": "number"
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.7794759825327511,
+              "y": 0.2787878787878788,
+              "uniqueID": "id-34921",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "Readme text here",
+              "global": true
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3799621928166351,
+              "y": 0.28955223880597014,
+              "uniqueID": "id-34922",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.603515625,
+              "y": 0.21428571428571427,
+              "uniqueID": "id-34923",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "count",
+                  "ioValue": 5
+                },
+                {
+                  "name": "distX",
+                  "ioValue": 20
+                },
+                {
+                  "name": "distY",
+                  "ioValue": 0
+                },
+                {
+                  "name": "distZ",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0           \n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
+              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4012178619756428,
+              "y": 0.6829268292682927,
+              "uniqueID": "id-34924",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "count",
+                  "ioValue": 4
+                },
+                {
+                  "name": "distX",
+                  "ioValue": 55
+                },
+                {
+                  "name": "distY",
+                  "ioValue": 0
+                },
+                {
+                  "name": "distZ",
+                  "ioValue": 0
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0\n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
+              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.458984375,
+              "y": 0.4142857142857143,
+              "uniqueID": "id-34925",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 3
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 9
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.5247395833333334,
+              "y": 0.47428571428571425,
+              "uniqueID": "id-34926",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.6790364583333334,
+              "y": 0.21714285714285714,
+              "uniqueID": "id-34927",
+              "interpreterVersion": 1,
+              "code": "// Example Code\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"distX\", type: \"number\", defaultValue: 10 },\n    { inputName: \"distY\", type: \"number\", defaultValue: 0 },\n    { inputName: \"distZ\", type: \"number\", defaultValue: 0 }\n];\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-34915",
+              "ap2ID": "id-34922"
+            },
+            {
+              "ap2Name": "count",
+              "ap1ID": "id-34916",
+              "ap2ID": "id-34924"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-34917",
+              "ap2ID": "id-34924"
+            },
+            {
+              "ap2Name": "distX",
+              "ap1ID": "id-34918",
+              "ap2ID": "id-34924"
+            },
+            {
+              "ap2Name": "distY",
+              "ap1ID": "id-34919",
+              "ap2ID": "id-34924"
+            },
+            {
+              "ap2Name": "distZ",
+              "ap1ID": "id-34920",
+              "ap2ID": "id-34924"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-34922",
+              "ap2ID": "id-34925"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-34922",
+              "ap2ID": "id-34926"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-34924",
+              "ap2ID": "id-34914"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-34925",
+              "ap2ID": "id-34926"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-34926",
+              "ap2ID": "id-34923"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-07-30T10:23:39.244Z",
+            "privateRepo": false,
+            "repoName": "Linear-Pattern",
+            "dateCreated": "2025-02-19T00:40:13Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": 1739925613779,
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/Linear-Pattern",
+            "topics": [
+              "abundance-tool"
+            ],
+            "pullRequests": [],
+            "parentRepo": "BarbourSmith/Linear-Pattern",
+            "forks": 1,
+            "dateModified": "739770",
+            "ranking": 28.7,
+            "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times abundance-tool",
+            "owner": "alzatin",
+            "description": "Returns the input shape formed into an assembly translated n times",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1785432011447
+        },
+        {
+          "atomType": "Intersection",
+          "x": 0.58984375,
+          "y": 0.5342857142857143,
+          "uniqueID": "id-36228",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-34971",
+          "ap2ID": "id-36228"
+        },
+        {
+          "ap2Name": "Geometry",
+          "ap1ID": "id-34830",
+          "ap2ID": "id-34869"
+        },
+        {
+          "ap2Name": "Geometry",
+          "ap1ID": "id-34830",
+          "ap2ID": "id-34913"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-34869",
+          "ap2ID": "id-34818"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-34869",
+          "ap2ID": "id-36228"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-34913",
+          "ap2ID": "id-34971"
         }
       ],
       "fileTypeVersion": 1
@@ -9660,883 +10540,6 @@
           "ap2Name": "assembly",
           "ap1ID": "id-27681",
           "ap2ID": "id-27788"
-        }
-      ],
-      "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.37369791666666663,
-      "y": 0.24,
-      "uniqueID": "id-34816",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-34818",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "GitHubMolecule",
-          "x": 0.13932291666666666,
-          "y": 0.44571428571428573,
-          "uniqueID": "id-34830",
-          "name": "Involute_Gear",
-          "ioValues": [
-            {
-              "name": "Number_of_Teeth",
-              "ioValue": 20
-            },
-            {
-              "name": "Pitch",
-              "ioValue": 5,
-              "currentEquation": "5"
-            },
-            {
-              "name": "Thickness",
-              "ioValue": 5
-            },
-            {
-              "name": "Pressure_Angle",
-              "ioValue": 20
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-34824",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
-              "uniqueID": "id-34825",
-              "name": "Number_of_Teeth"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
-              "uniqueID": "id-34826",
-              "name": "Pitch"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
-              "uniqueID": "id-34827",
-              "name": "Thickness"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.4307692307692308,
-              "uniqueID": "id-34828",
-              "name": "Pressure_Angle"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.4431216931216931,
-              "y": 0.34818941504178275,
-              "uniqueID": "id-34829",
-              "ioValues": [
-                {
-                  "name": "teeth",
-                  "ioValue": 20
-                },
-                {
-                  "name": "pitch",
-                  "ioValue": 5
-                },
-                {
-                  "name": "thickness",
-                  "ioValue": 5
-                },
-                {
-                  "name": "pressureAngle",
-                  "ioValue": 20
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "/**\n * Involute spur gear with curved (spline) flanks. Each flank is split into\n * FLANK_SEGMENTS sub-splines, with the *exact* involute tangent fed to\n * replicad at every junction as a direction vector.\n *\n * Bug history note: replicad's smoothSplineTo treats a NUMBER tangent as\n * an angle in DEGREES (it multiplies by π/180 internally). To keep the\n * math in radians we pass tangents as unit Point2D direction vectors —\n * those bypass the degree conversion entirely.\n */\nfunction run(\n  teeth: number = 20,\n  pitch: number = 5,\n  thickness: number = 5,\n  pressureAngle: number = 20,\n) {\n  const N = Math.max(3, Math.round(teeth));\n  const m = pitch / Math.PI;\n  const alpha = (pressureAngle * Math.PI) / 180;\n  const pitchR = (N * pitch) / (2 * Math.PI);\n  const addR = pitchR + m;\n  const rootR = Math.max(0.1, pitchR - 1.25 * m);\n  const baseR = pitchR * Math.cos(alpha);\n\n  const inv = (a: number) => Math.tan(a) - a;\n  const invAtPitch = inv(alpha);\n  const halfTooth = Math.PI / (2 * N);\n  const toothAngle = (2 * Math.PI) / N;\n\n  const tMax = Math.acos(Math.min(1, baseR / addR));\n  const useRadialUndercut = rootR < baseR;\n  const tMin = useRadialUndercut ? 0 : Math.acos(Math.min(1, baseR / rootR));\n  const flankBaseR = useRadialUndercut ? rootR : baseR / Math.cos(tMin);\n\n  const FLANK_SEGMENTS = 3;   // sub-splines per flank — bump to 4–5 for tiny tooth counts\n\n  const P = (r: number, a: number): [number, number] => [r * Math.cos(a), r * Math.sin(a)];\n  const involutePt = (t: number, originA: number, orient: number): [number, number] =>\n    P(baseR / Math.cos(t), originA + orient * inv(t));\n  // Unit tangent VECTOR at parameter t. orient = ±1 (left/right flank);\n  // traversalSign = +1 if we're walking with t increasing, -1 if decreasing.\n  const tanVec = (t: number, originA: number, orient: number, traversalSign: number): [number, number] => {\n    const a = originA + orient * (inv(t) + t);\n    return [traversalSign * Math.cos(a), traversalSign * Math.sin(a)];\n  };\n\n  const samples: number[] = [];\n  for (let s = 0; s <= FLANK_SEGMENTS; s++) {\n    samples.push(tMin + (tMax - tMin) * (s / FLANK_SEGMENTS));\n  }\n\n  let pen = replicad.draw(P(rootR, -halfTooth - invAtPitch));\n\n  for (let i = 0; i < N; i++) {\n    const c = i * toothAngle;\n    const leftStart = c - halfTooth - invAtPitch;\n    const rightStart = c + halfTooth + invAtPitch;\n\n    // ── Left flank: tMin → tMax ──\n    if (useRadialUndercut) pen = pen.lineTo(P(baseR, leftStart));\n    for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n      const tA = samples[s - 1], tB = samples[s];\n      pen = pen.smoothSplineTo(involutePt(tB, leftStart, +1), {\n        startTangent: tanVec(tA, leftStart, +1, +1),\n        endTangent: tanVec(tB, leftStart, +1, +1),\n      });\n    }\n\n    // ── Tip chord ──\n    pen = pen.lineTo(involutePt(tMax, rightStart, -1));\n\n    // ── Right flank: tMax → tMin (reversed traversal) ──\n    for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n      const tA = samples[FLANK_SEGMENTS - (s - 1)];\n      const tB = samples[FLANK_SEGMENTS - s];\n      pen = pen.smoothSplineTo(involutePt(tB, rightStart, -1), {\n        startTangent: tanVec(tA, rightStart, -1, -1),\n        endTangent: tanVec(tB, rightStart, -1, -1),\n      });\n    }\n    if (useRadialUndercut) pen = pen.lineTo(P(rootR, rightStart));\n\n    // ── Gap arc to next tooth (close() handles the last one) ──\n    if (i < N - 1) {\n      const arcStartA = useRadialUndercut ? rightStart : (rightStart - inv(tMin));\n      const nextLeft = (i + 1) * toothAngle - halfTooth - invAtPitch;\n      const arcEndA = nextLeft + (useRadialUndercut ? 0 : inv(tMin));\n      const arcMidA = (arcStartA + arcEndA) / 2;\n      pen = pen.threePointsArcTo(P(flankBaseR, arcEndA), P(flankBaseR, arcMidA));\n    }\n  }\n\n  const drawing = pen.close();\n  return drawing.sketchOnPlane().extrude(thickness);\n}",
-              "compiledCode": "\"use strict\";\n/**\n * Involute spur gear with curved (spline) flanks. Each flank is split into\n * FLANK_SEGMENTS sub-splines, with the *exact* involute tangent fed to\n * replicad at every junction as a direction vector.\n *\n * Bug history note: replicad's smoothSplineTo treats a NUMBER tangent as\n * an angle in DEGREES (it multiplies by π/180 internally). To keep the\n * math in radians we pass tangents as unit Point2D direction vectors —\n * those bypass the degree conversion entirely.\n */\nfunction run(teeth = 20, pitch = 5, thickness = 5, pressureAngle = 20) {\n    const N = Math.max(3, Math.round(teeth));\n    const m = pitch / Math.PI;\n    const alpha = (pressureAngle * Math.PI) / 180;\n    const pitchR = (N * pitch) / (2 * Math.PI);\n    const addR = pitchR + m;\n    const rootR = Math.max(0.1, pitchR - 1.25 * m);\n    const baseR = pitchR * Math.cos(alpha);\n    const inv = (a) => Math.tan(a) - a;\n    const invAtPitch = inv(alpha);\n    const halfTooth = Math.PI / (2 * N);\n    const toothAngle = (2 * Math.PI) / N;\n    const tMax = Math.acos(Math.min(1, baseR / addR));\n    const useRadialUndercut = rootR < baseR;\n    const tMin = useRadialUndercut ? 0 : Math.acos(Math.min(1, baseR / rootR));\n    const flankBaseR = useRadialUndercut ? rootR : baseR / Math.cos(tMin);\n    const FLANK_SEGMENTS = 3; // sub-splines per flank — bump to 4–5 for tiny tooth counts\n    const P = (r, a) => [r * Math.cos(a), r * Math.sin(a)];\n    const involutePt = (t, originA, orient) => P(baseR / Math.cos(t), originA + orient * inv(t));\n    // Unit tangent VECTOR at parameter t. orient = ±1 (left/right flank);\n    // traversalSign = +1 if we're walking with t increasing, -1 if decreasing.\n    const tanVec = (t, originA, orient, traversalSign) => {\n        const a = originA + orient * (inv(t) + t);\n        return [traversalSign * Math.cos(a), traversalSign * Math.sin(a)];\n    };\n    const samples = [];\n    for (let s = 0; s <= FLANK_SEGMENTS; s++) {\n        samples.push(tMin + (tMax - tMin) * (s / FLANK_SEGMENTS));\n    }\n    let pen = replicad.draw(P(rootR, -halfTooth - invAtPitch));\n    for (let i = 0; i < N; i++) {\n        const c = i * toothAngle;\n        const leftStart = c - halfTooth - invAtPitch;\n        const rightStart = c + halfTooth + invAtPitch;\n        // ── Left flank: tMin → tMax ──\n        if (useRadialUndercut)\n            pen = pen.lineTo(P(baseR, leftStart));\n        for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n            const tA = samples[s - 1], tB = samples[s];\n            pen = pen.smoothSplineTo(involutePt(tB, leftStart, +1), {\n                startTangent: tanVec(tA, leftStart, +1, +1),\n                endTangent: tanVec(tB, leftStart, +1, +1),\n            });\n        }\n        // ── Tip chord ──\n        pen = pen.lineTo(involutePt(tMax, rightStart, -1));\n        // ── Right flank: tMax → tMin (reversed traversal) ──\n        for (let s = 1; s <= FLANK_SEGMENTS; s++) {\n            const tA = samples[FLANK_SEGMENTS - (s - 1)];\n            const tB = samples[FLANK_SEGMENTS - s];\n            pen = pen.smoothSplineTo(involutePt(tB, rightStart, -1), {\n                startTangent: tanVec(tA, rightStart, -1, -1),\n                endTangent: tanVec(tB, rightStart, -1, -1),\n            });\n        }\n        if (useRadialUndercut)\n            pen = pen.lineTo(P(rootR, rightStart));\n        // ── Gap arc to next tooth (close() handles the last one) ──\n        if (i < N - 1) {\n            const arcStartA = useRadialUndercut ? rightStart : (rightStart - inv(tMin));\n            const nextLeft = (i + 1) * toothAngle - halfTooth - invAtPitch;\n            const arcEndA = nextLeft + (useRadialUndercut ? 0 : inv(tMin));\n            const arcMidA = (arcStartA + arcEndA) / 2;\n            pen = pen.threePointsArcTo(P(flankBaseR, arcEndA), P(flankBaseR, arcMidA));\n        }\n    }\n    const drawing = pen.close();\n    return drawing.sketchOnPlane().extrude(thickness);\n}\n"
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "teeth",
-              "ap1ID": "id-34825",
-              "ap2ID": "id-34829"
-            },
-            {
-              "ap2Name": "pitch",
-              "ap1ID": "id-34826",
-              "ap2ID": "id-34829"
-            },
-            {
-              "ap2Name": "thickness",
-              "ap1ID": "id-34827",
-              "ap2ID": "id-34829"
-            },
-            {
-              "ap2Name": "pressureAngle",
-              "ap1ID": "id-34828",
-              "ap2ID": "id-34829"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-34829",
-              "ap2ID": "id-34824"
-            }
-          ],
-          "parentRepo": {
-            "lastFoundGit": "2026-07-30T10:23:39.244Z",
-            "privateRepo": false,
-            "repoName": "Involute_Gear",
-            "dateCreated": "2026-04-21T21:23:02Z",
-            "likes": 0,
-            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/README.md?sanitize=true",
-            "yyyy": 2026,
-            "topMoleculeID": "id-709",
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/BarbourSmith/Involute_Gear",
-            "topics": [],
-            "pullRequests": [],
-            "parentRepo": null,
-            "forks": 0,
-            "dateModified": "739749",
-            "ranking": 2.1,
-            "searchField": "involute_gear barboursmith generates an involute gear given the number of teeth, tooth ptich, thickness and the pressure angle ",
-            "owner": "BarbourSmith",
-            "description": "Generates an involute gear given the number of teeth, tooth ptich, thickness and the pressure angle",
-            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/project.abundance?sanitize=true",
-            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Involute_Gear/master/project.svg?sanitize=true",
-            "isLocal": false
-          },
-          "unitsKey": "MM",
-          "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1785431986572
-        },
-        {
-          "atomType": "GitHubMolecule",
-          "x": 0.31380208333333337,
-          "y": 0.21142857142857144,
-          "uniqueID": "id-34869",
-          "name": "Linear-Pattern",
-          "ioValues": [
-            {
-              "name": "Number",
-              "ioValue": 4,
-              "currentEquation": "4"
-            },
-            {
-              "name": "Geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "distX",
-              "ioValue": 39
-            },
-            {
-              "name": "distY",
-              "ioValue": 0,
-              "currentEquation": "0"
-            },
-            {
-              "name": "distZ",
-              "ioValue": 0
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-34855",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Rectangle",
-              "x": 0.27976190476190477,
-              "y": 0.2116991643454039,
-              "uniqueID": "id-34856",
-              "ioValues": [
-                {
-                  "name": "x length",
-                  "ioValue": 10
-                },
-                {
-                  "name": "y length",
-                  "ioValue": 10
-                }
-              ]
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
-              "uniqueID": "id-34857",
-              "name": "Number",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
-              "uniqueID": "id-34858",
-              "name": "Geometry",
-              "type": "geometry"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
-              "uniqueID": "id-34859",
-              "name": "distX",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.4307692307692308,
-              "uniqueID": "id-34860",
-              "name": "distY",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.5230769230769231,
-              "uniqueID": "id-34861",
-              "name": "distZ",
-              "type": "number"
-            },
-            {
-              "atomType": "Readme",
-              "x": 0.7794759825327511,
-              "y": 0.2787878787878788,
-              "uniqueID": "id-34862",
-              "name": "README",
-              "ioValues": [
-                {
-                  "name": "value",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "readMeText": "Readme text here",
-              "global": true
-            },
-            {
-              "atomType": "Extrude",
-              "x": 0.3799621928166351,
-              "y": 0.28955223880597014,
-              "uniqueID": "id-34863",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "height",
-                  "ioValue": 10
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.603515625,
-              "y": 0.21428571428571427,
-              "uniqueID": "id-34864",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "count",
-                  "ioValue": 5
-                },
-                {
-                  "name": "distX",
-                  "ioValue": 20
-                },
-                {
-                  "name": "distY",
-                  "ioValue": 0
-                },
-                {
-                  "name": "distZ",
-                  "ioValue": 0
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0           \n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
-              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.4012178619756428,
-              "y": 0.6829268292682927,
-              "uniqueID": "id-34865",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "count",
-                  "ioValue": 4
-                },
-                {
-                  "name": "distX",
-                  "ioValue": 39
-                },
-                {
-                  "name": "distY",
-                  "ioValue": 0
-                },
-                {
-                  "name": "distZ",
-                  "ioValue": 0
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0\n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
-              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
-            },
-            {
-              "atomType": "Move",
-              "x": 0.458984375,
-              "y": 0.4142857142857143,
-              "uniqueID": "id-34866",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 3
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 9
-                }
-              ]
-            },
-            {
-              "atomType": "Assembly",
-              "x": 0.5247395833333334,
-              "y": 0.47428571428571425,
-              "uniqueID": "id-34867",
-              "ioValues": [
-                {
-                  "name": "Shape 1",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 2",
-                  "ioValue": null
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.6790364583333334,
-              "y": 0.21714285714285714,
-              "uniqueID": "id-34868",
-              "interpreterVersion": 1,
-              "code": "// Example Code\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"distX\", type: \"number\", defaultValue: 10 },\n    { inputName: \"distY\", type: \"number\", defaultValue: 0 },\n    { inputName: \"distZ\", type: \"number\", defaultValue: 0 }\n];\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-34856",
-              "ap2ID": "id-34863"
-            },
-            {
-              "ap2Name": "count",
-              "ap1ID": "id-34857",
-              "ap2ID": "id-34865"
-            },
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-34858",
-              "ap2ID": "id-34865"
-            },
-            {
-              "ap2Name": "distX",
-              "ap1ID": "id-34859",
-              "ap2ID": "id-34865"
-            },
-            {
-              "ap2Name": "distY",
-              "ap1ID": "id-34860",
-              "ap2ID": "id-34865"
-            },
-            {
-              "ap2Name": "distZ",
-              "ap1ID": "id-34861",
-              "ap2ID": "id-34865"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-34863",
-              "ap2ID": "id-34866"
-            },
-            {
-              "ap2Name": "Shape 2",
-              "ap1ID": "id-34863",
-              "ap2ID": "id-34867"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-34865",
-              "ap2ID": "id-34855"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-34866",
-              "ap2ID": "id-34867"
-            },
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-34867",
-              "ap2ID": "id-34864"
-            }
-          ],
-          "parentRepo": {
-            "lastFoundGit": "2026-07-30T10:23:39.244Z",
-            "privateRepo": false,
-            "repoName": "Linear-Pattern",
-            "dateCreated": "2025-02-19T00:40:13Z",
-            "likes": 0,
-            "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
-            "yyyy": 2025,
-            "topMoleculeID": 1739925613779,
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/alzatin/Linear-Pattern",
-            "topics": [
-              "abundance-tool"
-            ],
-            "pullRequests": [],
-            "parentRepo": "BarbourSmith/Linear-Pattern",
-            "forks": 1,
-            "dateModified": "739770",
-            "ranking": 28.7,
-            "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times abundance-tool",
-            "owner": "alzatin",
-            "description": "Returns the input shape formed into an assembly translated n times",
-            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
-            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
-            "isLocal": false
-          },
-          "unitsKey": "MM",
-          "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1785432011447
-        },
-        {
-          "atomType": "GitHubMolecule",
-          "x": 0.2897135416666667,
-          "y": 0.6057142857142858,
-          "uniqueID": "id-34913",
-          "name": "Linear-Pattern",
-          "ioValues": [
-            {
-              "name": "Number",
-              "ioValue": 4
-            },
-            {
-              "name": "Geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "distX",
-              "ioValue": 55,
-              "currentEquation": "55"
-            },
-            {
-              "name": "distY",
-              "ioValue": 0
-            },
-            {
-              "name": "distZ",
-              "ioValue": 0
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-34914",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Rectangle",
-              "x": 0.27976190476190477,
-              "y": 0.2116991643454039,
-              "uniqueID": "id-34915",
-              "ioValues": [
-                {
-                  "name": "x length",
-                  "ioValue": 10
-                },
-                {
-                  "name": "y length",
-                  "ioValue": 10
-                }
-              ]
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
-              "uniqueID": "id-34916",
-              "name": "Number",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
-              "uniqueID": "id-34917",
-              "name": "Geometry",
-              "type": "geometry"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
-              "uniqueID": "id-34918",
-              "name": "distX",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.4307692307692308,
-              "uniqueID": "id-34919",
-              "name": "distY",
-              "type": "number"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.5230769230769231,
-              "uniqueID": "id-34920",
-              "name": "distZ",
-              "type": "number"
-            },
-            {
-              "atomType": "Readme",
-              "x": 0.7794759825327511,
-              "y": 0.2787878787878788,
-              "uniqueID": "id-34921",
-              "name": "README",
-              "ioValues": [
-                {
-                  "name": "value",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "readMeText": "Readme text here",
-              "global": true
-            },
-            {
-              "atomType": "Extrude",
-              "x": 0.3799621928166351,
-              "y": 0.28955223880597014,
-              "uniqueID": "id-34922",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "height",
-                  "ioValue": 10
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.603515625,
-              "y": 0.21428571428571427,
-              "uniqueID": "id-34923",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "count",
-                  "ioValue": 5
-                },
-                {
-                  "name": "distX",
-                  "ioValue": 20
-                },
-                {
-                  "name": "distY",
-                  "ioValue": 0
-                },
-                {
-                  "name": "distZ",
-                  "ioValue": 0
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0           \n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
-              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
-            },
-            {
-              "atomType": "Code",
-              "x": 0.4012178619756428,
-              "y": 0.6829268292682927,
-              "uniqueID": "id-34924",
-              "ioValues": [
-                {
-                  "name": "shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "count",
-                  "ioValue": 4
-                },
-                {
-                  "name": "distX",
-                  "ioValue": 55
-                },
-                {
-                  "name": "distY",
-                  "ioValue": 0
-                },
-                {
-                  "name": "distZ",
-                  "ioValue": 0
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  shape: Assembly,\n  count: number = 5,\n  distX: number = 10,\n  distY: number = 0,\n  distZ: number = 0\n) {\n  let shapesArray = [];\n  for (let i = 0; i < count; i++) {\n    const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n      if (leaf.is2D()) {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i)\n        leaf.plane = leaf.plane.translateZ(distZ * i)\n      } else {\n        leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i)\n      }\n      return leaf;\n    })\n    shapesArray.push(offsetAssembly)\n  }\n  return shapesArray;\n}\n",
-              "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(shape, count = 5, distX = 10, distY = 0, distZ = 0) {\n    let shapesArray = [];\n    for (let i = 0; i < count; i++) {\n        const offsetAssembly = new Assembly(shape).onLeafs((leaf) => {\n            if (leaf.is2D()) {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i);\n                leaf.plane = leaf.plane.translateZ(distZ * i);\n            }\n            else {\n                leaf.geometry = leaf.geometry.clone().translate(distX * i, distY * i, distZ * i);\n            }\n            return leaf;\n        });\n        shapesArray.push(offsetAssembly);\n    }\n    return shapesArray;\n}\n"
-            },
-            {
-              "atomType": "Move",
-              "x": 0.458984375,
-              "y": 0.4142857142857143,
-              "uniqueID": "id-34925",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 3
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 9
-                }
-              ]
-            },
-            {
-              "atomType": "Assembly",
-              "x": 0.5247395833333334,
-              "y": 0.47428571428571425,
-              "uniqueID": "id-34926",
-              "ioValues": [
-                {
-                  "name": "Shape 1",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 2",
-                  "ioValue": null
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.6790364583333334,
-              "y": 0.21714285714285714,
-              "uniqueID": "id-34927",
-              "interpreterVersion": 1,
-              "code": "// Example Code\nconst Inputs = [\n  { inputName: \"Shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"Number\", type: \"number\", defaultValue: 5 },\n  { inputName: \"distX\", type: \"number\", defaultValue: 10 },\n    { inputName: \"distY\", type: \"number\", defaultValue: 0 },\n    { inputName: \"distZ\", type: \"number\", defaultValue: 0 }\n];\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-34915",
-              "ap2ID": "id-34922"
-            },
-            {
-              "ap2Name": "count",
-              "ap1ID": "id-34916",
-              "ap2ID": "id-34924"
-            },
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-34917",
-              "ap2ID": "id-34924"
-            },
-            {
-              "ap2Name": "distX",
-              "ap1ID": "id-34918",
-              "ap2ID": "id-34924"
-            },
-            {
-              "ap2Name": "distY",
-              "ap1ID": "id-34919",
-              "ap2ID": "id-34924"
-            },
-            {
-              "ap2Name": "distZ",
-              "ap1ID": "id-34920",
-              "ap2ID": "id-34924"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-34922",
-              "ap2ID": "id-34925"
-            },
-            {
-              "ap2Name": "Shape 2",
-              "ap1ID": "id-34922",
-              "ap2ID": "id-34926"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-34924",
-              "ap2ID": "id-34914"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-34925",
-              "ap2ID": "id-34926"
-            },
-            {
-              "ap2Name": "shape",
-              "ap1ID": "id-34926",
-              "ap2ID": "id-34923"
-            }
-          ],
-          "parentRepo": {
-            "lastFoundGit": "2026-07-30T10:23:39.244Z",
-            "privateRepo": false,
-            "repoName": "Linear-Pattern",
-            "dateCreated": "2025-02-19T00:40:13Z",
-            "likes": 0,
-            "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
-            "yyyy": 2025,
-            "topMoleculeID": 1739925613779,
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/alzatin/Linear-Pattern",
-            "topics": [
-              "abundance-tool"
-            ],
-            "pullRequests": [],
-            "parentRepo": "BarbourSmith/Linear-Pattern",
-            "forks": 1,
-            "dateModified": "739770",
-            "ranking": 28.7,
-            "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times abundance-tool",
-            "owner": "alzatin",
-            "description": "Returns the input shape formed into an assembly translated n times",
-            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
-            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
-            "isLocal": false
-          },
-          "unitsKey": "MM",
-          "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1785432011447
-        },
-        {
-          "atomType": "Move",
-          "x": 0.3990885416666667,
-          "y": 0.6228571428571429,
-          "uniqueID": "id-34971",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0,
-              "currentEquation": "0"
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "Geometry",
-          "ap1ID": "id-34830",
-          "ap2ID": "id-34869"
-        },
-        {
-          "ap2Name": "Geometry",
-          "ap1ID": "id-34830",
-          "ap2ID": "id-34913"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-34869",
-          "ap2ID": "id-34818"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-34913",
-          "ap2ID": "id-34971"
         }
       ],
       "fileTypeVersion": 1
