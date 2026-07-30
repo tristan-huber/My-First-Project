@@ -3711,8 +3711,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 4,
-              "currentEquation": "4"
+              "ioValue": 4.5
             },
             {
               "name": "yDist",
@@ -4528,30 +4527,9 @@
           "unitsKey": "MM",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1785432011447
-        },
-        {
-          "atomType": "Intersection",
-          "x": 0.58984375,
-          "y": 0.5342857142857143,
-          "uniqueID": "id-36228",
-          "ioValues": [
-            {
-              "name": "geometry1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "geometry2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
         }
       ],
       "allConnectors": [
-        {
-          "ap2Name": "geometry1",
-          "ap1ID": "id-34971",
-          "ap2ID": "id-36228"
-        },
         {
           "ap2Name": "Geometry",
           "ap1ID": "id-34830",
@@ -4566,11 +4544,6 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-34869",
           "ap2ID": "id-34818"
-        },
-        {
-          "ap2Name": "geometry2",
-          "ap1ID": "id-34869",
-          "ap2ID": "id-36228"
         },
         {
           "ap2Name": "geometry",
