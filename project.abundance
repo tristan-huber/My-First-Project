@@ -2120,8 +2120,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 50,
-              "currentEquation": "50"
+              "ioValue": 50
             }
           ]
         },
@@ -2137,8 +2136,7 @@
             },
             {
               "name": "height",
-              "ioValue": 100,
-              "currentEquation": "100"
+              "ioValue": 100
             }
           ]
         },
@@ -2158,20 +2156,18 @@
             },
             {
               "name": "y-axis degrees",
-              "ioValue": 90,
-              "currentEquation": "90"
+              "ioValue": 90
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             }
           ]
         },
         {
           "atomType": "Rotate",
-          "x": 0.6341145833333333,
-          "y": 0.8028571428571428,
+          "x": 0.45572916666666663,
+          "y": 0.822857142857143,
           "uniqueID": "id-36320",
           "ioValues": [
             {
@@ -2180,17 +2176,147 @@
             },
             {
               "name": "x-axis degrees",
-              "ioValue": 90,
-              "currentEquation": "90"
+              "ioValue": 90
             },
             {
               "name": "y-axis degrees",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "z-axis degrees",
               "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.16796875,
+          "y": 0.3057142857142857,
+          "uniqueID": "id-36339",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.2825520833333333,
+          "y": 0.27714285714285714,
+          "uniqueID": "id-36342",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 10
+            },
+            {
+              "name": "yDist",
+              "ioValue": 16,
+              "currentEquation": "16"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "ShrinkWrap",
+          "x": 0.35286458333333337,
+          "y": 0.34285714285714286,
+          "uniqueID": "id-36348",
+          "name": "Shrink Wrap",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 1",
+              "ioValue": {
+                "geometry": "move-circle-5-10-16-0",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": {
+                "geometry": "circle-5",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.40755208333333337,
+          "y": 0.8457142857142858,
+          "uniqueID": "id-36387",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 1
             }
           ]
         },
@@ -2291,239 +2417,10 @@
           "lastReloadedFromGithubAt": 1785530086653
         },
         {
-          "atomType": "Circle",
-          "x": 0.16796875,
-          "y": 0.3057142857142857,
-          "uniqueID": "id-36339",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 10
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "x": 0.2825520833333333,
-          "y": 0.27714285714285714,
-          "uniqueID": "id-36342",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 10,
-              "currentEquation": "10"
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
-          "atomType": "ShrinkWrap",
-          "x": 0.35286458333333337,
-          "y": 0.34285714285714286,
-          "uniqueID": "id-36348",
-          "name": "Shrink Wrap",
-          "ioValues": [
-            {
-              "name": "Shape 1",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape 2",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape 3",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Shape 1",
-              "ioValue": {
-                "geometry": "move-circle-5-10-0-0",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
-            },
-            {
-              "name": "Shape 2",
-              "ioValue": {
-                "geometry": "circle-5",
-                "dimension": "2D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
-            },
-            {
-              "name": "Shape 3",
-              "ioValue": null
-            }
-          ]
-        },
-        {
-          "atomType": "GitHubMolecule",
-          "x": 0.5553385416666666,
-          "y": 0.5,
-          "uniqueID": "id-36375",
-          "name": "extrudeFaceDirected",
-          "ioValues": [
-            {
-              "name": "face",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "extrusionVec",
-              "ioValue": 10
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-36371",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.45166015625,
-              "y": 0.4833333333333333,
-              "uniqueID": "id-36372",
-              "ioValues": [
-                {
-                  "name": "faces",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "direction",
-                  "ioValue": 10
-                }
-              ],
-              "interpreterVersion": 1,
-              "code": "function run(faces: Assembly, direction: number[]) {\n  return faces.onLeafs((leaf) => {\n    leaf.geometry = replicad.basicFaceExtrusion(leaf.geometry, new replicad.Vector(direction))\n    return leaf;\n  })\n}",
-              "compiledCode": "\"use strict\";\nfunction run(faces, direction) {\n    return faces.onLeafs((leaf) => {\n        leaf.geometry = replicad.basicFaceExtrusion(leaf.geometry, new replicad.Vector(direction));\n        return leaf;\n    });\n}\n"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
-              "uniqueID": "id-36373",
-              "name": "face",
-              "type": "geometry"
-            },
-            {
-              "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
-              "uniqueID": "id-36374",
-              "name": "extrusionVec",
-              "type": "point3d",
-              "pointValue": null
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-36372",
-              "ap2ID": "id-36371"
-            },
-            {
-              "ap2Name": "faces",
-              "ap1ID": "id-36373",
-              "ap2ID": "id-36372"
-            },
-            {
-              "ap2Name": "direction",
-              "ap1ID": "id-36374",
-              "ap2ID": "id-36372"
-            }
-          ],
-          "parentRepo": {
-            "lastFoundGit": "2026-07-31T18:27:35.376Z",
-            "privateRepo": false,
-            "repoName": "extrudeFaceDirected",
-            "dateCreated": "2026-07-29T22:22:15Z",
-            "readMe": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/README.md?sanitize=true",
-            "yyyy": 2026,
-            "topMoleculeID": "id-121",
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/tristan-huber/extrudeFaceDirected",
-            "topics": [
-              "abundance-tool"
-            ],
-            "pullRequests": [],
-            "parentRepo": null,
-            "forks": 0,
-            "dateModified": "739826",
-            "ranking": 0,
-            "searchField": "extrudefacedirected tristan-huber extrude an assembly of faces in a given direction. same as feeding an assembly of faces to extrude except that the direction of extrusion is specified explicitly. abundance-tool",
-            "owner": "tristan-huber",
-            "description": "Extrude an assembly of faces in a given direction. Same as feeding an assembly of faces to Extrude except that the direction of extrusion is specified explicitly.",
-            "contentURL": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/project.abundance?sanitize=true",
-            "svgURL": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/project.svg?sanitize=true",
-            "isLocal": false
-          },
-          "unitsKey": "Unitless",
-          "fileTypeVersion": 1,
-          "lastReloadedFromGithubAt": 1785530211685
-        },
-        {
           "atomType": "Extrude",
-          "x": 0.40755208333333337,
-          "y": 0.8457142857142858,
-          "uniqueID": "id-36387",
+          "x": 0.4772135416666667,
+          "y": 0.43714285714285717,
+          "uniqueID": "id-37280",
           "ioValues": [
             {
               "name": "geometry",
@@ -2531,8 +2428,73 @@
             },
             {
               "name": "height",
+              "ioValue": 40,
+              "currentEquation": "40"
+            }
+          ]
+        },
+        {
+          "atomType": "Intersection",
+          "x": 0.5390625,
+          "y": 0.6142857142857143,
+          "uniqueID": "id-37284",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6106770833333334,
+          "y": 0.3,
+          "uniqueID": "id-37288",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
               "ioValue": 1,
               "currentEquation": "1"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.65625,
+          "y": 0.5457142857142857,
+          "uniqueID": "id-37294",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 1
             }
           ]
         }
@@ -2554,9 +2516,9 @@
           "ap2ID": "id-36330"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-36330",
-          "ap2ID": "id-36387"
+          "ap2Name": "geometry2",
+          "ap1ID": "id-36320",
+          "ap2ID": "id-37284"
         },
         {
           "ap2Name": "geometry",
@@ -2575,8 +2537,33 @@
         },
         {
           "ap2Name": "geometry",
+          "ap1ID": "id-36348",
+          "ap2ID": "id-37280"
+        },
+        {
+          "ap2Name": "geometry",
           "ap1ID": "id-36387",
           "ap2ID": "id-36320"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-36330",
+          "ap2ID": "id-36387"
+        },
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-37280",
+          "ap2ID": "id-37284"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-37284",
+          "ap2ID": "id-37288"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-37288",
+          "ap2ID": "id-37294"
         }
       ],
       "fileTypeVersion": 1
