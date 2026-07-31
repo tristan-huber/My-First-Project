@@ -2166,8 +2166,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.45572916666666663,
-          "y": 0.822857142857143,
+          "x": 0.6341145833333333,
+          "y": 0.8028571428571428,
           "uniqueID": "id-36320",
           "ioValues": [
             {
@@ -2221,7 +2221,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             }
           ]
         },
@@ -2418,8 +2419,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.4772135416666667,
-          "y": 0.43714285714285717,
+          "x": 0.5,
+          "y": 0.5,
           "uniqueID": "id-37280",
           "ioValues": [
             {
@@ -2435,8 +2436,8 @@
         },
         {
           "atomType": "Intersection",
-          "x": 0.5390625,
-          "y": 0.6142857142857143,
+          "x": 0.6438802083333333,
+          "y": 0.46,
           "uniqueID": "id-37284",
           "ioValues": [
             {
@@ -2446,55 +2447,6 @@
             {
               "name": "geometry2",
               "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "x": 0.6106770833333334,
-          "y": 0.3,
-          "uniqueID": "id-37288",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 1,
-              "currentEquation": "1"
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "x": 0.65625,
-          "y": 0.5457142857142857,
-          "uniqueID": "id-37294",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 1
             }
           ]
         }
@@ -2554,16 +2506,6 @@
           "ap2Name": "geometry1",
           "ap1ID": "id-37280",
           "ap2ID": "id-37284"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-37284",
-          "ap2ID": "id-37288"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-37288",
-          "ap2ID": "id-37294"
         }
       ],
       "fileTypeVersion": 1
