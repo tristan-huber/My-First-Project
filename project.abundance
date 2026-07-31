@@ -2511,6 +2511,10 @@
             {
               "name": "Shape 2",
               "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
             }
           ]
         }
@@ -2589,6 +2593,11 @@
         {
           "ap2Name": "Shape 1",
           "ap1ID": "id-37288",
+          "ap2ID": "id-37300"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-37294",
           "ap2ID": "id-37300"
         }
       ],
