@@ -82,8 +82,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.4309895833333333,
-      "y": 0.8857142857142857,
+      "x": 0.21940104166666666,
+      "y": 0.9400000000000001,
       "uniqueID": "id-29015",
       "ioValues": [
         {
@@ -98,8 +98,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5481770833333333,
-      "y": 0.8771428571428571,
+      "x": 0.3307291666666667,
+      "y": 0.937142857142857,
       "uniqueID": "id-29019",
       "ioValues": [
         {
@@ -7635,6 +7635,255 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3990885416666667,
+      "y": 0.8114285714285715,
+      "uniqueID": "id-39161",
+      "name": "ExtractFaces",
+      "ioValues": [
+        {
+          "name": "Assembly",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-39158",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-39159",
+          "name": "Assembly",
+          "type": "faceselect",
+          "selectedFaceData": {
+            "0": [
+              4
+            ]
+          }
+        },
+        {
+          "atomType": "Code",
+          "x": 0.2565104166666667,
+          "y": 0.7599999999999999,
+          "uniqueID": "id-39160",
+          "ioValues": [
+            {
+              "name": "input",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(input: Assembly) {\n  const res =  input.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      throw new Error(\"Drawings have no Faces. Input must be 3d\")\n    }\n    if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n      const faces = leaf.geometry.faces;\n      const faceIndexes = leaf.selection.faces\n      if (faceIndexes.length == 1) {\n        leaf.geometry = faces[faceIndexes[0]]\n        return leaf;\n      } else {\n        const res = faceIndexes.map((index) => {\n          return new Assembly({ ...leaf, geometry: faces[index] })\n        })\n        return new Assembly({\n          geometry: res\n        })\n      }\n    }\n    return null;\n  })\n  console.log(res)\n  return res;\n}",
+          "compiledCode": "\"use strict\";\nfunction run(input) {\n    const res = input.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            throw new Error(\"Drawings have no Faces. Input must be 3d\");\n        }\n        if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n            const faces = leaf.geometry.faces;\n            const faceIndexes = leaf.selection.faces;\n            if (faceIndexes.length == 1) {\n                leaf.geometry = faces[faceIndexes[0]];\n                return leaf;\n            }\n            else {\n                const res = faceIndexes.map((index) => {\n                    return new Assembly({ ...leaf, geometry: faces[index] });\n                });\n                return new Assembly({\n                    geometry: res\n                });\n            }\n        }\n        return null;\n    });\n    console.log(res);\n    return res;\n}\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "input",
+          "ap1ID": "id-39159",
+          "ap2ID": "id-39160"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-39160",
+          "ap2ID": "id-39158"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-08-10T18:27:42.505Z",
+        "privateRepo": false,
+        "repoName": "ExtractFaces",
+        "dateCreated": "2026-07-24T19:57:30Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-34810",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/ExtractFaces",
+        "topics": [
+          "abundance-tool"
+        ],
+        "pullRequests": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739821",
+        "ranking": 1.8,
+        "searchField": "extractfaces tristan-huber extract faces from an assembly by click selection. faces are identified by index within their leaf of the assembly. returns a new assembly with just faces abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Extract faces from an assembly by click selection. Faces are identified by index within their leaf of the assembly. Returns a new assembly with just faces",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExtractFaces/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1786394817829
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3352864583333333,
+      "y": 0.5542857142857143,
+      "uniqueID": "id-39175",
+      "name": "extrudeFaceDirected",
+      "ioValues": [
+        {
+          "name": "face",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "extrusionVec",
+          "ioValue": [
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-39171",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.45166015625,
+          "y": 0.4833333333333333,
+          "uniqueID": "id-39172",
+          "ioValues": [
+            {
+              "name": "faces",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "direction",
+              "ioValue": [
+                0,
+                1,
+                1
+              ]
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(faces: Assembly, direction: number[]) {\n  return faces.onLeafs((leaf) => {\n    leaf.geometry = replicad.basicFaceExtrusion(leaf.geometry, new replicad.Vector(direction))\n    return leaf;\n  })\n}",
+          "compiledCode": "\"use strict\";\nfunction run(faces, direction) {\n    return faces.onLeafs((leaf) => {\n        leaf.geometry = replicad.basicFaceExtrusion(leaf.geometry, new replicad.Vector(direction));\n        return leaf;\n    });\n}\n"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-39173",
+          "name": "face",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-39174",
+          "name": "extrusionVec",
+          "type": "point3d",
+          "pointValue": null
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-39172",
+          "ap2ID": "id-39171"
+        },
+        {
+          "ap2Name": "faces",
+          "ap1ID": "id-39173",
+          "ap2ID": "id-39172"
+        },
+        {
+          "ap2Name": "direction",
+          "ap1ID": "id-39174",
+          "ap2ID": "id-39172"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-08-10T18:27:42.505Z",
+        "privateRepo": false,
+        "repoName": "extrudeFaceDirected",
+        "dateCreated": "2026-07-29T22:22:15Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-121",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/tristan-huber/extrudeFaceDirected",
+        "topics": [
+          "abundance-tool"
+        ],
+        "pullRequests": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739826",
+        "ranking": 2.4,
+        "searchField": "extrudefacedirected tristan-huber extrude an assembly of faces in a given direction. same as feeding an assembly of faces to extrude except that the direction of extrusion is specified explicitly. abundance-tool",
+        "owner": "tristan-huber",
+        "description": "Extrude an assembly of faces in a given direction. Same as feeding an assembly of faces to Extrude except that the direction of extrusion is specified explicitly.",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/extrudeFaceDirected/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1786394834439
+    },
+    {
+      "atomType": "Export",
+      "x": 0.4147135416666667,
+      "y": 0.6171428571428571,
+      "uniqueID": "id-39187",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "bevelcnctest",
+          "currentEquation": "bevelcnctest"
+        }
+      ],
+      "type": "STL",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "bevelcnctest"
     }
   ],
   "allConnectors": [
@@ -7647,6 +7896,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-29019",
       "ap2ID": "id-29023"
+    },
+    {
+      "ap2Name": "Assembly",
+      "ap1ID": "id-29019",
+      "ap2ID": "id-39161"
     },
     {
       "ap2Name": "geometry",
@@ -7712,6 +7966,16 @@
       "ap2Name": "Face",
       "ap1ID": "id-34781",
       "ap2ID": "id-34745"
+    },
+    {
+      "ap2Name": "face",
+      "ap1ID": "id-39161",
+      "ap2ID": "id-39175"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-39175",
+      "ap2ID": "id-39187"
     }
   ],
   "unitsKey": "MM",
