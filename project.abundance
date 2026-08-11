@@ -466,8 +466,8 @@
         },
         {
           "name": "curvatureScale",
-          "ioValue": 0.020000000000000007,
-          "currentEquation": "0.020000000000000009"
+          "ioValue": 0.0010000000000000009,
+          "currentEquation": "0.0010000000000000009"
         }
       ],
       "interpreterVersion": 1,
@@ -8110,6 +8110,11 @@
       "ap2ID": "id-39187"
     },
     {
+      "ap2Name": "surface",
+      "ap1ID": "id-40147",
+      "ap2ID": "id-41107"
+    },
+    {
       "ap2Name": "geometry2",
       "ap1ID": "id-27917",
       "ap2ID": "id-29035"
@@ -8148,11 +8153,6 @@
       "ap2Name": "face",
       "ap1ID": "id-39161",
       "ap2ID": "id-39175"
-    },
-    {
-      "ap2Name": "surface",
-      "ap1ID": "id-4693",
-      "ap2ID": "id-41107"
     }
   ],
   "unitsKey": "MM",
