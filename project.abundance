@@ -456,8 +456,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.62060546875,
-      "y": 0.83125,
+      "x": 0.619140625,
+      "y": 0.8229166666666666,
       "uniqueID": "id-41107",
       "ioValues": [
         {
@@ -466,8 +466,8 @@
         },
         {
           "name": "curvatureScale",
-          "ioValue": 0.005000000000000001,
-          "currentEquation": "0.0050000000000000009"
+          "ioValue": 0.020000000000000007,
+          "currentEquation": "0.020000000000000009"
         }
       ],
       "interpreterVersion": 1,
@@ -8090,6 +8090,11 @@
       "ap2ID": "id-39161"
     },
     {
+      "ap2Name": "surface",
+      "ap1ID": "id-29019",
+      "ap2ID": "id-41107"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-29023",
       "ap2ID": "id-29029"
@@ -8178,11 +8183,6 @@
       "ap2Name": "face",
       "ap1ID": "id-39161",
       "ap2ID": "id-39175"
-    },
-    {
-      "ap2Name": "surface",
-      "ap1ID": "id-42072",
-      "ap2ID": "id-41107"
     }
   ],
   "unitsKey": "MM",
