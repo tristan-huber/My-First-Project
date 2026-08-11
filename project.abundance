@@ -38,8 +38,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.0231,
+      "y": 0.14,
       "uniqueID": "id-3797",
       "name": "diam"
     },
@@ -61,22 +61,22 @@
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "x": 0.0231,
+      "y": 0.22400000000000003,
       "uniqueID": "id-19497",
       "name": "TargetLen"
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "x": 0.0231,
+      "y": 0.30800000000000005,
       "uniqueID": "id-26203",
       "name": "Breadth"
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
+      "x": 0.0231,
+      "y": 0.39200000000000007,
       "uniqueID": "id-26206",
       "name": "length"
     },
@@ -497,8 +497,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-27916",
           "name": "FaceAssembly",
           "type": "geometry"
@@ -574,8 +574,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-30112",
           "name": "Shape",
           "type": "faceselect",
@@ -639,8 +639,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-32343",
           "name": "Shape",
           "type": "faceselect",
@@ -712,8 +712,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-32368",
           "name": "Face",
           "type": "geometry"
@@ -743,15 +743,15 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-32370",
           "name": "NumRulings"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0231,
+          "y": 0.30800000000000005,
           "uniqueID": "id-32371",
           "name": "StartFromEdge"
         },
@@ -861,8 +861,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-32399",
           "name": "target",
           "type": "edgeselect",
@@ -870,8 +870,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-32402",
           "name": "mover",
           "type": "edgeselect",
@@ -879,16 +879,16 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0231,
+          "y": 0.30800000000000005,
           "uniqueID": "id-32405",
           "name": "flip",
           "type": "boolean"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.4307692307692308,
+          "x": 0.0231,
+          "y": 0.39200000000000007,
           "uniqueID": "id-32408",
           "name": "offset"
         },
@@ -999,16 +999,16 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-33537",
           "name": "geometry",
           "type": "geometry"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-33538",
           "name": "i",
           "type": "number"
@@ -1111,16 +1111,16 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-33554",
           "name": "geometry",
           "type": "geometry"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-33555",
           "name": "i",
           "type": "number"
@@ -1236,16 +1236,16 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-34738",
           "name": "Face",
           "type": "geometry"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-34739",
           "name": "NumRulings"
         },
@@ -1303,8 +1303,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0231,
+          "y": 0.30800000000000005,
           "uniqueID": "id-34742",
           "name": "StartFromEdge"
         },
@@ -1443,8 +1443,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-34783",
           "name": "Shape",
           "type": "faceselect",
@@ -1508,8 +1508,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-39159",
           "name": "Assembly",
           "type": "faceselect",
@@ -1636,16 +1636,16 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-39173",
           "name": "face",
           "type": "geometry"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-39174",
           "name": "extrusionVec",
           "type": "point3d",
@@ -1735,15 +1735,15 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "x": 0.0231,
+          "y": 0.14,
           "uniqueID": "id-27199",
           "name": "width"
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "x": 0.0231,
+          "y": 0.22400000000000003,
           "uniqueID": "id-27202",
           "name": "length"
         },
@@ -1762,8 +1762,8 @@
         },
         {
           "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "x": 0.0231,
+          "y": 0.30800000000000005,
           "uniqueID": "id-27269",
           "name": "back_support_diam"
         },
@@ -2101,8 +2101,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-27417",
               "name": "assembly"
             }
@@ -2185,16 +2185,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-27505",
               "name": "Shape",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-27506",
               "name": "Radius"
             },
@@ -2288,8 +2288,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-27512",
               "name": "Bounding_Box",
               "type": "geometry"
@@ -2851,8 +2851,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-36328",
               "name": "Assembly",
               "type": "faceselect",
@@ -2947,8 +2947,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-37309",
               "name": "Shape",
               "type": "geometry"
@@ -3036,8 +3036,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-38230",
               "type": "partselect",
               "selectedLeafIndexes": [
@@ -3678,8 +3678,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4699",
               "name": "X"
             },
@@ -3708,15 +3708,15 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4701",
               "name": "Y"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4702",
               "name": "Z"
             }
@@ -3817,24 +3817,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4720",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4721",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4722",
               "name": "direction",
               "type": "point3d",
@@ -4092,24 +4092,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4764",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4765",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4766",
               "name": "direction",
               "type": "point3d",
@@ -4373,16 +4373,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4808",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4809",
               "name": "close",
               "type": "boolean"
@@ -4479,24 +4479,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4824",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4825",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-4826",
               "name": "direction",
               "type": "point3d",
@@ -4760,16 +4760,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4868",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4869",
               "name": "close",
               "type": "boolean"
@@ -4872,16 +4872,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-4884",
               "name": "Wires",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-4885",
               "name": "Thickness",
               "type": "number"
@@ -4978,24 +4978,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-6413",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-6414",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-6415",
               "name": "direction",
               "type": "point3d",
@@ -5253,24 +5253,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-6462",
               "name": "toMove",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-6463",
               "name": "offsets",
               "type": "array"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-6464",
               "name": "direction",
               "type": "point3d",
@@ -5534,16 +5534,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-6511",
               "name": "Wires",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-6512",
               "name": "Thickness",
               "type": "number"
@@ -5646,16 +5646,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-6527",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-6528",
               "name": "close",
               "type": "boolean"
@@ -5758,16 +5758,16 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-6543",
               "name": "Points",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-6544",
               "name": "close",
               "type": "boolean"
@@ -5882,8 +5882,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-35007",
               "name": "Face",
               "type": "faceselect",
@@ -5891,8 +5891,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-35008",
               "name": "NumRulings"
             },
@@ -5950,8 +5950,8 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-35011",
               "name": "StartFromEdge"
             },
@@ -6098,24 +6098,24 @@
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.15384615384615385,
+              "x": 0.0231,
+              "y": 0.14,
               "uniqueID": "id-8949",
               "name": "Cone",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "x": 0.0231,
+              "y": 0.22400000000000003,
               "uniqueID": "id-8952",
               "name": "SimpleTwist",
               "type": "geometry"
             },
             {
               "atomType": "Input",
-              "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "x": 0.0231,
+              "y": 0.30800000000000005,
               "uniqueID": "id-8955",
               "name": "WithHole",
               "type": "geometry"
@@ -6411,16 +6411,16 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-8981",
                   "name": "shape",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-8982",
                   "name": "index"
                 },
@@ -6521,16 +6521,16 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-8997",
                   "name": "shape",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-8998",
                   "name": "index"
                 },
@@ -6672,23 +6672,23 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-9586",
                   "name": "Face",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-9587",
                   "name": "NumRulings"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.3384615384615385,
+                  "x": 0.0231,
+                  "y": 0.30800000000000005,
                   "uniqueID": "id-9588",
                   "name": "RulingAxis(U,V,auto)",
                   "type": "string"
@@ -6829,32 +6829,32 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-10911",
                   "name": "Face",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-10912",
                   "name": "NumRulings",
                   "type": "number"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.3384615384615385,
+                  "x": 0.0231,
+                  "y": 0.30800000000000005,
                   "uniqueID": "id-10913",
                   "name": "ThresholdRadius",
                   "type": "number"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.4307692307692308,
+                  "x": 0.0231,
+                  "y": 0.39200000000000007,
                   "uniqueID": "id-10914",
                   "name": "RulingAxis(U,V,auto)",
                   "type": "string"
@@ -6981,23 +6981,23 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-10936",
                   "name": "Face",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-10937",
                   "name": "NumRulings"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.3384615384615385,
+                  "x": 0.0231,
+                  "y": 0.30800000000000005,
                   "uniqueID": "id-10938",
                   "name": "RulingAxis(U,V,auto)",
                   "type": "string"
@@ -7337,16 +7337,16 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-17204",
                   "name": "Face",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-17205",
                   "name": "NumRulings"
                 },
@@ -7404,8 +7404,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.3384615384615385,
+                  "x": 0.0231,
+                  "y": 0.30800000000000005,
                   "uniqueID": "id-17208",
                   "name": "StartFromEdge"
                 }
@@ -7493,16 +7493,16 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-17954",
                   "name": "shape",
                   "type": "geometry"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-17955",
                   "name": "index"
                 },
@@ -7607,8 +7607,8 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.15384615384615385,
+                  "x": 0.0231,
+                  "y": 0.14,
                   "uniqueID": "id-24617",
                   "name": "Face",
                   "type": "geometry"
@@ -7638,15 +7638,15 @@
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.24615384615384617,
+                  "x": 0.0231,
+                  "y": 0.22400000000000003,
                   "uniqueID": "id-24619",
                   "name": "NumRulings"
                 },
                 {
                   "atomType": "Input",
-                  "x": 0.025384615384615384,
-                  "y": 0.3384615384615385,
+                  "x": 0.0231,
+                  "y": 0.30800000000000005,
                   "uniqueID": "id-24620",
                   "name": "StartFromEdge"
                 },
@@ -8011,6 +8011,26 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Code",
+      "x": 0.53173828125,
+      "y": 0.8541666666666667,
+      "uniqueID": "id-41107",
+      "ioValues": [
+        {
+          "name": "surface",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "curvatureScale",
+          "ioValue": 0.010000000000000009,
+          "currentEquation": "0.010000000000000009"
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "/**\n * Colours selected faces of the input assembly by discrete Gaussian\n * curvature: red for concave (negative curvature), blue for convex\n * (positive curvature), white for flat/neutral, darker as curvature grows\n * more severe.\n *\n * Uses whichever faces are selected on `surface` (via a faceselect input);\n * if none are selected, every face of the assembly is coloured.\n *\n *   curvatureScale — absolute curvature magnitude (1/length², in the\n *                    model's own units) at which a colour fully saturates.\n *                    Tune per model scale: small parts with tight fillets\n *                    need a larger value, large gently-curved parts need a\n *                    smaller one.\n */\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\nfunction run(surface: Assembly, curvatureScale: number = 0.01): Assembly[] {\n  if (!surface) {\n    throw new Error(\"Gaussian curvature: missing required geometry input.\");\n  }\n  if (!Number.isFinite(curvatureScale) || curvatureScale <= 0) {\n    throw new Error(\n      \"Gaussian curvature: curvatureScale must be a positive number.\",\n    );\n  }\n\n  const noneSelected = surface.getSelectedFaces().length === 0;\n  const facesToProcess: replicad.Face[] = [];\n  // eslint-disable-next-line @typescript-eslint/no-explicit-any\n  (surface as any).onLeafs((leaf: any) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      console.warn(\"Gaussian curvature: drawings have no faces, skipping\");\n      return leaf;\n    }\n    if (noneSelected) {\n      facesToProcess.push(\n        ...(leaf.geometry instanceof replicad.Face\n          ? [leaf.geometry]\n          : leaf.geometry.faces),\n      );\n    } else if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n      facesToProcess.push(\n        ...leaf.selection.faces.map((idx: number) => leaf.geometry.faces[idx]),\n      );\n    }\n    return leaf;\n  });\n\n  if (facesToProcess.length === 0) {\n    throw new Error(\"Gaussian curvature: input has no faces to visualize.\");\n  }\n\n  return facesToProcess.map(\n    (face) =>\n      new Assembly({\n        geometry: face,\n        color: \"#5B9BD5\",\n        tags: [\"heatmap:gaussian-curvature\"],\n        metadata: {\n          meshOverride: buildCurvatureMeshOverride(face, curvatureScale),\n        },\n      }),\n  );\n}\n\n// ─── meshOverride baking ──────────────────────────────────────────────────\n//\n// Tessellates the face at a fixed, coarse tolerance, then computes discrete\n// Gaussian curvature at every mesh vertex via the angle-defect method: for\n// each vertex, sum the interior angles of its adjacent triangles and compare\n// against 2π (or π on the mesh boundary); the deficit divided by the local\n// (mixed/Voronoi) area is the curvature estimate.\n\nfunction buildCurvatureMeshOverride(\n  // eslint-disable-next-line @typescript-eslint/no-explicit-any\n  face: any,\n  curvatureScale: number,\n) {\n  const faces = face.mesh({ tolerance: 0.1, angularTolerance: 0.3 });\n  const edges = face.meshEdges({ tolerance: 0.1, angularTolerance: 0.3 });\n\n  const { vertices, triangles } = faces;\n  const numVerts = vertices.length / 3;\n  const angleSum = new Float64Array(numVerts);\n  const areaSum = new Float64Array(numVerts);\n  const edgeTriCount = new Map<string, number>();\n\n  const px = (i: number) => vertices[i * 3];\n  const py = (i: number) => vertices[i * 3 + 1];\n  const pz = (i: number) => vertices[i * 3 + 2];\n\n  const angleAt = (a: number, b: number, c: number): number => {\n    const abx = px(b) - px(a),\n      aby = py(b) - py(a),\n      abz = pz(b) - pz(a);\n    const acx = px(c) - px(a),\n      acy = py(c) - py(a),\n      acz = pz(c) - pz(a);\n    const abLen = Math.hypot(abx, aby, abz);\n    const acLen = Math.hypot(acx, acy, acz);\n    if (abLen === 0 || acLen === 0) return 0;\n    const cos = (abx * acx + aby * acy + abz * acz) / (abLen * acLen);\n    return Math.acos(Math.min(1, Math.max(-1, cos)));\n  };\n\n  const edgeKey = (i: number, j: number) => (i < j ? `${i}_${j}` : `${j}_${i}`);\n\n  const numTriangles = triangles.length / 3;\n  for (let t = 0; t < numTriangles; t++) {\n    const i0 = triangles[t * 3];\n    const i1 = triangles[t * 3 + 1];\n    const i2 = triangles[t * 3 + 2];\n\n    const abx = px(i1) - px(i0),\n      aby = py(i1) - py(i0),\n      abz = pz(i1) - pz(i0);\n    const acx = px(i2) - px(i0),\n      acy = py(i2) - py(i0),\n      acz = pz(i2) - pz(i0);\n    const cx = aby * acz - abz * acy;\n    const cy = abz * acx - abx * acz;\n    const cz = abx * acy - aby * acx;\n    const area = 0.5 * Math.hypot(cx, cy, cz);\n\n    angleSum[i0] += angleAt(i0, i1, i2);\n    angleSum[i1] += angleAt(i1, i2, i0);\n    angleSum[i2] += angleAt(i2, i0, i1);\n    areaSum[i0] += area / 3;\n    areaSum[i1] += area / 3;\n    areaSum[i2] += area / 3;\n\n    for (const [a, b] of [\n      [i0, i1],\n      [i1, i2],\n      [i2, i0],\n    ] as const) {\n      const key = edgeKey(a, b);\n      edgeTriCount.set(key, (edgeTriCount.get(key) ?? 0) + 1);\n    }\n  }\n\n  // Vertices touched by an edge that borders only one triangle sit on the\n  // face's trimmed boundary; the angle-defect reference there is π, not 2π\n  // (this ignores the boundary contour's own geodesic curvature).\n  const isBoundary = new Uint8Array(numVerts);\n  for (const [key, count] of edgeTriCount) {\n    if (count === 1) {\n      const [a, b] = key.split(\"_\").map(Number);\n      isBoundary[a] = 1;\n      isBoundary[b] = 1;\n    }\n  }\n\n  const [r0, g0, b0] = hexToRgb(\"#ffffff\");\n  const [rConcave, gConcave, bConcave] = hexToRgb(\"#ff0000\");\n  const [rConvex, gConvex, bConvex] = hexToRgb(\"#0000ff\");\n\n  const vertexColors: number[] = new Array(numVerts * 3);\n  for (let v = 0; v < numVerts; v++) {\n    const area = areaSum[v];\n    const reference = isBoundary[v] ? Math.PI : 2 * Math.PI;\n    const k = area > 0 ? (reference - angleSum[v]) / area : 0;\n\n    let t = k / curvatureScale;\n    console.log(t)\n    if (t < -1) t = -1;\n    else if (t > 1) t = 1;\n    const mag = Math.abs(t);\n    console.log(mag)\n    const [rBase, gBase, bBase] =\n      t < 0 ? [rConcave, gConcave, bConcave] : [rConvex, gConvex, bConvex];\n    const darken = 1 - 0.4 * mag;\n    vertexColors[v * 3] = (r0 + (rBase - r0) * mag) * darken;\n    vertexColors[v * 3 + 1] = (g0 + (gBase - g0) * mag) * darken;\n    vertexColors[v * 3 + 2] = (b0 + (bBase - b0) * mag) * darken;\n  }\n\n  return {\n    faces,\n    edges,\n    // Plain array (not Float32Array) so metadata.meshOverride survives the\n    // JSON round-trip in cacheAssemblyStructure/getAssembly. Renderer wraps\n    // back into a typed array when constructing the BufferAttribute.\n    vertexColors,\n  };\n}\n\nfunction hexToRgb(hex: string): [number, number, number] {\n  const h = hex.replace(\"#\", \"\");\n  return [\n    parseInt(h.slice(0, 2), 16) / 255,\n    parseInt(h.slice(2, 4), 16) / 255,\n    parseInt(h.slice(4, 6), 16) / 255,\n  ];\n}\n",
+      "compiledCode": "\"use strict\";\n/**\n * Colours selected faces of the input assembly by discrete Gaussian\n * curvature: red for concave (negative curvature), blue for convex\n * (positive curvature), white for flat/neutral, darker as curvature grows\n * more severe.\n *\n * Uses whichever faces are selected on `surface` (via a faceselect input);\n * if none are selected, every face of the assembly is coloured.\n *\n *   curvatureScale — absolute curvature magnitude (1/length², in the\n *                    model's own units) at which a colour fully saturates.\n *                    Tune per model scale: small parts with tight fillets\n *                    need a larger value, large gently-curved parts need a\n *                    smaller one.\n */\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\nfunction run(surface, curvatureScale = 0.01) {\n    if (!surface) {\n        throw new Error(\"Gaussian curvature: missing required geometry input.\");\n    }\n    if (!Number.isFinite(curvatureScale) || curvatureScale <= 0) {\n        throw new Error(\"Gaussian curvature: curvatureScale must be a positive number.\");\n    }\n    const noneSelected = surface.getSelectedFaces().length === 0;\n    const facesToProcess = [];\n    // eslint-disable-next-line @typescript-eslint/no-explicit-any\n    surface.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            console.warn(\"Gaussian curvature: drawings have no faces, skipping\");\n            return leaf;\n        }\n        if (noneSelected) {\n            facesToProcess.push(...(leaf.geometry instanceof replicad.Face\n                ? [leaf.geometry]\n                : leaf.geometry.faces));\n        }\n        else if (leaf.selection?.faces && leaf.selection.faces.length > 0) {\n            facesToProcess.push(...leaf.selection.faces.map((idx) => leaf.geometry.faces[idx]));\n        }\n        return leaf;\n    });\n    if (facesToProcess.length === 0) {\n        throw new Error(\"Gaussian curvature: input has no faces to visualize.\");\n    }\n    return facesToProcess.map((face) => new Assembly({\n        geometry: face,\n        color: \"#5B9BD5\",\n        tags: [\"heatmap:gaussian-curvature\"],\n        metadata: {\n            meshOverride: buildCurvatureMeshOverride(face, curvatureScale),\n        },\n    }));\n}\n// ─── meshOverride baking ──────────────────────────────────────────────────\n//\n// Tessellates the face at a fixed, coarse tolerance, then computes discrete\n// Gaussian curvature at every mesh vertex via the angle-defect method: for\n// each vertex, sum the interior angles of its adjacent triangles and compare\n// against 2π (or π on the mesh boundary); the deficit divided by the local\n// (mixed/Voronoi) area is the curvature estimate.\nfunction buildCurvatureMeshOverride(\n// eslint-disable-next-line @typescript-eslint/no-explicit-any\nface, curvatureScale) {\n    const faces = face.mesh({ tolerance: 0.1, angularTolerance: 0.3 });\n    const edges = face.meshEdges({ tolerance: 0.1, angularTolerance: 0.3 });\n    const { vertices, triangles } = faces;\n    const numVerts = vertices.length / 3;\n    const angleSum = new Float64Array(numVerts);\n    const areaSum = new Float64Array(numVerts);\n    const edgeTriCount = new Map();\n    const px = (i) => vertices[i * 3];\n    const py = (i) => vertices[i * 3 + 1];\n    const pz = (i) => vertices[i * 3 + 2];\n    const angleAt = (a, b, c) => {\n        const abx = px(b) - px(a), aby = py(b) - py(a), abz = pz(b) - pz(a);\n        const acx = px(c) - px(a), acy = py(c) - py(a), acz = pz(c) - pz(a);\n        const abLen = Math.hypot(abx, aby, abz);\n        const acLen = Math.hypot(acx, acy, acz);\n        if (abLen === 0 || acLen === 0)\n            return 0;\n        const cos = (abx * acx + aby * acy + abz * acz) / (abLen * acLen);\n        return Math.acos(Math.min(1, Math.max(-1, cos)));\n    };\n    const edgeKey = (i, j) => (i < j ? `${i}_${j}` : `${j}_${i}`);\n    const numTriangles = triangles.length / 3;\n    for (let t = 0; t < numTriangles; t++) {\n        const i0 = triangles[t * 3];\n        const i1 = triangles[t * 3 + 1];\n        const i2 = triangles[t * 3 + 2];\n        const abx = px(i1) - px(i0), aby = py(i1) - py(i0), abz = pz(i1) - pz(i0);\n        const acx = px(i2) - px(i0), acy = py(i2) - py(i0), acz = pz(i2) - pz(i0);\n        const cx = aby * acz - abz * acy;\n        const cy = abz * acx - abx * acz;\n        const cz = abx * acy - aby * acx;\n        const area = 0.5 * Math.hypot(cx, cy, cz);\n        angleSum[i0] += angleAt(i0, i1, i2);\n        angleSum[i1] += angleAt(i1, i2, i0);\n        angleSum[i2] += angleAt(i2, i0, i1);\n        areaSum[i0] += area / 3;\n        areaSum[i1] += area / 3;\n        areaSum[i2] += area / 3;\n        for (const [a, b] of [\n            [i0, i1],\n            [i1, i2],\n            [i2, i0],\n        ]) {\n            const key = edgeKey(a, b);\n            edgeTriCount.set(key, (edgeTriCount.get(key) ?? 0) + 1);\n        }\n    }\n    // Vertices touched by an edge that borders only one triangle sit on the\n    // face's trimmed boundary; the angle-defect reference there is π, not 2π\n    // (this ignores the boundary contour's own geodesic curvature).\n    const isBoundary = new Uint8Array(numVerts);\n    for (const [key, count] of edgeTriCount) {\n        if (count === 1) {\n            const [a, b] = key.split(\"_\").map(Number);\n            isBoundary[a] = 1;\n            isBoundary[b] = 1;\n        }\n    }\n    const [r0, g0, b0] = hexToRgb(\"#ffffff\");\n    const [rConcave, gConcave, bConcave] = hexToRgb(\"#ff0000\");\n    const [rConvex, gConvex, bConvex] = hexToRgb(\"#0000ff\");\n    const vertexColors = new Array(numVerts * 3);\n    for (let v = 0; v < numVerts; v++) {\n        const area = areaSum[v];\n        const reference = isBoundary[v] ? Math.PI : 2 * Math.PI;\n        const k = area > 0 ? (reference - angleSum[v]) / area : 0;\n        let t = k / curvatureScale;\n        console.log(t);\n        if (t < -1)\n            t = -1;\n        else if (t > 1)\n            t = 1;\n        const mag = Math.abs(t);\n        console.log(mag);\n        const [rBase, gBase, bBase] = t < 0 ? [rConcave, gConcave, bConcave] : [rConvex, gConvex, bConvex];\n        const darken = 1 - 0.4 * mag;\n        vertexColors[v * 3] = (r0 + (rBase - r0) * mag) * darken;\n        vertexColors[v * 3 + 1] = (g0 + (gBase - g0) * mag) * darken;\n        vertexColors[v * 3 + 2] = (b0 + (bBase - b0) * mag) * darken;\n    }\n    return {\n        faces,\n        edges,\n        // Plain array (not Float32Array) so metadata.meshOverride survives the\n        // JSON round-trip in cacheAssemblyStructure/getAssembly. Renderer wraps\n        // back into a typed array when constructing the BufferAttribute.\n        vertexColors,\n    };\n}\nfunction hexToRgb(hex) {\n    const h = hex.replace(\"#\", \"\");\n    return [\n        parseInt(h.slice(0, 2), 16) / 255,\n        parseInt(h.slice(2, 4), 16) / 255,\n        parseInt(h.slice(4, 6), 16) / 255,\n    ];\n}\n"
     }
   ],
   "allConnectors": [
@@ -8043,6 +8063,11 @@
       "ap2Name": "Assembly",
       "ap1ID": "id-29019",
       "ap2ID": "id-39161"
+    },
+    {
+      "ap2Name": "surface",
+      "ap1ID": "id-29019",
+      "ap2ID": "id-41107"
     },
     {
       "ap2Name": "geometry",
