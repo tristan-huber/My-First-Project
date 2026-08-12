@@ -8072,8 +8072,8 @@
         }
       ],
       "interpreterVersion": 1,
-      "code": "function run(assembly: Assembly, defaultDensity: number) {\n  const points: Assembly[] = []\n  assembly.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const props = replicad.measureShapeVolumeProperties(leaf.geometry as replicad.Shape3D)\n      points.push(new Assembly({\n        ...leaf,\n        geometry: replicad.makeVertex(props.centerOfMass),\n        metadata: { mass: defaultDensity * props.volume}\n      }))\n    }\n    return leaf;\n  })\n  return points;\n}",
-      "compiledCode": "\"use strict\";\nfunction run(assembly, defaultDensity) {\n    const points = [];\n    assembly.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const props = replicad.measureShapeVolumeProperties(leaf.geometry);\n            points.push(new Assembly({\n                ...leaf,\n                geometry: replicad.makeVertex(props.centerOfMass),\n                metadata: { mass: defaultDensity * props.volume }\n            }));\n        }\n        return leaf;\n    });\n    return points;\n}\n"
+      "code": "function run(assembly: Assembly, defaultDensity: number) {\n  const points: Assembly[] = []\n  assembly.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const props = replicad.measureShapeVolumeProperties(leaf.geometry as replicad.Shape3D)\n      points.push(new Assembly({\n        ...leaf,\n        geometry: replicad.makeVertex(props.centerOfMass),\n        metadata: { mass: defaultDensity * props.volume}\n      }))\n    } else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n      points.push(leaf);\n    }\n    return leaf;\n  })\n\n  \n  return points;\n}",
+      "compiledCode": "\"use strict\";\nfunction run(assembly, defaultDensity) {\n    const points = [];\n    assembly.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const props = replicad.measureShapeVolumeProperties(leaf.geometry);\n            points.push(new Assembly({\n                ...leaf,\n                geometry: replicad.makeVertex(props.centerOfMass),\n                metadata: { mass: defaultDensity * props.volume }\n            }));\n        }\n        else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n            points.push(leaf);\n        }\n        return leaf;\n    });\n    return points;\n}\n"
     },
     {
       "atomType": "Assembly",
@@ -8082,11 +8082,11 @@
       "uniqueID": "id-43053",
       "ioValues": [
         {
-          "name": "Shape 1",
+          "name": "Shape 2",
           "ioValue": null
         },
         {
-          "name": "Shape 2",
+          "name": "Shape 4",
           "ioValue": null
         }
       ]
@@ -8269,11 +8269,6 @@
       "ap2ID": "id-130"
     },
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-4693",
-      "ap2ID": "id-43053"
-    },
-    {
       "ap2Name": "assembly",
       "ap1ID": "id-4693",
       "ap2ID": "id-43064"
@@ -8286,6 +8281,11 @@
     {
       "ap2Name": "Shape 2",
       "ap1ID": "id-43058",
+      "ap2ID": "id-43053"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-43064",
       "ap2ID": "id-43053"
     }
   ],
