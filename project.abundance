@@ -498,6 +498,84 @@
       ]
     },
     {
+      "atomType": "Code",
+      "x": 0.13606770833333334,
+      "y": 0.6228571428571429,
+      "uniqueID": "id-43042",
+      "ioValues": [
+        {
+          "name": "assembly",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "defaultDensity",
+          "ioValue": 1
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "function run(assembly: Assembly, defaultDensity: number) {\n  const points: Assembly[] = []\n  assembly.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const props = replicad.measureShapeVolumeProperties(leaf.geometry as replicad.Shape3D)\n      points.push(new Assembly({\n        ...leaf,\n        geometry: replicad.makeVertex(props.centerOfMass),\n        metadata: { mass: leaf.metadata?.mass ? leaf.metadata.mass : defaultDensity * props.volume}\n      }))\n    } else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n      points.push(leaf);\n    }\n    return leaf;\n  })\n  \n  return centerOfMass(points);\n}\n\nfunction centerOfMass(points: Assembly[]): Assembly {\n  let totalMass = 0;\n  let sx = 0, sy = 0, sz = 0;\n\n  for (const { geometry, metadata } of points) {\n    const [x, y, z] = (geometry as replicad.Vertex).asTuple();\n    const m = metadata?.mass;\n    sx += x * m;\n    sy += y * m;\n    sz += z * m;\n    totalMass += m;\n  }\n\n  if (totalMass === 0) {\n    throw new Error(\"centerOfMass: total mass is zero.\");\n  }\n\n  return new Assembly({\n    geometry: replicad.makeVertex([sx / totalMass, sy / totalMass, sz / totalMass]),\n    metadata: {mass: totalMass}\n  })\n}",
+      "compiledCode": "\"use strict\";\nfunction run(assembly, defaultDensity) {\n    const points = [];\n    assembly.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const props = replicad.measureShapeVolumeProperties(leaf.geometry);\n            points.push(new Assembly({\n                ...leaf,\n                geometry: replicad.makeVertex(props.centerOfMass),\n                metadata: { mass: leaf.metadata?.mass ? leaf.metadata.mass : defaultDensity * props.volume }\n            }));\n        }\n        else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n            points.push(leaf);\n        }\n        return leaf;\n    });\n    return centerOfMass(points);\n}\nfunction centerOfMass(points) {\n    let totalMass = 0;\n    let sx = 0, sy = 0, sz = 0;\n    for (const { geometry, metadata } of points) {\n        const [x, y, z] = geometry.asTuple();\n        const m = metadata?.mass;\n        sx += x * m;\n        sy += y * m;\n        sz += z * m;\n        totalMass += m;\n    }\n    if (totalMass === 0) {\n        throw new Error(\"centerOfMass: total mass is zero.\");\n    }\n    return new Assembly({\n        geometry: replicad.makeVertex([sx / totalMass, sy / totalMass, sz / totalMass]),\n        metadata: { mass: totalMass }\n    });\n}\n"
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.26953125,
+      "y": 0.20833333333333334,
+      "uniqueID": "id-43053",
+      "ioValues": [
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.31705729166666663,
+      "y": 0.7797619047619048,
+      "uniqueID": "id-43058",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 5
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.09114583333333333,
+      "y": 0.47714285714285715,
+      "uniqueID": "id-43064",
+      "ioValues": [
+        {
+          "name": "assembly",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "mass",
+          "ioValue": 100
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "// Set mass\nfunction run(assembly: Assembly, mass: number) {\n  const initial = assembly.metadata ? assembly.metadata : {}\n  initial.mass = mass;\n  assembly.metadata = initial;\n  return assembly\n}",
+      "compiledCode": "\"use strict\";\n// Set mass\nfunction run(assembly, mass) {\n    const initial = assembly.metadata ? assembly.metadata : {};\n    initial.mass = mass;\n    assembly.metadata = initial;\n    return assembly;\n}\n"
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.49544270833333337,
       "y": 0.7142857142857143,
@@ -8054,87 +8132,6 @@
         }
       ],
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Code",
-      "x": 0.13606770833333334,
-      "y": 0.6228571428571429,
-      "uniqueID": "id-43042",
-      "ioValues": [
-        {
-          "name": "assembly",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "defaultDensity",
-          "ioValue": 1,
-          "currentEquation": "1"
-        }
-      ],
-      "interpreterVersion": 1,
-      "code": "function run(assembly: Assembly, defaultDensity: number) {\n  const points: Assembly[] = []\n  assembly.onLeafs((leaf) => {\n    if (leaf.is3D()) {\n      const props = replicad.measureShapeVolumeProperties(leaf.geometry as replicad.Shape3D)\n      points.push(new Assembly({\n        ...leaf,\n        geometry: replicad.makeVertex(props.centerOfMass),\n        metadata: { mass: leaf.metadata?.mass ? leaf.metadata.mass : defaultDensity * props.volume}\n      }))\n    } else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n      points.push(leaf);\n    }\n    return leaf;\n  })\n  \n  return centerOfMass(points);\n}\n\nfunction centerOfMass(points: Assembly[]): Assembly {\n  let totalMass = 0;\n  let sx = 0, sy = 0, sz = 0;\n\n  for (const { geometry, metadata } of points) {\n    const [x, y, z] = (geometry as replicad.Vertex).asTuple();\n    const m = metadata?.mass;\n    sx += x * m;\n    sy += y * m;\n    sz += z * m;\n    totalMass += m;\n  }\n\n  if (totalMass === 0) {\n    throw new Error(\"centerOfMass: total mass is zero.\");\n  }\n\n  return new Assembly({\n    geometry: replicad.makeVertex([sx / totalMass, sy / totalMass, sz / totalMass]),\n    metadata: {mass: totalMass}\n  })\n}",
-      "compiledCode": "\"use strict\";\nfunction run(assembly, defaultDensity) {\n    const points = [];\n    assembly.onLeafs((leaf) => {\n        if (leaf.is3D()) {\n            const props = replicad.measureShapeVolumeProperties(leaf.geometry);\n            points.push(new Assembly({\n                ...leaf,\n                geometry: replicad.makeVertex(props.centerOfMass),\n                metadata: { mass: leaf.metadata?.mass ? leaf.metadata.mass : defaultDensity * props.volume }\n            }));\n        }\n        else if (leaf.isPoint() && leaf.metadata?.mass != undefined) {\n            points.push(leaf);\n        }\n        return leaf;\n    });\n    return centerOfMass(points);\n}\nfunction centerOfMass(points) {\n    let totalMass = 0;\n    let sx = 0, sy = 0, sz = 0;\n    for (const { geometry, metadata } of points) {\n        const [x, y, z] = geometry.asTuple();\n        const m = metadata?.mass;\n        sx += x * m;\n        sy += y * m;\n        sz += z * m;\n        totalMass += m;\n    }\n    if (totalMass === 0) {\n        throw new Error(\"centerOfMass: total mass is zero.\");\n    }\n    return new Assembly({\n        geometry: replicad.makeVertex([sx / totalMass, sy / totalMass, sz / totalMass]),\n        metadata: { mass: totalMass }\n    });\n}\n"
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.26953125,
-      "y": 0.20833333333333334,
-      "uniqueID": "id-43053",
-      "ioValues": [
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 4",
-          "ioValue": null
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.31705729166666663,
-      "y": 0.7797619047619048,
-      "uniqueID": "id-43058",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 5,
-          "currentEquation": "5"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Code",
-      "x": 0.09114583333333333,
-      "y": 0.47714285714285715,
-      "uniqueID": "id-43064",
-      "ioValues": [
-        {
-          "name": "assembly",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "mass",
-          "ioValue": 100,
-          "currentEquation": "100"
-        }
-      ],
-      "interpreterVersion": 1,
-      "code": "// Set mass\nfunction run(assembly: Assembly, mass: number) {\n  const initial = assembly.metadata ? assembly.metadata : {}\n  initial.mass = mass;\n  assembly.metadata = initial;\n  return assembly\n}",
-      "compiledCode": "\"use strict\";\n// Set mass\nfunction run(assembly, mass) {\n    const initial = assembly.metadata ? assembly.metadata : {};\n    initial.mass = mass;\n    assembly.metadata = initial;\n    return assembly;\n}\n"
     }
   ],
   "allConnectors": [
@@ -8224,6 +8221,21 @@
       "ap2ID": "id-42072"
     },
     {
+      "ap2Name": "assembly",
+      "ap1ID": "id-43053",
+      "ap2ID": "id-43042"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-43058",
+      "ap2ID": "id-43053"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-43064",
+      "ap2ID": "id-43053"
+    },
+    {
       "ap2Name": "geometry2",
       "ap1ID": "id-27917",
       "ap2ID": "id-29035"
@@ -8272,21 +8284,6 @@
       "ap2Name": "assembly",
       "ap1ID": "id-4693",
       "ap2ID": "id-43064"
-    },
-    {
-      "ap2Name": "assembly",
-      "ap1ID": "id-43053",
-      "ap2ID": "id-43042"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-43058",
-      "ap2ID": "id-43053"
-    },
-    {
-      "ap2Name": "Shape 4",
-      "ap1ID": "id-43064",
-      "ap2ID": "id-43053"
     }
   ],
   "unitsKey": "MM",
