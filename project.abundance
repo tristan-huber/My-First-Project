@@ -8057,8 +8057,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.11588541666666667,
-      "y": 0.6130952380952381,
+      "x": 0.13606770833333334,
+      "y": 0.6228571428571429,
       "uniqueID": "id-43042",
       "ioValues": [
         {
@@ -8115,6 +8115,26 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.09114583333333333,
+      "y": 0.47714285714285715,
+      "uniqueID": "id-43064",
+      "ioValues": [
+        {
+          "name": "assembly",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "mass",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ],
+      "interpreterVersion": 1,
+      "code": "// Set mass\nfunction run(assembly: Assembly, mass: number) {\n  const initial = assembly.metadata ? assembly.metadata : {}\n  initial.mass = mass;\n  assembly.metadata = initial;\n  return assembly\n}",
+      "compiledCode": "\"use strict\";\n// Set mass\nfunction run(assembly, mass) {\n    const initial = assembly.metadata ? assembly.metadata : {};\n    initial.mass = mass;\n    assembly.metadata = initial;\n    return assembly;\n}\n"
     }
   ],
   "allConnectors": [
@@ -8252,6 +8272,11 @@
       "ap2Name": "Shape 1",
       "ap1ID": "id-4693",
       "ap2ID": "id-43053"
+    },
+    {
+      "ap2Name": "assembly",
+      "ap1ID": "id-4693",
+      "ap2ID": "id-43064"
     },
     {
       "ap2Name": "assembly",
