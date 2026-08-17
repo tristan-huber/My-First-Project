@@ -663,8 +663,8 @@
         },
         {
           "atomType": "Circle",
-          "x": 0.16796875,
-          "y": 0.35714285714285715,
+          "x": 0.12109375,
+          "y": 0.24857142857142855,
           "uniqueID": "id-44053",
           "ioValues": [
             {
@@ -803,6 +803,25 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Code",
+          "x": 0.6015625,
+          "y": 0.6057142857142858,
+          "uniqueID": "id-44949",
+          "ioValues": [
+            {
+              "name": "a1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "a2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "interpreterVersion": 1,
+          "code": "function run(a1: Assembly, a2: Assembly) {\n  const result = new Assembly({\n    geometry: [a1, a2]\n  }).skipDisjointPostprocess()\n}",
+          "compiledCode": "\"use strict\";\nfunction run(a1, a2) {\n    const result = new Assembly({\n        geometry: [a1, a2]\n    }).skipDisjointPostprocess();\n}\n"
         }
       ],
       "allConnectors": [
