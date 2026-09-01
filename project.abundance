@@ -455,11 +455,7 @@
           "uniqueID": "id-39159",
           "name": "Assembly",
           "type": "faceselect",
-          "selectedFaceData": {
-            "0": [
-              4
-            ]
-          }
+          "selectedFaceData": {}
         },
         {
           "atomType": "Code",
@@ -706,7 +702,7 @@
               "downwardFaceIndex": 2
             }
           ],
-          "orientationsForHashed": "5b5bac0c"
+          "orientationsForHashed": 1
         },
         {
           "atomType": "Rectangle",
@@ -2020,11 +2016,7 @@
               "uniqueID": "id-36328",
               "name": "Assembly",
               "type": "faceselect",
-              "selectedFaceData": {
-                "0": [
-                  0
-                ]
-              }
+              "selectedFaceData": {}
             },
             {
               "atomType": "Code",
@@ -2204,9 +2196,7 @@
               "y": 0.15384615384615385,
               "uniqueID": "id-38230",
               "type": "partselect",
-              "selectedLeafIndexes": [
-                0
-              ]
+              "selectedLeafIndexes": []
             },
             {
               "atomType": "Code",
@@ -7175,6 +7165,77 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.46419270833333337,
+      "y": 0.7886904761904763,
+      "uniqueID": "id-45812",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-45814",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Import",
+          "x": 0.19986979166666669,
+          "y": 0.4404761904761905,
+          "uniqueID": "id-45818",
+          "fileName": "halfScaleEighthPly.step",
+          "name": "Import",
+          "type": "STEP",
+          "repoOwner": "tristan-huber",
+          "repoName": "My-First-Project",
+          "SVGwidth": 10
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.396484375,
+          "y": 0.6875,
+          "uniqueID": "id-45823",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 0.125
+            },
+            {
+              "name": "Passes",
+              "ioValue": 1
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Molecule",
+              "currentEquation": "Molecule"
+            }
+          ],
+          "partName": "Molecule",
+          "sortDirection": "Left"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -7269,7 +7330,7 @@
       "ap2ID": "id-43064"
     }
   ],
-  "unitsKey": "MM",
+  "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
 }
