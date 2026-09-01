@@ -2423,13 +2423,12 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 0.2,
-              "currentEquation": "0.2"
+              "ioValue": 3
             },
             {
               "name": "Part Name",
-              "ioValue": "strongback_quarter_bit",
-              "currentEquation": "strongback_quarter_bit"
+              "ioValue": "strongback_quarter_bit_1p",
+              "currentEquation": "strongback_quarter_bit_1p"
             }
           ],
           "partName": "Molecule",
@@ -2480,8 +2479,7 @@
               "uniqueID": "id-45849",
               "type": "partselect",
               "selectedLeafIndexes": [
-                3,
-                2
+                3
               ]
             },
             {
@@ -2698,7 +2696,7 @@
             },
             {
               "name": "Cut Through",
-              "ioValue": 0.3
+              "ioValue": 2
             },
             {
               "name": "Part Name",
@@ -2725,6 +2723,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-45851",
           "ap2ID": "id-45823"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-45851",
+          "ap2ID": "id-45814"
         },
         {
           "ap2Name": "Input",
