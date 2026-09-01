@@ -2535,9 +2535,7 @@
               "y": 0.15384615384615385,
               "uniqueID": "id-45849",
               "type": "partselect",
-              "selectedLeafIndexes": [
-                3
-              ]
+              "selectedLeafIndexes": []
             },
             {
               "atomType": "Code",
