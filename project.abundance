@@ -2399,8 +2399,8 @@
         },
         {
           "atomType": "Gcode",
-          "x": 0.396484375,
-          "y": 0.6875,
+          "x": 0.38411458333333337,
+          "y": 0.5565476190476191,
           "uniqueID": "id-45823",
           "ioValues": [
             {
@@ -2413,17 +2413,15 @@
             },
             {
               "name": "Passes",
-              "ioValue": 3,
-              "currentEquation": "3"
+              "ioValue": 3
             },
             {
               "name": "Speed",
-              "ioValue": 2500,
-              "currentEquation": "2500"
+              "ioValue": 2500
             },
             {
               "name": "Cut Through",
-              "ioValue": 3
+              "ioValue": 0.15
             },
             {
               "name": "Part Name",
@@ -2445,6 +2443,65 @@
           "repoOwner": "tristan-huber",
           "repoName": "My-First-Project",
           "SVGwidth": 10
+        },
+        {
+          "atomType": "Move",
+          "x": 0.28645833333333337,
+          "y": 0.2767857142857143,
+          "uniqueID": "id-46763",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 48
+            },
+            {
+              "name": "yDist",
+              "ioValue": 25
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.45963541666666663,
+          "y": 0.3363095238095238,
+          "uniqueID": "id-46769",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 0.125
+            },
+            {
+              "name": "Passes",
+              "ioValue": 2
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 2
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "panels_2pass",
+              "currentEquation": "panels_2pass"
+            }
+          ],
+          "partName": "Molecule",
+          "sortDirection": "Bottom"
         },
         {
           "atomType": "GitHubMolecule",
@@ -2646,66 +2703,6 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1788294416747
-        },
-        {
-          "atomType": "Move",
-          "x": 0.28645833333333337,
-          "y": 0.2767857142857143,
-          "uniqueID": "id-46763",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 48
-            },
-            {
-              "name": "yDist",
-              "ioValue": 25
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
-          "atomType": "Gcode",
-          "x": 0.45963541666666663,
-          "y": 0.3363095238095238,
-          "uniqueID": "id-46769",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Tool Size",
-              "ioValue": 0.125
-            },
-            {
-              "name": "Passes",
-              "ioValue": 2,
-              "currentEquation": "2"
-            },
-            {
-              "name": "Speed",
-              "ioValue": 1500
-            },
-            {
-              "name": "Cut Through",
-              "ioValue": 2
-            },
-            {
-              "name": "Part Name",
-              "ioValue": "panels_2pass",
-              "currentEquation": "panels_2pass"
-            }
-          ],
-          "partName": "Molecule",
-          "sortDirection": "Bottom"
         }
       ],
       "allConnectors": [
@@ -2733,11 +2730,6 @@
           "ap2Name": "Input",
           "ap1ID": "id-46748",
           "ap2ID": "id-45851"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-46763",
-          "ap2ID": "id-46769"
         }
       ],
       "fileTypeVersion": 1
