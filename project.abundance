@@ -2648,9 +2648,75 @@
           "unitsKey": "Unitless",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1788294416747
+        },
+        {
+          "atomType": "Move",
+          "x": 0.28645833333333337,
+          "y": 0.2767857142857143,
+          "uniqueID": "id-46763",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 48
+            },
+            {
+              "name": "yDist",
+              "ioValue": 25
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.45963541666666663,
+          "y": 0.3363095238095238,
+          "uniqueID": "id-46769",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Tool Size",
+              "ioValue": 0.125
+            },
+            {
+              "name": "Passes",
+              "ioValue": 2,
+              "currentEquation": "2"
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0.2,
+              "currentEquation": "0.2"
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "panels",
+              "currentEquation": "panels"
+            }
+          ],
+          "partName": "Molecule",
+          "sortDirection": "Bottom"
         }
       ],
       "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-45818",
+          "ap2ID": "id-46763"
+        },
         {
           "ap2Name": "ShapeToExplode",
           "ap1ID": "id-45830",
@@ -2665,6 +2731,11 @@
           "ap2Name": "Input",
           "ap1ID": "id-46748",
           "ap2ID": "id-45851"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-46763",
+          "ap2ID": "id-46769"
         }
       ],
       "fileTypeVersion": 1
