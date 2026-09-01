@@ -7188,8 +7188,8 @@
         },
         {
           "atomType": "Import",
-          "x": 0.19986979166666669,
-          "y": 0.4404761904761905,
+          "x": 0.17122395833333331,
+          "y": 0.2916666666666667,
           "uniqueID": "id-45818",
           "fileName": "halfScaleEighthPly.step",
           "name": "Import",
@@ -7214,27 +7214,260 @@
             },
             {
               "name": "Passes",
-              "ioValue": 1
+              "ioValue": 3,
+              "currentEquation": "3"
             },
             {
               "name": "Speed",
-              "ioValue": 1500
+              "ioValue": 2500
             },
             {
               "name": "Cut Through",
-              "ioValue": 0
+              "ioValue": 0.2,
+              "currentEquation": "0.2"
             },
             {
               "name": "Part Name",
-              "ioValue": "Molecule",
-              "currentEquation": "Molecule"
+              "ioValue": "strongback2",
+              "currentEquation": "strongback2"
             }
           ],
           "partName": "Molecule",
-          "sortDirection": "Left"
+          "sortDirection": "Bottom"
+        },
+        {
+          "atomType": "Import",
+          "x": 0.16796875,
+          "y": 0.6755952380952381,
+          "uniqueID": "id-45830",
+          "fileName": "halfScaleHalfPly(2).step",
+          "name": "Import",
+          "type": "STEP",
+          "repoOwner": "tristan-huber",
+          "repoName": "My-First-Project",
+          "SVGwidth": 10
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.23111979166666669,
+          "y": 0.5476190476190477,
+          "uniqueID": "id-45837",
+          "name": "ExplodeDisjoint",
+          "ioValues": [
+            {
+              "name": "ShapeToExplode",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-45833",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.3912760416666667,
+              "y": 0.5171428571428571,
+              "uniqueID": "id-45834",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "\n// Example Code\nfunction run(shape: Assembly) {\n  const resultLeafs: Assembly[] = []\n  shape.onLeafs((leaf) => {\n    if (leaf.geometry instanceof replicad.Drawing) {\n      return leaf;\n    }\n    const splitGeoms = []\n    for (const foo of replicad.iterTopo(leaf.geometry.wrapped, \"solid\")) {\n      splitGeoms.push(foo)\n    }\n    console.log(`extracted ${splitGeoms.length} solids`)\n    console.log(replicad.cast(splitGeoms[0]))\n\n    for (let i = 0; i < splitGeoms.length; i++) {\n      resultLeafs.push(new Assembly({\n        ...leaf,\n        geometry: replicad.cast(splitGeoms[i])\n      }))\n    }\n    return leaf;\n  });\n  return resultLeafs;\n}",
+              "compiledCode": "\"use strict\";\n// Example Code\nfunction run(shape) {\n    const resultLeafs = [];\n    shape.onLeafs((leaf) => {\n        if (leaf.geometry instanceof replicad.Drawing) {\n            return leaf;\n        }\n        const splitGeoms = [];\n        for (const foo of replicad.iterTopo(leaf.geometry.wrapped, \"solid\")) {\n            splitGeoms.push(foo);\n        }\n        console.log(`extracted ${splitGeoms.length} solids`);\n        console.log(replicad.cast(splitGeoms[0]));\n        for (let i = 0; i < splitGeoms.length; i++) {\n            resultLeafs.push(new Assembly({\n                ...leaf,\n                geometry: replicad.cast(splitGeoms[i])\n            }));\n        }\n        return leaf;\n    });\n    return resultLeafs;\n}\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-45835",
+              "name": "ShapeToExplode",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Readme",
+              "x": 0.203125,
+              "y": 0.6228571428571429,
+              "uniqueID": "id-45836",
+              "name": "README",
+              "ioValues": [
+                {
+                  "name": "value",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "readMeText": "Makes an assembly where each leaf is a disjoint (ie not touching) part from the input. Particularly useful for imported entities.",
+              "global": true
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-45834",
+              "ap2ID": "id-45833"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-45835",
+              "ap2ID": "id-45834"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-09-01T18:23:39.199Z",
+            "privateRepo": false,
+            "repoName": "ExplodeDisjoint",
+            "dateCreated": "2026-01-09T19:43:12Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-2775",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/tristan-huber/ExplodeDisjoint",
+            "topics": [
+              "abundance-tool"
+            ],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739807",
+            "ranking": 1.5,
+            "searchField": "explodedisjoint tristan-huber explodes disjoint 3d shapes into an assembly. abundance-tool",
+            "owner": "tristan-huber",
+            "description": "Explodes disjoint 3d shapes into an assembly.",
+            "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExplodeDisjoint/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1788290302612
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.2513020833333333,
+          "y": 0.7797619047619048,
+          "uniqueID": "id-45851",
+          "name": "ExtractParts",
+          "ioValues": [
+            {
+              "name": "Input",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-45848",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-45849",
+              "type": "partselect",
+              "selectedLeafIndexes": [
+                3,
+                2,
+                0
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.3912760416666667,
+              "y": 0.7742857142857142,
+              "uniqueID": "id-45850",
+              "ioValues": [
+                {
+                  "name": "input",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "function run(input: Assembly) {\n  const res = input.onLeafs((leaf) => {\n    if (leaf.selection?.part && leaf.selection.part) {\n      return leaf;\n    } else {\n      return null;\n    }\n  })\n  console.log(res)\n  return res;\n}",
+              "compiledCode": "\"use strict\";\nfunction run(input) {\n    const res = input.onLeafs((leaf) => {\n        if (leaf.selection?.part && leaf.selection.part) {\n            return leaf;\n        }\n        else {\n            return null;\n        }\n    });\n    console.log(res);\n    return res;\n}\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "input",
+              "ap1ID": "id-45849",
+              "ap2ID": "id-45850"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-45850",
+              "ap2ID": "id-45848"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-09-01T18:23:39.199Z",
+            "privateRepo": false,
+            "repoName": "ExtractParts",
+            "dateCreated": "2026-07-24T20:42:33Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-34890",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/tristan-huber/ExtractParts",
+            "topics": [
+              "abundance-tool"
+            ],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739821",
+            "ranking": 2.4,
+            "searchField": "extractparts tristan-huber select sub-component parts of an assembly by click and return a new assembly with just the selected parts abundance-tool",
+            "owner": "tristan-huber",
+            "description": "Select sub-component parts of an assembly by click and return a new assembly with just the selected parts",
+            "contentURL": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/tristan-huber/ExtractParts/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1788290316150
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "ShapeToExplode",
+          "ap1ID": "id-45830",
+          "ap2ID": "id-45837"
+        },
+        {
+          "ap2Name": "Input",
+          "ap1ID": "id-45837",
+          "ap2ID": "id-45851"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-45851",
+          "ap2ID": "id-45823"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
