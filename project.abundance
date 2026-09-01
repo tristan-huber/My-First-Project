@@ -2703,8 +2703,8 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "panels",
-              "currentEquation": "panels"
+              "ioValue": "panels_2pass",
+              "currentEquation": "panels_2pass"
             }
           ],
           "partName": "Molecule",
