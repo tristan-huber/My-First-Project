@@ -2,7 +2,7 @@
 
 # My-First-Project
 
-![](/project.svg)
+![](/project.png)
 
 ## Inputs
 
