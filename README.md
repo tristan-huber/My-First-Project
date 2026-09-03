@@ -6,10 +6,10 @@
 
 ## Inputs
 
-- **diam** (number)
 - **TargetLen** (number)
 - **Breadth** (number)
 - **length** (number)
+- **diam** (number)
 
 
 
