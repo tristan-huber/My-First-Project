@@ -109,7 +109,13 @@
           "atomType": "Circle",
           "x": 0.29296875,
           "y": 0.5857142857142857,
-          "uniqueID": "id-27205"
+          "uniqueID": "id-27205",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
         },
         {
           "atomType": "Input",
@@ -127,6 +133,10 @@
             {
               "name": "geometry",
               "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -159,7 +169,30 @@
             },
             {
               "name": "Shape 1",
-              "ioValue": null
+              "ioValue": {
+                "geometry": "move-circle-5-0-4-0",
+                "dimension": "2D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
             },
             {
               "name": "Shape 4",
@@ -211,7 +244,13 @@
           "atomType": "Circle",
           "x": 0.18815104166666669,
           "y": 0.8114285714285715,
-          "uniqueID": "id-27358"
+          "uniqueID": "id-27358",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
         },
         {
           "atomType": "Move",
@@ -222,6 +261,10 @@
             {
               "name": "geometry",
               "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -253,7 +296,13 @@
           "atomType": "Circle",
           "x": 0.14453125,
           "y": 0.4028571428571429,
-          "uniqueID": "id-27399"
+          "uniqueID": "id-27399",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
         },
         {
           "atomType": "Move",
@@ -267,6 +316,10 @@
             },
             {
               "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
               "ioValue": 0
             },
             {
@@ -960,11 +1013,7 @@
               "uniqueID": "id-36328",
               "name": "Assembly",
               "type": "faceselect",
-              "selectedFaceData": {
-                "0": [
-                  0
-                ]
-              }
+              "selectedFaceData": {}
             },
             {
               "atomType": "Code",
@@ -7092,36 +7141,6 @@
           "ap2ID": "id-4898"
         },
         {
-          "ap2Name": "Shape 2",
-          "ap1ID": "id-4865",
-          "ap2ID": "id-4898"
-        },
-        {
-          "ap2Name": "retain",
-          "ap1ID": "id-4886",
-          "ap2ID": "id-6014"
-        },
-        {
-          "ap2Name": "shape",
-          "ap1ID": "id-6508",
-          "ap2ID": "id-6556"
-        },
-        {
-          "ap2Name": "SimpleTwist",
-          "ap1ID": "id-6508",
-          "ap2ID": "id-8870"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-6524",
-          "ap2ID": "id-6503"
-        },
-        {
-          "ap2Name": "Shape 2",
-          "ap1ID": "id-6540",
-          "ap2ID": "id-6503"
-        },
-        {
           "ap2Name": "geometry",
           "ap1ID": "id-48598",
           "ap2ID": "id-6454"
@@ -7147,6 +7166,11 @@
           "ap2ID": "id-4810"
         },
         {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-4865",
+          "ap2ID": "id-4898"
+        },
+        {
           "ap2Name": "Points",
           "ap1ID": "id-48676",
           "ap2ID": "id-4865"
@@ -7155,9 +7179,47 @@
           "ap2Name": "Points",
           "ap1ID": "id-48755",
           "ap2ID": "id-6540"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-4886",
+          "ap2ID": "id-6014"
+        },
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-6508",
+          "ap2ID": "id-6556"
+        },
+        {
+          "ap2Name": "SimpleTwist",
+          "ap1ID": "id-6508",
+          "ap2ID": "id-8870"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-6524",
+          "ap2ID": "id-6503"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-6540",
+          "ap2ID": "id-6503"
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Color",
+      "x": 0.5592447916666666,
+      "y": 0.5285714285714286,
+      "uniqueID": "id-49625",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Default"
     }
   ],
   "allConnectors": [
@@ -7220,6 +7282,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-40147",
       "ap2ID": "id-42072"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-42072",
+      "ap2ID": "id-49625"
     },
     {
       "ap2Name": "assembly",
