@@ -903,8 +903,8 @@
       "ioValues": [
         {
           "name": "Input",
-          "ioValue": "two",
-          "currentEquation": "two"
+          "ioValue": "five",
+          "currentEquation": "five"
         }
       ],
       "topLevel": false,
@@ -1031,11 +1031,7 @@
               "name": "Assembly",
               "type": "faceselect",
               "options": [],
-              "selectedFaceData": {
-                "0": [
-                  0
-                ]
-              }
+              "selectedFaceData": {}
             },
             {
               "atomType": "Code",
@@ -1446,7 +1442,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.2571428571428572,
+          "y": 0.23714285714285713,
           "uniqueID": "id-50501",
           "type": "dropdown",
           "options": [
@@ -1468,7 +1464,7 @@
             },
             {
               "name": "Text",
-              "ioValue": "two",
+              "ioValue": "five",
               "currentEquation": "Lorem Ipsum"
             },
             {
@@ -1578,14 +1574,14 @@
           "ap2ID": "id-37300"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-36330",
-          "ap2ID": "id-36387"
-        },
-        {
           "ap2Name": "Text",
           "ap1ID": "id-50501",
           "ap2ID": "id-50507"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-36330",
+          "ap2ID": "id-36387"
         }
       ],
       "fileTypeVersion": 1
